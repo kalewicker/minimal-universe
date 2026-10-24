@@ -15,6 +15,17 @@
 6. **R05 — Extension proposal.** A two-edge LHS is a new experiment, never an
    implicit modification of the baseline grammar.
 
+## Current position
+
+R00–R02 engineering/calibration stages are complete. R03b completed its registered
+two-event discovery subset; it did not execute a full-panel census or promote
+candidates. [R04a](../reports/r04a.md) closed conditional validation without launch,
+with no candidate statistics evaluated and no intervention effects measured.
+All 16,774 reserved jobs remain unopened. The next bounded milestone is the R05
+extension proposal, including matching/aliasing semantics and controls; a new
+kernel and campaign require subsequent registrations. This is a design transition,
+not a finding that the one-edge rules failed a scientific effect test.
+
 Discovery, detector development, validation, and final testing use disjoint parent
 trajectory groups. All branches/interventions inherit their parent's partition.
 Compare baseline features B against B plus motifs on the same frozen prediction

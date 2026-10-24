@@ -85,4 +85,12 @@ snapshots independently verified. All 16,774 holdout jobs remain reserved.
 degenerate nulls, and motif exclusions. No candidates were promoted. The 50-event
 intervention gate is unchanged.
 
+The [R04a eligibility closeout](reports/r04a.md) verified the public receipts and
+closed conditional validation without launching it: this descriptive registration
+supplies no eligible candidates, and intervention effects remain unmeasured.
+Verify it from a public clone with
+`python3 -B scripts/audit_r04.py --verify reports/r04a.json`.
+The next milestone is an R05 two-edge extension proposal with explicit semantics
+and new controls, before any implementation or campaign.
+
 Public repository: https://github.com/kalewicker/minimal-universe

@@ -1,0 +1,38 @@
+{
+  "audit_status": "pass",
+  "candidate_effect_status": "not_evaluated",
+  "candidate_statistics_evaluated": 0,
+  "claim_limit": "No eligible candidates from this registration; not evidence that all rules fail or that effects are zero.",
+  "decision": "close_conditional_validation_without_launch",
+  "discovery_jobs_completed": 10946,
+  "eligible_candidates": [],
+  "evidence_scope": "Public receipt and source consistency only; bulk trajectories and native binary were not reopened.",
+  "holdout_authorized": false,
+  "holdout_jobs_executed": 0,
+  "inputs_sha256": {
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r03b-design.json": "266a11eb89743f450c2ef88fb6937a9146693a432938ce6e74af1717d77c49a1",
+    "protocols/r03b-launch.json": "df10df2fdc9d4d8386bc8d67ae57fe6a9d669875d2604f24e6e2af7f2453fa49",
+    "protocols/r03b-seal.json": "712aa5ab26423884fe84bfd25d6a7e40e9993959e22c0b2a999c04ffd8a4d297",
+    "reports/r03b-analysis.json": "f6f894793335483345f74d84fa97800757bb09a993f4e1b38c2bf182d556bf49",
+    "reports/r03b-custody.json": "53da7a01423a11a4b8db2247bc5cbe16468944ca99d9fa70fc461b39ed90ff9f",
+    "reports/r03b-run.json": "50fb0e460c2e616c8d8df0a8de8bbfed3f9b27b5552aff90fc07f7fe026f7b3f"
+  },
+  "intervention_status": "not_executed",
+  "new_world_events": 0,
+  "protocol_id": "R04a-v1",
+  "reasons": [
+    "descriptive_registration_prohibits_promotion",
+    "no_promoted_candidates_in_audited_receipt",
+    "intervention_endpoint_not_measured"
+  ],
+  "registered_observation_horizon": 2,
+  "required_intervention_horizon": 50,
+  "reserved_jobs": 16774,
+  "scientific_status": "no_new_inference",
+  "source_sha256": {
+    "protocols/r04a.json": "57f8a1a9dfc0d2a9f16695183550892b7ebaafdf15c32a60b9643547bb1af0a9",
+    "scripts/audit_r04.py": "da08da96810bf399e4f29b2099e974006eced0482f515f924565bc18f54a561f",
+    "tests/test_audit_r04.py": "3b58cc578a5b2e69a5a1276feaabf0b94860ef81e409fbb2b636474b3d021945"
+  }
+}

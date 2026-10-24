@@ -1,0 +1,22 @@
+{
+  "acceptance": "Exact hashes and accounting agree; no promoted candidates; descriptive scope and unmeasured intervention endpoint are preserved. Unexpected promotion or changed scope fails closed for separate review.",
+  "holdout_authorized": false,
+  "inference_authorized": false,
+  "inputs_sha256": {
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r03b-design.json": "266a11eb89743f450c2ef88fb6937a9146693a432938ce6e74af1717d77c49a1",
+    "protocols/r03b-launch.json": "df10df2fdc9d4d8386bc8d67ae57fe6a9d669875d2604f24e6e2af7f2453fa49",
+    "protocols/r03b-seal.json": "712aa5ab26423884fe84bfd25d6a7e40e9993959e22c0b2a999c04ffd8a4d297",
+    "reports/r03b-analysis.json": "f6f894793335483345f74d84fa97800757bb09a993f4e1b38c2bf182d556bf49",
+    "reports/r03b-custody.json": "53da7a01423a11a4b8db2247bc5cbe16468944ca99d9fa70fc461b39ed90ff9f",
+    "reports/r03b-run.json": "50fb0e460c2e616c8d8df0a8de8bbfed3f9b27b5552aff90fc07f7fe026f7b3f"
+  },
+  "kind": "read_only_conditional_validation_eligibility_closeout",
+  "method": "Verify pinned public receipts and source seal, cross-check execution and analysis accounting, and compare registered observation horizon with frozen intervention horizon. Do not inspect trajectories or construct candidate statistics.",
+  "missing_evidence": "not_evaluated, never scientific rejection or an observed zero effect",
+  "next_boundary": "R05 may propose a separately specified two-edge extension; no extension execution is authorized here.",
+  "outputs": "Source-bound compact receipt and interpretation report; eligible candidate list empty only for this completed descriptive registration.",
+  "protocol_id": "R04a-v1",
+  "question": "Does the completed descriptive R03b atlas supply candidates eligible for R04 held-out validation?",
+  "world_events_authorized": 0
+}
