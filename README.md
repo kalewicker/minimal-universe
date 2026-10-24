@@ -3,10 +3,11 @@
 Bounded experiments in recursive rewriting, with explicit mathematical limits,
 reproducible checks, and a separation between structure and causal organization.
 
-The project has an **R00 mathematical audit**, **R01 reference kernels**, and
-**R02 bounded measurement calibration**. This is not
-evidence of emergence, learning, life, or open-ended evolution. No discovery
-campaign is included or authorized by the audit protocol.
+The project has an **R00 mathematical audit**, **R01 reference kernels**,
+**R02 bounded measurement calibration**, and an independently audited
+**R03b descriptive discovery atlas**. This is not evidence of emergence,
+learning, life, or open-ended evolution. Holdout and downstream experiments
+remain unlaunched.
 
 ## Run the audit
 
@@ -65,16 +66,23 @@ python3 -B scripts/calibrate_r02.py --output /tmp/minimal-universe-r02.json
 The [R02 contract](docs/r02-measurements.md) defines induced multigraph motifs,
 exact degree-conditioned nulls, exposure-adjusted persistence, synthetic paired
 effects, and promotion gates. [Results and limits](reports/r02.md) include all
-registered calibration counts. No discovery or real causal assay has run.
+registered calibration counts. Calibration did not run discovery or a real causal
+assay; the subsequent descriptive discovery milestone is recorded below.
 
-## Planned descriptive atlas
+## Descriptive discovery atlas
 
 [R03a design and feasibility](docs/r03-design.md) freezes a complete planned panel
 of 27,720 jobs at a two-event budget, with discovery and holdout partitions fixed
 in advance. The [static audit](reports/r03a.md) verified every job without running
 world dynamics. The [observer/runner pilot](reports/r03p.md) has passed on its fixed
 engineering panel; its [execution contract](docs/r03-runner.md) describes timeouts,
-storage accounting, and holdout protection. The production adapter and source-bound
-launch protocol are still required. The 50-event intervention gate is unchanged.
+storage accounting, and holdout protection.
+
+The [R03b execution contract](docs/r03-atlas.md) and source seal governed one
+completed discovery attempt: 10,946 jobs, 21,876 native events, and 32,822 observed
+snapshots independently verified. All 16,774 holdout jobs remain reserved.
+[R03b results](reports/r03b.md) preserve early terminations, undefined measurements,
+degenerate nulls, and motif exclusions. No candidates were promoted. The 50-event
+intervention gate is unchanged.
 
 Public repository: https://github.com/kalewicker/minimal-universe
