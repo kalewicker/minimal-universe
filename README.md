@@ -72,7 +72,9 @@ registered calibration counts. No discovery or real causal assay has run.
 [R03a design and feasibility](docs/r03-design.md) freezes a complete planned panel
 of 27,720 jobs at a two-event budget, with discovery and holdout partitions fixed
 in advance. The [static audit](reports/r03a.md) verified every job without running
-world dynamics. Runtime and measurement coverage still require an engineering
-pilot before launch. The 50-event intervention gate is unchanged.
+world dynamics. The [observer/runner pilot](reports/r03p.md) has passed on its fixed
+engineering panel; its [execution contract](docs/r03-runner.md) describes timeouts,
+storage accounting, and holdout protection. The production adapter and source-bound
+launch protocol are still required. The 50-event intervention gate is unchanged.
 
 Public repository: https://github.com/kalewicker/minimal-universe

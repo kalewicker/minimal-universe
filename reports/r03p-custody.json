@@ -1,0 +1,35 @@
+{
+  "full_python_suite_tests": 23,
+  "kind": "post_pilot_custody_check",
+  "local_artifact_sha256": {
+    "results/r03p-001/faults/global_deadline/events.jsonl": "f08f756e0afe74d443294175a47f326ebd8778767d27f7962a3aee646bcd7336",
+    "results/r03p-001/faults/global_deadline/summary.json": "6c2365b57bfee750b2afddf125335a1afb918137ec292a5d531a5a9609c462c1",
+    "results/r03p-001/faults/invalid_json/events.jsonl": "4fa44cf6ab20af55aea89776ce8abf39d83f0c1d1985d6589323c6472fadad7d",
+    "results/r03p-001/faults/invalid_json/summary.json": "dd6ece83799f78a165597c6606bfcbf75fdc7a0292cbc1be5528051922545b99",
+    "results/r03p-001/faults/job_deadline/events.jsonl": "c28d63df13569676bed3d1f728fba41ac120f2e078c5ba175b4b865e1080f4fa",
+    "results/r03p-001/faults/job_deadline/summary.json": "5831316a75cbc7f7e185ffb40019b72419b51076e6438cde5411f6cffcb83cea",
+    "results/r03p-001/faults/nonzero_exit/events.jsonl": "acde0d3c4be2e4f28fa8b18ba91d77e3c67827d2863c4ff25b942626c60bb1ed",
+    "results/r03p-001/faults/nonzero_exit/summary.json": "355c8077914338fd8a8f6c09fe659ddc03793e5571ab7f817fea345fe3f0ba70",
+    "results/r03p-001/faults/output_cap/events.jsonl": "8e08a353a39c6c4b07acab4d83011d81b7d79c031c18460dad7f326154e81ec3",
+    "results/r03p-001/faults/output_cap/summary.json": "9f4519729f6ab3a28be006566af1efa9604c29f5640181d6fe0e22c93737121f",
+    "results/r03p-001/faults/reserved/events.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/r03p-001/faults/reserved/summary.json": "3086718346d35c22cb0539d47981e439a21e87418e89ff592402a6484fd073cb",
+    "results/r03p-001/faults/storage_cap/events.jsonl": "791152ce538c597eda3c8bb4126b7ff60896bddae0a3e15d9dfd9ef716378a11",
+    "results/r03p-001/faults/storage_cap/summary.json": "4fa4b66206053b93af74585a6f543276671278c3f7020e9a3ef25032c20e5655",
+    "results/r03p-001/panel/events.jsonl": "63894b9cd647939e4c2939be092c87ad7a569a3ad62a577028bafc80ef97c91a",
+    "results/r03p-001/panel/summary.json": "e5d0754f5bdef5c346400985405b2ae864c9a20c5409f6160e4e99df4e005e14"
+  },
+  "note": "Supplemental combined-stream and serialized-envelope checks were added after the registered pilot; no world events and no threshold changes.",
+  "protocol_id": "R03p-v1",
+  "source_and_receipt_sha256": {
+    "protocols/r03b-design.json": "266a11eb89743f450c2ef88fb6937a9146693a432938ce6e74af1717d77c49a1",
+    "protocols/r03p.json": "8b63024ea8c4ff350963819fd1f63ddb26f166b03ad7be0e3272122a36f13626",
+    "reports/r03a-plan.json": "7526c7947e8c64ca8e40adf1984a92b16cdc17e75f61336e903621910541bfff",
+    "reports/r03a-verification.json": "b4422a47acfe343dbd9c1ea4759b21ba57df5820a12fae169cb6e947a7a2a48b",
+    "reports/r03p.json": "77a619e867eb0b3c6227da2aed2537ab178377719644a3d62deb70b607288bbd",
+    "tests/test_runner_boundaries.py": "b6e43dbe52318d36cc0e577e1b24a4595cee30a126a17c3b20ef9172c56db9ef"
+  },
+  "status": "pass",
+  "supplemental_boundary_tests": 2,
+  "test_status": "pass"
+}

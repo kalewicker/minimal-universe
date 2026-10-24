@@ -1,0 +1,94 @@
+{
+  "atlas_jobs_executed": 0,
+  "atlas_launch_authorized": false,
+  "binary_sha256": "d07d23afaeef06d3653c23a1d12c25e5c3cbc069c676d50f93df9bab39b36d29",
+  "checks": {
+    "degenerate_null_snapshots": 12,
+    "incomplete_motif_snapshots": 6,
+    "jobs": 18,
+    "native_events": 33,
+    "observed_snapshots": 51,
+    "unavailable_snapshots": 3,
+    "undefined_density_snapshots": 15
+  },
+  "discovery_admissible": 10946,
+  "fault_cases": {
+    "existing_directory": {
+      "status": "rejected"
+    },
+    "global_deadline": {
+      "statuses": [
+        "global_wall_cap",
+        "not_started_global_wall_cap",
+        "not_started_global_wall_cap"
+      ],
+      "stored_bytes": 793,
+      "summary_sha256": "6c2365b57bfee750b2afddf125335a1afb918137ec292a5d531a5a9609c462c1"
+    },
+    "invalid_json": {
+      "statuses": [
+        "invalid_worker_json"
+      ],
+      "stored_bytes": 727,
+      "summary_sha256": "dd6ece83799f78a165597c6606bfcbf75fdc7a0292cbc1be5528051922545b99"
+    },
+    "job_deadline": {
+      "statuses": [
+        "job_wall_cap"
+      ],
+      "stored_bytes": 715,
+      "summary_sha256": "5831316a75cbc7f7e185ffb40019b72419b51076e6438cde5411f6cffcb83cea"
+    },
+    "nonzero_exit": {
+      "statuses": [
+        "worker_error"
+      ],
+      "stored_bytes": 712,
+      "summary_sha256": "355c8077914338fd8a8f6c09fe659ddc03793e5571ab7f817fea345fe3f0ba70"
+    },
+    "output_cap": {
+      "statuses": [
+        "output_cap"
+      ],
+      "stored_bytes": 713,
+      "summary_sha256": "9f4519729f6ab3a28be006566af1efa9604c29f5640181d6fe0e22c93737121f"
+    },
+    "reserved": {
+      "statuses": [
+        "reserved"
+      ],
+      "stored_bytes": 414,
+      "summary_sha256": "3086718346d35c22cb0539d47981e439a21e87418e89ff592402a6484fd073cb"
+    },
+    "storage_cap": {
+      "statuses": [
+        "complete",
+        "not_started_global_output_cap",
+        "not_started_global_output_cap"
+      ],
+      "stored_bytes": 762,
+      "summary_sha256": "4fa4b66206053b93af74585a6f543276671278c3f7020e9a3ef25032c20e5655"
+    }
+  },
+  "maximum_job_seconds": 0.09492200054228306,
+  "maximum_record_bytes": 1962,
+  "panel_ledger_sha256": "63894b9cd647939e4c2939be092c87ad7a569a3ad62a577028bafc80ef97c91a",
+  "pilot_elapsed_seconds": 0.38086212519556284,
+  "pilot_stored_bytes": 27820,
+  "protocol_id": "R03p-v1",
+  "reserved_atlas_jobs": 16774,
+  "scientific_status": "untested",
+  "source_sha256": {
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "protocols/r03p.json": "8b63024ea8c4ff350963819fd1f63ddb26f166b03ad7be0e3272122a36f13626",
+    "scripts/bounded_runner.py": "b0809a69f807247f19cb063cf552426753d11269aaa50e999635db5769cebd54",
+    "scripts/calibrate_r02.py": "779c79a1fd19c915c60e78f5f6fd2017236322250dc6fa81b652187635b345b6",
+    "scripts/observe_r03.py": "7b4a652185c6976611be3d9c2dc2937b238beb2f541fda64e174f9e5b899e987",
+    "scripts/pilot_r03.py": "90a9b5595e53716b1924bbc7b02bcc4e46f687b86afbc576020aaf3ff946f2d4",
+    "scripts/verify_r01.py": "9681a4ecfd2d8478f599aea880f1c4b433c389467b39422d0ebbaeb3239a216a",
+    "scripts/verify_r03_plan.py": "dc7a7dda2554deb37a093827ccc5fec0ff8ac82f9b21443883dd4c192aa1df71",
+    "tests/test_r03_runner.py": "522738497df1ea4051d998838459405a387499710205e71ddb87fae86d462f00"
+  },
+  "static_atlas_jobs_checked": 27720,
+  "status": "pass"
+}

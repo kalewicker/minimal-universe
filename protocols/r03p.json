@@ -1,0 +1,26 @@
+{
+  "protocol_id": "R03p-v1",
+  "kind": "observer_runner_engineering_pilot",
+  "atlas_launch_authorized": false,
+  "fixtures": [
+    {"id":"erase_loop","nodes":1,"edges":[[0,0]],"rhs":[]},
+    {"id":"identity_arc","nodes":2,"edges":[[0,1]],"rhs":[[0,1]]},
+    {"id":"triple_loop","nodes":1,"edges":[[0,0]],"rhs":[[0,0],[0,0],[0,0]]},
+    {"id":"feedback_mutual","nodes":2,"edges":[[0,1],[1,0]],"rhs":[[0,2],[1,0],[2,1]]},
+    {"id":"eight_edge","nodes":3,"edges":[[0,1],[1,1],[2,1],[2,0]],"rhs":[[0,2],[1,0],[2,1]]},
+    {"id":"reverse_mutual","nodes":2,"edges":[[0,1],[1,0]],"rhs":[[1,0]]}
+  ],
+  "schedulers":["oldest","newest","uniform"],
+  "rng_seed":20261024,
+  "snapshots":[0,1,2],
+  "graph_limits":{"events":2,"nodes":5,"edges":8},
+  "runner_limits":{"workers":4,"per_job_wall_seconds":30,"global_wall_seconds":120,"global_output_bytes":1048576,"per_job_output_bytes":65536},
+  "expected_jobs":18,
+  "verification":"Compare every native endpoint/event to independent R01 Python execution; reconstruct snapshot graphs independently and compare observations. Existing R02 independent calibration remains the algorithmic oracle for motif/null correctness.",
+  "fault_cases":["invalid worker JSON","nonzero worker exit","per-job deadline kills process group","global deadline stops running work and leaves suffix not_started","combined stdout/stderr byte cap","global storage reservation leaves suffix not_started","reserved job never dispatched","existing output directory rejected"],
+  "holdout_check":"Validate the full static R03a manifest and classify all jobs without executing them; reject partition tampering and select only discovery",
+  "acceptance":"All 18 engineering jobs complete; exact snapshot/native comparisons pass; all registered fault checks and protection checks pass; retained output bytes stay within registered ceilings. Preserve failed receipts rather than changing the panel.",
+  "timing":"Record monotonic elapsed runtime and stored bytes; report pilot throughput only, with no guaranteed full-atlas runtime extrapolation",
+  "scientific_status":"untested",
+  "next":"A source-bound atlas launch protocol is still required; this pilot cannot dispatch production parent keys"
+}
