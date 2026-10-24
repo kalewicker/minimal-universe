@@ -1,0 +1,23 @@
+{
+  "contract_id": "measurements-v1",
+  "structural_primary": "Reciprocal-pair density: unordered distinct vertex pairs with at least one edge in each direction divided by choose(V,2); undefined for V<2",
+  "structural_null": "Uniform permutation of edge target stubs conditional on exact source and target degree sequences; loops and multiedges allowed; exact enumeration only up to 8 edges in this version",
+  "null_degeneracy": "constant score distribution is not informative; unsupported size or zero denominator is not testable",
+  "persistence": "Untouched edge-occurrence survival is descriptive, compared to product(1-m/E_j); it is not repair, regeneration, replication, or a candidate promotion outcome",
+  "intervention_primary": "Parent-level paired difference in changes of reciprocal-pair density: (target_h-target_0)-(sham_h-sham_0); horizon in successful events; undefined endpoints invalidate the pair",
+  "intervention_horizon": 50,
+  "intervention_scope": "Total effect under a fixed scheduler, including update-competition effects; does not identify local context-sensitive interaction",
+  "structural_min_effect": 0.05,
+  "intervention_min_effect": 0.05,
+  "minimum_independent_parents": 30,
+  "minimum_complete_fraction": 1.0,
+  "minimum_scheduler_count": 2,
+  "alpha": 0.05,
+  "multiplicity": "Holm adjustment separately over all prespecified structural tests and all prespecified intervention tests; include every attempted eligible test; no omission based on outcome",
+  "uncertainty": "95 percent percentile bootstrap over independent parent trajectories, 10000 resamples; resampling RNG and eligible family identifiers must be pinned in R03/R04 before execution; do not resample snapshots as independent",
+  "promotion": "Both effect estimates >=0.05; both lower CI bounds >0; both Holm-adjusted p<=0.05; informative matched null; complete motif coverage; all frozen validation flags true; >=30 independent parents and >=2 schedulers; no scientific promotion before held-out intervention validation",
+  "split": "SHA256 of UTF-8 parent key, first 8 bytes big-endian modulo 10: 0..3 discovery, 4..5 detector-development, 6..7 validation, 8..9 final-test; all branches/interventions inherit parent key",
+  "claim_limit": "Passing numerical gates is operational prioritization, not evidence of life or context-sensitive causal emergence. R00 restrictions still apply.",
+  "missing_statistics": "Gate consumes explicitly supplied frozen-validation statistics; R02 does not implement bootstrap estimators or claim power at n=30. R03/R04 must register design/power and tests before scientific use.",
+  "status": "frozen_for_calibration; production eligibility requires later registered design"
+}

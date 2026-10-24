@@ -1,0 +1,15 @@
+{
+  "protocol_id": "R02-v1",
+  "kind": "measurement_calibration_only",
+  "motifs": {"min_nodes": 1, "max_nodes": 3, "max_arc_multiplicity": 2, "semantics": "weakly connected vertex-induced directed multigraph; each vertex subset counted once; loops and isolates retained", "unsupported": "count excluded connected subsets explicitly; never clip multiplicity"},
+  "structural_fixtures": {"binary_adjacency_nodes": [1, 2, 3], "ternary_adjacency_nodes": [1, 2], "expected_graphs": 614, "relabeling": "every permutation of each fixture's vertices", "oracle": "independent exact isomorphism against all labeled motif templates"},
+  "survival_fixtures": {"initial_edges": [1, 2, 3], "output_edges": [0, 1, 2, 3], "horizons": [0, 1, 2, 3, 4], "target_counts": "all integers 0 through initial_edges", "expected_cases": 180, "oracle": "exact Fraction-weighted enumeration of every labelled edge-choice history", "extinction": "requested event horizon beyond exhaustion is unavailable, not padded"},
+  "null_fixtures": {"nodes": 3, "edge_counts": [0, 1, 2, 3], "expected_graphs": 820, "oracle": "enumerate ordered endpoint assignments with the same in/out degree sequences; compare exact score distributions to target-permutation null"},
+  "paired_effect_cases": ["zero effect", "delayed +0.25", "immediate-only difference cancels", "missing endpoint rejected", "duplicate parent rejected"],
+  "gate_cases": "one synthetic qualifying record and one failure for each required condition; unknown or missing fields fail closed",
+  "acceptance": "Exact structural counts, relabelings, rational probabilities, null distributions, and synthetic effect/gate outcomes all match; no statistical tolerance or tuning",
+  "scientific_status": "untested",
+  "world_campaign_executed": false,
+  "discovery_authorized": false,
+  "next": "R03 needs a separately registered feasible run matrix and launch; this calibration does not launch it"
+}

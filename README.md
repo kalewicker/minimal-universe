@@ -3,7 +3,8 @@
 Bounded experiments in recursive rewriting, with explicit mathematical limits,
 reproducible checks, and a separation between structure and causal organization.
 
-The project has an **R00 mathematical audit** and **R01 reference kernels**. This is not
+The project has an **R00 mathematical audit**, **R01 reference kernels**, and
+**R02 bounded measurement calibration**. This is not
 evidence of emergence, learning, life, or open-ended evolution. No discovery
 campaign is included or authorized by the audit protocol.
 
@@ -54,5 +55,16 @@ python3 -B scripts/verify_r01.py --binary build/msru \
 Use new output names for each run. [R01 results](reports/r01.md) distinguish the
 verified kernel behavior from the unimplemented measurement and discovery stages.
 The Python checkers remain specification oracles, not production simulators.
+
+## Measurement calibration
+
+```sh
+python3 -B scripts/calibrate_r02.py --output /tmp/minimal-universe-r02.json
+```
+
+The [R02 contract](docs/r02-measurements.md) defines induced multigraph motifs,
+exact degree-conditioned nulls, exposure-adjusted persistence, synthetic paired
+effects, and promotion gates. [Results and limits](reports/r02.md) include all
+registered calibration counts. No discovery or real causal assay has run.
 
 Public repository: https://github.com/kalewicker/minimal-universe
