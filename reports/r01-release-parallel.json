@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "d07d23afaeef06d3653c23a1d12c25e5c3cbc069c676d50f93df9bab39b36d29",
+  "checks": {
+    "fresh_process_restores": 4620,
+    "graph_events": 55236,
+    "graph_runs": 4620,
+    "lambda_comparisons": 26
+  },
+  "discovery_executed": false,
+  "machine": "arm64",
+  "protocol_id": "R01-v1",
+  "python": "3.14.5",
+  "scientific_status": "untested",
+  "source_sha256": {
+    "CMakeLists.txt": "56a7e10a880a631557ff1a17cbdcc0d00edae9674be6c22cb4e3f5401bd85fed",
+    "include/minimal_universe/graph.hpp": "1f125a4fc81c1cd9504d03aa7a2e5577c73e13dcc096a683bc753e3800f1649b",
+    "include/minimal_universe/ski.hpp": "43784e8326d3440afc3cc80aad05742e8aa4d982624c3cc908f2db190a8dca23",
+    "protocols/r00.json": "c4537b7a48ce6d129eafd982597278715409a27f0a8677fe17df95a6a6df638e",
+    "protocols/r01.json": "704e60d729b34fc3d3a845eaca16056b9f9c12ae6b128c8ffeeaf3f22c62158a",
+    "scripts/verify_r01.py": "9681a4ecfd2d8478f599aea880f1c4b433c389467b39422d0ebbaeb3239a216a",
+    "src/graph.cpp": "f0063a2827ddcca756d84d116e945667841161ec5c2be76dd4de49a9d67add60",
+    "src/main.cpp": "bc3070950bbaeadc52c6905cd7b67742c7b25e11e50090fa120b0bdbeeae8302",
+    "src/ski.cpp": "bffe2cbb02dd2e3bdd450f569199f2887c6c49d53f3caf99e45978590e4793fc",
+    "tests/kernel_tests.cpp": "07cad76d55826062a38e6f20a688e1f4a36d86abb71bc7a337277b6f38ccf83e",
+    "tests/test_reference_r01.py": "87ae39320e6865b5ceed1707fb800676d96e8c78a27d52b9453a369f0cb5960a"
+  },
+  "status": "pass",
+  "system": "Darwin",
+  "trace_sha256": "9b934f082a4e32b70008af88cca33f99a87cd16e6f60601365f829829738d26d",
+  "workers": 8
+}

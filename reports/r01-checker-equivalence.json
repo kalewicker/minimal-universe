@@ -1,0 +1,16 @@
+{
+  "kind": "checker_execution_equivalence",
+  "protocol_id": "R01-v1",
+  "status": "pass",
+  "serial_receipt": "r01-release.json",
+  "concurrent_receipt": "r01-release-parallel.json",
+  "equal_fields": [
+    "checks",
+    "trace_sha256",
+    "binary_sha256",
+    "status"
+  ],
+  "unchanged_protocol_sha256": "704e60d729b34fc3d3a845eaca16056b9f9c12ae6b128c8ffeeaf3f22c62158a",
+  "trace_sha256": "9b934f082a4e32b70008af88cca33f99a87cd16e6f60601365f829829738d26d",
+  "note": "Only independent fixture orchestration changed; source snapshot of serial checker retained."
+}

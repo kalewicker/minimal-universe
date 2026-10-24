@@ -1,0 +1,12 @@
+{
+  "protocol_id": "R01-v1",
+  "status": "interrupted",
+  "reason": "Serial sanitizer subprocess startup overhead; rerun unchanged complete matrix with concurrent independent fixture jobs.",
+  "completed_graph_runs": 805,
+  "completed_graph_events": 9456,
+  "trace_sha256": "0400eec59a199fb6cac66436cd78c581db8efdce94f6aa3ff047638e8e966acf",
+  "checker_sha256": "f35b355bed1946f5ce68581792d02a770068166dfb07c6deb26d464c328a4573",
+  "scientific_status": "untested",
+  "observed_mismatches": 0,
+  "remaining_cases": "not_executed; no pass inferred"
+}

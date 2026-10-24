@@ -1,0 +1,32 @@
+{
+  "protocol_id": "R01-v1",
+  "kind": "reference_kernel_validation",
+  "graph_matrix": {
+    "rules": "All 220 symbolic definitions in R00 order",
+    "seeds": "All seven exact R00 seeds",
+    "schedulers": ["oldest", "newest", "uniform"],
+    "rng_seed": 20261024,
+    "max_events": 12,
+    "max_nodes": 64,
+    "max_edges": 64,
+    "expected_runs": 4620
+  },
+  "graph_oracle": "Independent Python dictionary rewriter and SplitMix64 selection; compare every event and final state, not only counts",
+  "checkpoint_cases": "Every graph matrix run, pause after 5 successful events or earlier halt, restore in a fresh process, compare uninterrupted output",
+  "iota_semantics": "Pure-iota source translated to SKI; full leftmost-outermost normal form",
+  "iota_fixtures": {
+    "sources": ["(i i)", "(i (i (i i)))", "(i (i (i (i i))))"],
+    "probe_arguments": [["x"], ["x", "y"], ["x", "y", "z"]],
+    "expected": ["x", "x", "((x z) (y z))"],
+    "max_steps": 10000,
+    "max_nodes": 100000,
+    "tiny_sources_max_leaves": 5,
+    "tiny_source_count": 23,
+    "tiny_source_comparison": "Apply each source to x,y,z; compare normalized lambda denotations from independent direct iota translation and C++ SKI result"
+  },
+  "adversarial": ["parallel edges and isolates", "loop aliasing", "invalid input", "event/node/edge/term caps", "RNG rollback on rejected step", "checkpoint corruption/truncation/version/trailing data", "ID overflow", "SKI erasure/duplication/under-argument reduction", "known divergent SKI fixture capped without divergence inference"],
+  "acceptance": "All registered comparisons and native tests pass, including sanitizer build. Preserve failures and fixes in closeout; do not modify thresholds or fixture inputs after execution.",
+  "scientific_status": "untested",
+  "discovery_authorized": false,
+  "next_milestone": "R02 requires its own measurement-calibration protocol"
+}

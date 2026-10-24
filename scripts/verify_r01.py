@@ -1,0 +1,283 @@
+#!/usr/bin/env python3
+"""Independent dictionary graph execution and de Bruijn lambda evaluation."""
+import argparse
+from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
+from functools import lru_cache
+import hashlib
+from itertools import combinations_with_replacement, product
+import json
+from pathlib import Path
+import platform
+import subprocess
+import sys
+import tempfile
+
+ROOT = Path(__file__).resolve().parents[1]
+MASK = (1 << 64) - 1
+
+
+def require(value, why):
+    if not value:
+        raise ValueError(why)
+
+
+def word(state):
+    state = (state + 0x9e3779b97f4a7c15) & MASK
+    z = ((state ^ (state >> 30)) * 0xbf58476d1ce4e5b9) & MASK
+    z = ((z ^ (z >> 27)) * 0x94d049bb133111eb) & MASK
+    return state, z ^ (z >> 31)
+
+
+def reference_graph(seed, rhs, scheduler, budget):
+    nodes = seed['nodes']
+    active = {i: (a, b, None) for i, (a, b) in enumerate(seed['edges'])}
+    next_edge = len(active)
+    rng = budget['rng_seed']
+    history = []
+    fresh = any(2 in arc for arc in rhs)
+    while True:
+        if not active:
+            status = 'no_eligible_edge'
+            break
+        if len(history) == budget['max_events']:
+            status = 'event_cap'
+            break
+        if nodes + fresh > budget['max_nodes']:
+            status = 'node_cap'
+            break
+        if len(active) - 1 + len(rhs) > budget['max_edges']:
+            status = 'edge_cap'
+            break
+        ids = sorted(active)
+        selected = ids[-1] if scheduler == 'newest' else ids[0]
+        if scheduler == 'uniform':
+            threshold = (1 << 64) % len(ids)
+            while True:
+                rng, draw = word(rng)
+                if draw >= threshold:
+                    selected = ids[draw % len(ids)]
+                    break
+        u, v, parent = active.pop(selected)
+        event = len(history)
+        history.append([event, selected, u, v, parent, nodes if fresh else None,
+                        next_edge, len(rhs), rng])
+        binding = {0: u, 1: v, 2: nodes}
+        for a, b in rhs:
+            active[next_edge] = (binding[a], binding[b], event)
+            next_edge += 1
+        nodes += fresh
+    return dict(status=status, nodes=nodes, next_edge=next_edge, rng=rng,
+                edges=[[i, *active[i]] for i in sorted(active)], events=history)
+
+
+def config_text(seed, rhs, scheduler, budget):
+    lines = ['MU_CONFIG_1', f"{seed['nodes']} {budget['rng_seed']} {scheduler}",
+             f"{budget['max_events']} {budget['max_nodes']} {budget['max_edges']}", str(len(rhs))]
+    lines += [f'{a} {b}' for a, b in rhs]
+    lines += [str(len(seed['edges']))]
+    lines += [f'{a} {b}' for a, b in seed['edges']]
+    return '\n'.join(lines) + '\n'
+
+
+# Lambda terms: bound variable int, free variable str, ('L', body), ('A', f, x).
+def app(f, x):
+    return ('A', f, x)
+
+
+I = ('L', 0)
+K = ('L', ('L', 1))
+S = ('L', ('L', ('L', app(app(2, 0), app(1, 0)))))
+IOTA = ('L', app(app(0, S), K))
+
+
+def shift(term, delta, cutoff=0):
+    if isinstance(term, int):
+        return term + delta if term >= cutoff else term
+    if isinstance(term, str):
+        return term
+    if term[0] == 'L':
+        return ('L', shift(term[1], delta, cutoff + 1))
+    return app(shift(term[1], delta, cutoff), shift(term[2], delta, cutoff))
+
+
+def substitute(term, value, depth=0):
+    if isinstance(term, int):
+        return shift(value, depth) if term == depth else term
+    if isinstance(term, str):
+        return term
+    if term[0] == 'L':
+        return ('L', substitute(term[1], value, depth + 1))
+    return app(substitute(term[1], value, depth), substitute(term[2], value, depth))
+
+
+def beta_step(term):
+    if not isinstance(term, tuple):
+        return None
+    if term[0] == 'A' and isinstance(term[1], tuple) and term[1][0] == 'L':
+        return shift(substitute(term[1][1], shift(term[2], 1)), -1)
+    child = beta_step(term[1])
+    if term[0] == 'L':
+        return None if child is None else ('L', child)
+    if child is not None:
+        return app(child, term[2])
+    child = beta_step(term[2])
+    return None if child is None else app(term[1], child)
+
+
+def tree_size(term):
+    if not isinstance(term, tuple):
+        return 1
+    return 1 + sum(tree_size(t) for t in term[1:])
+
+
+def normal(term, max_steps=10000, max_nodes=100000):
+    for _ in range(max_steps):
+        require(tree_size(term) <= max_nodes, 'lambda reference node cap')
+        next_term = beta_step(term)
+        if next_term is None:
+            return term
+        term = next_term
+    raise ValueError('lambda reference event cap')
+
+
+def parse_expression(text):
+    tokens = text.replace('(', ' ( ').replace(')', ' ) ').split()
+    def read(index):
+        require(index < len(tokens), 'missing expression')
+        if tokens[index] != '(':
+            require(tokens[index] != ')', 'unexpected close')
+            return tokens[index], index + 1
+        a, index = read(index + 1)
+        b, index = read(index)
+        require(index < len(tokens) and tokens[index] == ')', 'missing close')
+        return (a, b), index + 1
+    term, end = read(0)
+    require(end == len(tokens), 'trailing expression')
+    return term
+
+
+def denotation(term):
+    if isinstance(term, str):
+        return {'i': IOTA, 'S': S, 'K': K, 'I': I}.get(term, term)
+    return app(denotation(term[0]), denotation(term[1]))
+
+
+@lru_cache(None)
+def sources(leaves):
+    if leaves == 1:
+        return ('i',)
+    return tuple(f'({a} {b})' for n in range(1, leaves)
+                 for a in sources(n) for b in sources(leaves - n))
+
+
+def invoke(binary, *args):
+    proc = subprocess.run([str(binary), *map(str, args)], text=True, capture_output=True, timeout=30)
+    require(proc.returncode == 0, f'native command {args[0]} failed: {proc.stderr.strip()}')
+    return json.loads(proc.stdout)
+
+
+def execute(binary, trace, counters, workers):
+    protocol = json.loads((ROOT / 'protocols/r01.json').read_text())
+    seeds = json.loads((ROOT / 'protocols/r00.json').read_text())['seeds']
+    budget = protocol['graph_matrix']
+    registry = [r for k in range(4) for r in combinations_with_replacement(tuple(product(range(3), repeat=2)), k)]
+    digest = hashlib.sha256()
+    def record(row):
+        data = (json.dumps(row, sort_keys=True, separators=(',', ':')) + '\n').encode()
+        trace.write(data); digest.update(data)
+    def graph_case(case):
+        rule_id, name, scheduler = case
+        rhs, seed = registry[rule_id], seeds[name]
+        with tempfile.TemporaryDirectory(prefix='minimal-universe-r01-') as temporary:
+            temp = Path(temporary)
+            conf = temp / 'fixture.txt'
+            conf.write_text(config_text(seed, rhs, scheduler, budget))
+            expected = reference_graph(seed, rhs, scheduler, budget)
+            actual = invoke(binary, 'graph', conf)
+            require(actual == expected, f'graph differential mismatch: {case}')
+            checkpoint = temp / 'checkpoint.txt'
+            invoke(binary, 'graph', conf, 5, checkpoint)
+            resumed = invoke(binary, 'resume', checkpoint)
+            require(resumed == actual, f'checkpoint continuation mismatch: {case}')
+            return {'case': list(case), 'result': actual}
+    cases = product(range(len(registry)), seeds, budget['schedulers'])
+    # Independent processes only; ordered map preserves the serial trace exactly.
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for row in pool.map(graph_case, cases):
+            counters['graph_runs'] += 1
+            counters['graph_events'] += len(row['result']['events'])
+            counters['fresh_process_restores'] += 1
+            record(row)
+            if counters['graph_runs'] % 840 == 0:
+                print(f"Checked {counters['graph_runs']}/4620 graph cases", flush=True)
+    require(counters['graph_runs'] == budget['expected_runs'], 'graph denominator mismatch')
+    spec = protocol['iota_fixtures']
+    cases = list(zip(spec['sources'], spec['probe_arguments'], spec['expected']))
+    tiny = [s for n in range(1, spec['tiny_sources_max_leaves'] + 1) for s in sources(n)]
+    require(len(tiny) == spec['tiny_source_count'], 'tiny term denominator mismatch')
+    cases.extend((s, ['x', 'y', 'z'], None) for s in tiny)
+    for index, (source, probes, expected) in enumerate(cases):
+        native = invoke(binary, 'iota', source, spec['max_steps'], spec['max_nodes'], *probes)
+        require(native['status'] == 'normal_form', f'iota fixture capped: {source}')
+        reference = denotation(parse_expression(source))
+        for probe in probes:
+            reference = app(reference, probe)
+        require(normal(reference) == normal(denotation(parse_expression(native['term']))),
+                f'independent lambda mismatch: {source}')
+        if expected is not None:
+            require(native['term'] == expected, f'encoded combinator mismatch: {source}')
+        counters['lambda_comparisons'] += 1
+        record({'iota_case': index, 'source': source, 'probes': probes, 'result': native})
+    return digest.hexdigest()
+
+
+def source_hashes():
+    paths = [ROOT / 'CMakeLists.txt', ROOT / 'protocols/r00.json', ROOT / 'protocols/r01.json',
+             ROOT / 'scripts/verify_r01.py', ROOT / 'tests/test_reference_r01.py']
+    for directory, glob in [('src', '*.cpp'), ('include/minimal_universe', '*.hpp'), ('tests', '*.cpp')]:
+        paths.extend(sorted((ROOT / directory).glob(glob)))
+    return {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--binary', type=Path, required=True)
+    parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--trace', type=Path, required=True)
+    parser.add_argument('--compare', type=Path)
+    parser.add_argument('--workers', type=int, default=4)
+    args = parser.parse_args()
+    require(1 <= args.workers <= 16, 'workers must be between 1 and 16')
+    require(not args.output.exists() and not args.trace.exists(), 'refusing to replace prior evidence')
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.trace.parent.mkdir(parents=True, exist_ok=True)
+    result = {'protocol_id': 'R01-v1', 'scientific_status': 'untested', 'discovery_executed': False,
+              'source_sha256': source_hashes(),
+              'binary_sha256': hashlib.sha256(args.binary.read_bytes()).hexdigest(),
+              'python': platform.python_version(), 'system': platform.system(), 'machine': platform.machine(),
+              'workers': args.workers}
+    counters = Counter()
+    failed = None
+    try:
+        with args.trace.open('xb') as trace:
+            result['trace_sha256'] = execute(args.binary.resolve(), trace, counters, args.workers)
+        result['checks'] = dict(counters)
+        result['status'] = 'pass'
+        if args.compare:
+            prior = json.loads(args.compare.read_text())
+            for key in ['protocol_id', 'source_sha256', 'trace_sha256', 'checks', 'status']:
+                require(result[key] == prior[key], f'prior receipt mismatch: {key}')
+    except Exception as error:
+        failed = error
+        result.update(status='fail', checks=dict(counters), failure=str(error))
+    with args.output.open('x') as stream:
+        json.dump(result, stream, indent=2, sort_keys=True)
+        stream.write('\n')
+    print(json.dumps({'status': result['status'], 'checks': dict(counters)}, sort_keys=True))
+    if failed:
+        raise SystemExit(str(failed))
+
+
+if __name__ == '__main__':
+    main()
