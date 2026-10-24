@@ -67,4 +67,12 @@ exact degree-conditioned nulls, exposure-adjusted persistence, synthetic paired
 effects, and promotion gates. [Results and limits](reports/r02.md) include all
 registered calibration counts. No discovery or real causal assay has run.
 
+## Planned descriptive atlas
+
+[R03a design and feasibility](docs/r03-design.md) freezes a complete planned panel
+of 27,720 jobs at a two-event budget, with discovery and holdout partitions fixed
+in advance. The [static audit](reports/r03a.md) verified every job without running
+world dynamics. Runtime and measurement coverage still require an engineering
+pilot before launch. The 50-event intervention gate is unchanged.
+
 Public repository: https://github.com/kalewicker/minimal-universe

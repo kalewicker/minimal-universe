@@ -1,0 +1,16 @@
+{
+  "protocol_id": "R03a-v1",
+  "kind": "static_design_and_feasibility",
+  "source_grammar": "protocols/r00.json",
+  "measurement_contract": "protocols/r02-measurement-contract.json",
+  "atlas_design": "protocols/r03b-design.json",
+  "expected_rules": 220,
+  "expected_rule_seed_cells": 1540,
+  "expected_parent_groups": 24640,
+  "expected_jobs": 27720,
+  "checks": ["complete unfiltered grammar and seed coverage", "unique stable rule/parent/job keys", "scheduler siblings inherit parent split", "all jobs initially not_executed", "analytical size bounds at each reachable snapshot", "common horizon maximality", "unchanged 50-event intervention horizon feasibility", "exact-null raw permutation work upper bounds", "independent count-vector grammar reconstruction and manifest verification"],
+  "acceptance": "Every static invariant and independent manifest check passes; report unknown runtime and motif/null informativeness without inferring them",
+  "world_transitions": 0,
+  "discovery_authorized": false,
+  "scientific_status": "untested"
+}

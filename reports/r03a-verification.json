@@ -1,0 +1,26 @@
+{
+  "checked_cells": 1540,
+  "checked_jobs": 27720,
+  "checked_parent_groups": 24640,
+  "common_horizon": 2,
+  "horizon_50_cell_classification": {
+    "edge_domain_supports_50": 63,
+    "exceeds_exact_null_edge_limit": 1470,
+    "terminates_before_50": 7
+  },
+  "launch_authorized": false,
+  "manifest_sha256": "75aabc3e91df45b6044bc3423d1bf34b241ea4dc82f16070428a686ce7860f9f",
+  "protocol_id": "R03a-v1",
+  "scientific_status": "untested",
+  "source_sha256": {
+    "protocols/r00.json": "c4537b7a48ce6d129eafd982597278715409a27f0a8677fe17df95a6a6df638e",
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r03a.json": "23010eff778300b813db3c3d986b93ed478422e8fce4162a11dade11e2149177",
+    "protocols/r03b-design.json": "266a11eb89743f450c2ef88fb6937a9146693a432938ce6e74af1717d77c49a1",
+    "scripts/plan_r03.py": "69e737b1289ff55c877e856f3bf920740b9821799eadc02b6e0ddce0716675ea",
+    "scripts/verify_r03_plan.py": "dc7a7dda2554deb37a093827ccc5fec0ff8ac82f9b21443883dd4c192aa1df71",
+    "tests/test_r03_plan.py": "d8ac3a0f8d6b4fadf5339ec72abf6944b80d55566d5cc4cc104b515c1bb1e7c1"
+  },
+  "status": "pass",
+  "world_transitions": 0
+}
