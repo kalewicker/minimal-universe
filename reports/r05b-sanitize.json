@@ -1,0 +1,50 @@
+{
+  "audit_status": "pass",
+  "binary_sha256": "eedf09f596197a68948d71c0024456098b6b3b8218dd94b54757f956dbbbf23b",
+  "build_kind": "asan-ubsan",
+  "campaign_executed": false,
+  "checkpoint_collection_sha256": "6a20906d3daaa89d0175b9c2f5673cc0f3f73463599fc2f83aa9a125696afd56",
+  "elapsed_seconds": 13.735755207948387,
+  "files": {
+    "input.txt": "97f420a8c565c194e55eed042ee7179d1a13d08bb722827abee33d4b0d69cbea",
+    "manifest.jsonl": "02ffa8ced2217c78886aed2859db0c9a09b65eac4b133af5dc30cb1b168520af",
+    "native.jsonl": "39fae832c272cd6f924bf98537f8a2c81eb2f0eea92c7b870cf057de78b39d23",
+    "restored.jsonl": "01b92134c7f3016cc7b72ade70cc8b4299169fb5a883e864f18f0ea1a4e40c54"
+  },
+  "holdout_jobs_executed": 0,
+  "outcome": {
+    "case_kinds": {
+      "extra": 108,
+      "rule": 14535,
+      "static": 790
+    },
+    "cases": 15433,
+    "event_parent_counts": {
+      "0": 14615,
+      "1": 44213,
+      "2": 14881
+    },
+    "events": 73709,
+    "final_state_sha256": "213f9368ed6c7ace66735a868e7fa736c2bc485c8bb7535e123f1760a77b4fc8",
+    "final_statuses": {
+      "event_cap": 12355,
+      "no_eligible_match": 3078
+    },
+    "restored_cases": 15433
+  },
+  "protocol_id": "R05b-v1",
+  "retained_bytes_before_receipt": 55684312,
+  "scientific_status": "untested",
+  "source_sha256": {
+    "g2/CMakeLists.txt": "dd8f339b65bf974131787b05a766bae9ec584028955beef866c38a1b736c90f5",
+    "g2/kernel.cpp": "c9849b718440adf89cdc1ff97c938b6dd17bcc20f34b5511610d8ded8c677dda",
+    "g2/kernel.hpp": "289ab64a6583f7949b55ab0d97283ace9a26d2f1dcaa0adad47a092b5c324979",
+    "g2/main.cpp": "814ea3c0a1bf3fed7b31ec751f2922b36df24f2f935b6b527787b3049a538fe7",
+    "g2/tests.cpp": "9ea5f1f4ab936a9d4998fde8ebccb0efc0e95996ff418eecd9a232c735da78b1",
+    "protocols/r05b.json": "3fa63aeba3cdcae60d81d58705f93d37185d6708b7848b6c4ddc436418770f55",
+    "reports/r05a.json": "b284dd9bddb4738f12933b7f63c6fcb5de464bd061470c39b5122eda50c352e4",
+    "scripts/g2_reference.py": "6930e48ef41fd16d4435d5b1df21203d7a891ae21f5f6e38cc199e96c5221a36",
+    "scripts/verify_r05b.py": "ee9e1f0791eebe2528f5e6f388f7f24272708e4a2cb2fb59b3e8779f0861eda8",
+    "tests/test_g2_reference.py": "7dc2c345e5ba15d3cdeb150d1236424336c2d341cb2f57438cc770006706cbb8"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "files": {
+    "reports/r05b-cli.json": {
+      "bytes": 3983,
+      "sha256": "ee882a069413170dbc611b76b2404db9faca4ec8fab33c465a69678d757f9974"
+    },
+    "reports/r05b-release.json": {
+      "bytes": 2230,
+      "sha256": "f4929468115e1e0e3f7eb64a51fdf5cf53705f0b7a7b9f8628a62ee2bf1227df"
+    },
+    "reports/r05b-sanitize.json": {
+      "bytes": 2234,
+      "sha256": "e58c7f1c861eb059e2ecd024beb191d01d39f0d1de4fff475b844df688b1285a"
+    },
+    "results/r05b-release-001/native.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/r05b-release-001/receipt.json": {
+      "bytes": 2230,
+      "sha256": "f4929468115e1e0e3f7eb64a51fdf5cf53705f0b7a7b9f8628a62ee2bf1227df"
+    },
+    "results/r05b-release-001/restored.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/r05b-release-001/started.json": {
+      "bytes": 1128,
+      "sha256": "fd0bb9f03421e3da7f848d54eaacb22e4f9380e3b2b662ab3f9f839b710faff7"
+    },
+    "results/r05b-sanitize-001/native.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/r05b-sanitize-001/receipt.json": {
+      "bytes": 2234,
+      "sha256": "e58c7f1c861eb059e2ecd024beb191d01d39f0d1de4fff475b844df688b1285a"
+    },
+    "results/r05b-sanitize-001/restored.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/r05b-sanitize-001/started.json": {
+      "bytes": 1131,
+      "sha256": "8be95ad258e9725b7824000bf700c8efd0add324cd724fcdd60c4626343aef4a"
+    }
+  },
+  "identical_release_sanitizer_outputs": true,
+  "native_ctest_asan_ubsan": "pass",
+  "native_ctest_release": "pass",
+  "protocol_id": "R05b-v1",
+  "python_tests_passed": 45,
+  "source_hashes_verified": true,
+  "status": "pass"
+}

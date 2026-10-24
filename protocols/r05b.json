@@ -1,0 +1,308 @@
+{
+  "attempt_policy": "Preserve exclusive execution directories and failures; no selective matrix retries; bug fixes require new engineering attempt identity and preserve failed receipts",
+  "budgets": {
+    "global_wall_seconds": 600,
+    "per_process_wall_seconds": 120,
+    "retained_bytes": 536870912,
+    "workers": 1
+  },
+  "campaign_authorized": false,
+  "design_sha256": "3e0a31568b7f51c8e90e4d3ae4a103509268828545c84ae3d40319d430b1f7a5",
+  "hard_reference_limits": {
+    "edges": 256,
+    "events": 128,
+    "file_bytes": 4194304,
+    "matches": 65536,
+    "nodes": 256
+  },
+  "holdout_authorized": false,
+  "kind": "G2_reference_kernel_engineering_only",
+  "matrix": {
+    "checkpoint_prefix": 3,
+    "expected_extra_cases": 108,
+    "expected_rule_cases": 14535,
+    "expected_static_cases": 790,
+    "expected_total_cases": 15433,
+    "extra_rhs": [
+      [],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    ],
+    "extra_seeds": [
+      {
+        "edges": [],
+        "id": "empty",
+        "nodes": 0
+      },
+      {
+        "edges": [
+          [
+            0,
+            0
+          ]
+        ],
+        "id": "single_loop",
+        "nodes": 1
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "id": "parallel_nonloops",
+        "nodes": 2
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "id": "out_fork",
+        "nodes": 3
+      },
+      {
+        "edges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "id": "overlap",
+        "nodes": 3
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "id": "disjoint",
+        "nodes": 6
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "id": "weighted",
+        "nodes": 3
+      },
+      {
+        "edges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "id": "isolates",
+        "nodes": 4
+      },
+      {
+        "edges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "id": "four_loops",
+        "nodes": 1
+      }
+    ],
+    "limits": {
+      "edges": 16,
+      "events": 6,
+      "matches": 256,
+      "nodes": 16
+    },
+    "rng_seed": 104729,
+    "rules": "all 969 RHS multisets in R05a order",
+    "schedulers": [
+      "lex_first",
+      "lex_last",
+      "uniform_match"
+    ],
+    "seeds": [
+      {
+        "edges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "id": "all_equal",
+        "nodes": 1
+      },
+      {
+        "edges": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "id": "u_equals_v",
+        "nodes": 2
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "id": "u_equals_x",
+        "nodes": 2
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "id": "v_equals_x",
+        "nodes": 2
+      },
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "id": "distinct",
+        "nodes": 3
+      }
+    ],
+    "static_match_fixtures": "all R05a 790 graphs, RHS empty, event cap zero, lex_first; no events executed"
+  },
+  "no_selection": "Full engineering matrix including terminal/empty cases; no candidates, rankings, statistical effects, holdouts or production trajectories",
+  "prerequisite_sha256": "b284dd9bddb4738f12933b7f63c6fcb5de464bd061470c39b5122eda50c352e4",
+  "protocol_id": "R05b-v1",
+  "scientific_status": "untested",
+  "validation": [
+    "Independent Python occurrence-pair matching versus native adjacency-join matching",
+    "Compare every reached prefix/final event and state, including producer links and RNG",
+    "Every case saved at prefix up to three then restored in a separate native process and compared to full independent replay",
+    "Native tests for transactional caps and injected allocation failures, overflow primitive, malformed/corrupt/cross-version checkpoints",
+    "Release and address/undefined sanitizer builds; compare deterministic results"
+  ]
+}

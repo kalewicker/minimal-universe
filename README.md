@@ -96,7 +96,19 @@ scheduling, and required controls. Its [static audit](reports/r05a.md) passed on
 790 multigraph fixtures and the 969-rule census; an overlapping-match example
 demonstrates a nonconfluent rule. Verify it with
 `python3 -B scripts/audit_r05.py --verify reports/r05a.json`.
-The next milestone is R05b: a separately registered and independently verified
-G2 reference kernel before measurement calibration or a campaign.
+The [R05b G2 reference kernel](docs/r05b-kernel.md) is now implemented in a separate
+C++20 project. [Release and sanitizer validation](reports/r05b.md) matched the
+independent Python oracle on 15,433 cases, 73,709 primary events and all checkpoint
+restorations per build.
+
+```sh
+cmake -S g2 -B build-g2 -DCMAKE_BUILD_TYPE=Release
+cmake --build build-g2 -j 4
+ctest --test-dir build-g2 --output-on-failure
+./build-g2/mu-g2 run examples/g2-path.txt
+```
+
+G2 scientific status remains untested. The next milestone is R05c measurement
+calibration for match-weighted exposure and survival, before a discovery campaign.
 
 Public repository: https://github.com/kalewicker/minimal-universe

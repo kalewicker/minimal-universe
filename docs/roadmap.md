@@ -23,10 +23,13 @@ candidates. [R04a](../reports/r04a.md) closed conditional validation without lau
 with no candidate statistics evaluated and no intervention effects measured.
 All 16,774 reserved jobs remain unopened. [R05a](../reports/r05a.md) completed the
 two-edge extension proposal and static design audit, including matching/aliasing
-semantics, an explicit nonconfluent rule, and required controls. The next bounded
-milestone is R05b: register engineering fixtures and budgets, implement a G2
-reference kernel, and independently verify matching/replay. Measurement calibration
-and a campaign require subsequent registrations. This is a design transition,
+semantics, an explicit nonconfluent rule, and required controls.
+[R05b](../reports/r05b.md) implemented the separate C++20 G2 reference kernel and
+validated the full registered matrix against independent Python replay in release
+and sanitizer builds. The next bounded milestone is R05c G2 measurement calibration,
+including match-weighted exposure, exact small-history survival controls, terminal
+states and intervention bookkeeping. A campaign requires subsequent feasibility,
+pilot and launch registrations. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 
 Discovery, detector development, validation, and final testing use disjoint parent
