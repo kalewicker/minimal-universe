@@ -1,0 +1,25 @@
+{
+  "protocol_id": "R00-v1",
+  "kind": "mathematical_and_semantic_audit",
+  "graph_rhs_max_edges": 3,
+  "graph_steps_per_fixture": 12,
+  "expected_rules": 220,
+  "expected_no_fresh_rules": 35,
+  "expected_fresh_rules": 185,
+  "expected_discovery_subset_rules": 180,
+  "iota_max_leaves": 8,
+  "expected_iota_terms": 626,
+  "seeds": {
+    "loop1": {"nodes": 1, "edges": [[0, 0]]},
+    "arc2": {"nodes": 2, "edges": [[0, 1]]},
+    "mutual2": {"nodes": 2, "edges": [[0, 1], [1, 0]]},
+    "loop_pair": {"nodes": 2, "edges": [[0, 0], [0, 1], [1, 0]]},
+    "triad_asymmetric": {"nodes": 3, "edges": [[0, 1], [1, 1], [2, 1], [2, 0]]},
+    "chain3": {"nodes": 3, "edges": [[0, 1], [1, 2]]},
+    "cycle3": {"nodes": 3, "edges": [[0, 1], [1, 2], [2, 0]]}
+  },
+  "acceptance": "All exact counts and fixture invariants pass; any exception fails the audit.",
+  "scientific_status": "untested",
+  "discovery_authorized": false,
+  "next_milestone": "R01 requires its own protocol"
+}

@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "diamond_pairs": 3080,
+    "graph_events": 18412,
+    "graph_fixtures": 1540,
+    "iota_expansion_steps": 2353,
+    "iota_terms": 626
+  },
+  "counts": {
+    "discovery_subset_rules": 180,
+    "fresh_rules": 185,
+    "no_fresh_rules": 35,
+    "rules": 220
+  },
+  "discovery_executed": false,
+  "interpretation": "Finite specification fixtures corroborate the documented proofs.",
+  "protocol_id": "R00-v1",
+  "scientific_status": "untested",
+  "sha256": {
+    "docs/r00-audit.md": "63d9c58b1e8a2c118bb8953425d298c3e32d68d0d8936454ac41900db194549d",
+    "docs/semantics.md": "e4e2a340cee943025205490d3ff3bc87314a76ecc9afe851043b5dfebfdff281",
+    "protocols/r00.json": "c4537b7a48ce6d129eafd982597278715409a27f0a8677fe17df95a6a6df638e",
+    "scripts/audit_r00.py": "ff8f447046e79bfb5f40b38dd21f1c7ce80c6e59ff3c9ee13d530c7d2c46b74c",
+    "tests/test_r00.py": "190b499cf8cc73542639be713c80ffd180a2d2b63b6d110d59d8b6ccf2b7c3c2"
+  },
+  "status": "pass"
+}
