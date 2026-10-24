@@ -21,9 +21,12 @@ R00–R02 engineering/calibration stages are complete. R03b completed its regist
 two-event discovery subset; it did not execute a full-panel census or promote
 candidates. [R04a](../reports/r04a.md) closed conditional validation without launch,
 with no candidate statistics evaluated and no intervention effects measured.
-All 16,774 reserved jobs remain unopened. The next bounded milestone is the R05
-extension proposal, including matching/aliasing semantics and controls; a new
-kernel and campaign require subsequent registrations. This is a design transition,
+All 16,774 reserved jobs remain unopened. [R05a](../reports/r05a.md) completed the
+two-edge extension proposal and static design audit, including matching/aliasing
+semantics, an explicit nonconfluent rule, and required controls. The next bounded
+milestone is R05b: register engineering fixtures and budgets, implement a G2
+reference kernel, and independently verify matching/replay. Measurement calibration
+and a campaign require subsequent registrations. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 
 Discovery, detector development, validation, and final testing use disjoint parent

@@ -90,7 +90,13 @@ closed conditional validation without launching it: this descriptive registratio
 supplies no eligible candidates, and intervention effects remain unmeasured.
 Verify it from a public clone with
 `python3 -B scripts/audit_r04.py --verify reports/r04a.json`.
-The next milestone is an R05 two-edge extension proposal with explicit semantics
-and new controls, before any implementation or campaign.
+The [R05a two-edge proposal](docs/r05-two-edge.md) now defines directed path
+replacement, ordered occurrence matching, aliases, atomic events, ancestry,
+scheduling, and required controls. Its [static audit](reports/r05a.md) passed on
+790 multigraph fixtures and the 969-rule census; an overlapping-match example
+demonstrates a nonconfluent rule. Verify it with
+`python3 -B scripts/audit_r05.py --verify reports/r05a.json`.
+The next milestone is R05b: a separately registered and independently verified
+G2 reference kernel before measurement calibration or a campaign.
 
 Public repository: https://github.com/kalewicker/minimal-universe

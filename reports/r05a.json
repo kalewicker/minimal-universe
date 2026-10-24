@@ -1,0 +1,97 @@
+{
+  "alias_classes": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "audit_status": "pass",
+  "counts": {
+    "graphs": 790,
+    "occurrence_permutations": 13989,
+    "ordered_matches": 2640,
+    "vertex_permutations": 4435
+  },
+  "evidence_scope": "Finite static fixtures and an explicit local residual witness; no G2 production kernel or scientific assay.",
+  "graphs_by_nodes": {
+    "1": 5,
+    "2": 70,
+    "3": 715
+  },
+  "holdout_jobs_executed": 0,
+  "named_cases_passed": 8,
+  "nonconfluence_witness": [
+    {
+      "consumed": [
+        0,
+        1
+      ],
+      "loops": 0,
+      "remaining_edges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "retained_vertices": 3
+    },
+    {
+      "consumed": [
+        1,
+        2
+      ],
+      "loops": 1,
+      "remaining_edges": [
+        [
+          0,
+          0
+        ]
+      ],
+      "retained_vertices": 3
+    }
+  ],
+  "production_trajectories_executed": 0,
+  "protocol_id": "R05a-v1",
+  "rules_by_length": {
+    "0": 1,
+    "1": 16,
+    "2": 136,
+    "3": 816
+  },
+  "rules_with_fresh": 749,
+  "rules_without_fresh": 220,
+  "scientific_status": "untested_new_substrate",
+  "source_sha256": {
+    "docs/r05-two-edge.md": "3e0a31568b7f51c8e90e4d3ae4a103509268828545c84ae3d40319d430b1f7a5",
+    "protocols/r05a.json": "7f78da52b077f9fe6312296801ba36421feef334d5239117595239472fb81f2e",
+    "reports/r04a.json": "06986c48cfb308fb33154044f6293cbacf6683be2d2fb1624b6ef1b8595cc1d7",
+    "scripts/audit_r05.py": "d84631d35d0f1e04309af1ebbc66acfe04e9577fa53f6758d67b3b3323112131",
+    "tests/test_audit_r05.py": "2dd72e4118750200a6f7679bf8ab97da9f9bf779dba36b3d0e06832fb9efdbd2"
+  },
+  "unordered_match_pair_overlap_counts": {
+    "disjoint": 797,
+    "shared_one": 3802,
+    "shared_two": 562
+  }
+}
