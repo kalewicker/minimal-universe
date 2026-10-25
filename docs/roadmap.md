@@ -26,10 +26,12 @@ two-edge extension proposal and static design audit, including matching/aliasing
 semantics, an explicit nonconfluent rule, and required controls.
 [R05b](../reports/r05b.md) implemented the separate C++20 G2 reference kernel and
 validated the full registered matrix against independent Python replay in release
-and sanitizer builds. The next bounded milestone is R05c G2 measurement calibration,
-including match-weighted exposure, exact small-history survival controls, terminal
-states and intervention bookkeeping. A campaign requires subsequent feasibility,
-pilot and launch registrations. This is a design transition,
+and sanitizer builds. [R05c](../reports/r05c.md) calibrated exact match-weighted
+exposure, bounded survival with terminal probability mass, and synthetic paired
+bookkeeping against independent controls. Next is R05d: register and audit static
+campaign feasibility, reconciling intended horizons with kernel and measurement
+domains over the declared rules and seeds. A campaign requires subsequent pilot
+and launch registrations. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 
 Discovery, detector development, validation, and final testing use disjoint parent

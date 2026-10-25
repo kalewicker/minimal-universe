@@ -108,7 +108,16 @@ ctest --test-dir build-g2 --output-on-failure
 ./build-g2/mu-g2 run examples/g2-path.txt
 ```
 
-G2 scientific status remains untested. The next milestone is R05c measurement
-calibration for match-weighted exposure and survival, before a discovery campaign.
+The [R05c exact measurement calibration](reports/r05c.md) now verifies match-weighted
+exposure, untouched-occurrence survival, terminal probability mass and synthetic
+target/sham bookkeeping. It passed 10,239 exposure and 41,832 survival cases against
+independent exact controls. Verify it without native binaries or bulk data:
+
+```sh
+python3 -B scripts/calibrate_r05c.py --verify reports/r05c.json
+```
+
+G2 scientific status remains untested. Next is R05d: a static campaign-feasibility
+and measurement-domain review before a budget pilot or discovery campaign.
 
 Public repository: https://github.com/kalewicker/minimal-universe

@@ -1,0 +1,511 @@
+{
+  "audit_status": "pass",
+  "counts": {
+    "distribution_cases": 6216,
+    "explicit_history_nodes": 73398,
+    "exposure_cases": 10239,
+    "exposure_graphs": 790,
+    "survival_cases": 41832,
+    "survival_graphs": 259,
+    "survival_target_sets": 1743
+  },
+  "discovery_runs": 0,
+  "exact_toy_history_expansion": true,
+  "holdout_jobs_executed": 0,
+  "named_controls": {
+    "g1_formula_counterexample": {
+      "g2_avoid": [
+        0,
+        1
+      ],
+      "inapplicable_g1_value": [
+        1,
+        2
+      ]
+    },
+    "nonparticipating_target_then_unavailable": {
+      "exposure": {
+        "matches": 2,
+        "occurrence_match_counts": {
+          "0": 2,
+          "1": 2,
+          "2": 0
+        },
+        "probability_avoid": [
+          1,
+          1
+        ],
+        "status": "defined",
+        "target_union_matches": 0
+      },
+      "horizon_1": {
+        "conditional_survival": [
+          1,
+          1
+        ],
+        "consumed_reached_mass": [
+          0,
+          1
+        ],
+        "reached_mass": [
+          1,
+          1
+        ],
+        "status": "fully_reached",
+        "surviving_reached_mass": [
+          1,
+          1
+        ],
+        "terminal_mass_by_event": [
+          [
+            0,
+            1
+          ]
+        ],
+        "unavailable_mass": [
+          0,
+          1
+        ]
+      },
+      "horizon_2": {
+        "conditional_survival": null,
+        "consumed_reached_mass": [
+          0,
+          1
+        ],
+        "reached_mass": [
+          0,
+          1
+        ],
+        "status": "unavailable",
+        "surviving_reached_mass": [
+          0,
+          1
+        ],
+        "terminal_mass_by_event": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "unavailable_mass": [
+          1,
+          1
+        ]
+      }
+    },
+    "partial_horizon": {
+      "horizon_2": {
+        "conditional_survival": [
+          1,
+          1
+        ],
+        "consumed_reached_mass": [
+          0,
+          1
+        ],
+        "reached_mass": [
+          1,
+          2
+        ],
+        "status": "partly_unavailable",
+        "surviving_reached_mass": [
+          1,
+          2
+        ],
+        "terminal_mass_by_event": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "unavailable_mass": [
+          1,
+          2
+        ]
+      },
+      "horizon_3": {
+        "conditional_survival": null,
+        "consumed_reached_mass": [
+          0,
+          1
+        ],
+        "reached_mass": [
+          0,
+          1
+        ],
+        "status": "unavailable",
+        "surviving_reached_mass": [
+          0,
+          1
+        ],
+        "terminal_mass_by_event": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "unavailable_mass": [
+          1,
+          1
+        ]
+      }
+    },
+    "weighted_union_exposure": {
+      "matches": 5,
+      "occurrence_match_counts": {
+        "0": 3,
+        "1": 2,
+        "2": 2,
+        "3": 3
+      },
+      "probability_avoid": [
+        0,
+        1
+      ],
+      "status": "defined",
+      "target_union_matches": 5
+    }
+  },
+  "native_world_runs": 0,
+  "paired_controls": {
+    "censored": {
+      "complete_pairs": 0,
+      "mean_effect": null,
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": null,
+          "endpoint_match_counts": [
+            2,
+            null
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/censored",
+          "partition": "final-test",
+          "unavailable_reasons": [
+            "sham:resource_censored"
+          ]
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 1,
+      "unavailable_pairs": 1
+    },
+    "delayed_quarter": {
+      "complete_pairs": 1,
+      "mean_effect": [
+        1,
+        4
+      ],
+      "pairs": [
+        {
+          "effect": [
+            1,
+            4
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/delayed_quarter",
+          "partition": "discovery",
+          "unavailable_reasons": []
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    },
+    "duplicate_parent": {
+      "status": "rejected_as_registered"
+    },
+    "eligibility_change": {
+      "complete_pairs": 1,
+      "mean_effect": [
+        1,
+        4
+      ],
+      "pairs": [
+        {
+          "effect": [
+            1,
+            4
+          ],
+          "endpoint_eligibility_changed": true,
+          "endpoint_match_counts": [
+            2,
+            0
+          ],
+          "initial_eligibility_changed": true,
+          "initial_match_counts": [
+            2,
+            1
+          ],
+          "parent": "mu/G2-cal-v1/eligibility_change",
+          "partition": "detector-development",
+          "unavailable_reasons": []
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    },
+    "horizon_mismatch": {
+      "status": "rejected_as_registered"
+    },
+    "immediate_offset": {
+      "complete_pairs": 1,
+      "mean_effect": [
+        0,
+        1
+      ],
+      "pairs": [
+        {
+          "effect": [
+            0,
+            1
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/immediate_offset",
+          "partition": "validation",
+          "unavailable_reasons": []
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    },
+    "invalid_density": {
+      "status": "rejected_as_registered"
+    },
+    "invented_endpoint": {
+      "status": "rejected_as_registered"
+    },
+    "missing_field": {
+      "status": "rejected_as_registered"
+    },
+    "missing_match_count": {
+      "status": "rejected_as_registered"
+    },
+    "mixed_incomplete": {
+      "complete_pairs": 1,
+      "mean_effect": null,
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": null,
+          "endpoint_match_counts": [
+            null,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/mixed_incomplete",
+          "partition": "discovery",
+          "unavailable_reasons": [
+            "target:terminal_before_horizon"
+          ]
+        },
+        {
+          "effect": [
+            0,
+            1
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/other-complete",
+          "partition": "discovery",
+          "unavailable_reasons": []
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 2,
+      "unavailable_pairs": 1
+    },
+    "parent_mismatch": {
+      "status": "rejected_as_registered"
+    },
+    "scheduler_mismatch": {
+      "status": "rejected_as_registered"
+    },
+    "split_mismatch": {
+      "status": "rejected_as_registered"
+    },
+    "terminal": {
+      "complete_pairs": 0,
+      "mean_effect": null,
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": null,
+          "endpoint_match_counts": [
+            null,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/terminal",
+          "partition": "validation",
+          "unavailable_reasons": [
+            "target:terminal_before_horizon"
+          ]
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 1,
+      "unavailable_pairs": 1
+    },
+    "undefined_density": {
+      "complete_pairs": 0,
+      "mean_effect": null,
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/undefined_density",
+          "partition": "final-test",
+          "unavailable_reasons": [
+            "target:undefined_density"
+          ]
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 1,
+      "unavailable_pairs": 1
+    },
+    "unknown_status": {
+      "status": "rejected_as_registered"
+    },
+    "zero": {
+      "complete_pairs": 1,
+      "mean_effect": [
+        0,
+        1
+      ],
+      "pairs": [
+        {
+          "effect": [
+            0,
+            1
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/zero",
+          "partition": "discovery",
+          "unavailable_reasons": []
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    }
+  },
+  "prerequisite_sha256": {
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "reports/r05a.json": "b284dd9bddb4738f12933b7f63c6fcb5de464bd061470c39b5122eda50c352e4",
+    "reports/r05b-release.json": "f4929468115e1e0e3f7eb64a51fdf5cf53705f0b7a7b9f8628a62ee2bf1227df",
+    "reports/r05b-sanitize.json": "e58c7f1c861eb059e2ecd024beb191d01d39f0d1de4fff475b844df688b1285a"
+  },
+  "preserved_intervention_horizon": 50,
+  "promotion_authorized": false,
+  "protocol_id": "R05c-v1",
+  "scientific_status": "untested",
+  "source_sha256": {
+    "analysis/g2_measurements.py": "2eeb8165f7097c9ef1ea066c897910dd1c2f39f34d4dcd0cd28703177a128cae",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r05c-measurements.md": "4736be224639b9d971aa3e979c58a7aed48fbc482b07708e89c15e1c73761f0e",
+    "protocols/r05c.json": "f85d01805b1ec24fcaa37b71402f6c7c3bf51d5740072783184fa9bde447b74f",
+    "scripts/calibrate_r05c.py": "175e1e79830073b1594fc7714c109df74a42d21a4f501f5514abf1059fbee421",
+    "tests/test_g2_measurements.py": "a319423a43a2f28b1f2e894cf7024a693e19e73e18547af4e3c2f3cecf47590b"
+  },
+  "survival_availability": {
+    "fully_reached": 28162,
+    "partly_unavailable": 640,
+    "unavailable": 13030
+  },
+  "trace_bytes": 15161780,
+  "trace_sha256": "285a8b217647beee0f7df1babbdfa407f99ade95473def9983e4b7536a62d2d4"
+}

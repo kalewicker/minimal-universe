@@ -1,0 +1,151 @@
+{
+  "acceptance": "Exact rational exposure, endpoint distributions, terminal mass, all survival cases and named/synthetic bookkeeping outcomes agree, with mass conservation and invalid-input rejection.",
+  "attempt_policy": "Exclusive result directory and receipt; exact matrix, no selective retries or threshold tuning. Preserve errors and partial trace; code fixes require a new identified calibration attempt.",
+  "availability": "Reaching the requested successful-event index is required. Return reached/surviving-reached/consumed-reached/unavailable probability masses and conditional survival only when reached mass is positive. Terminal paths are not padded. Domain errors reject the whole request.",
+  "budgets": {
+    "global_wall_seconds": 240,
+    "retained_bytes": 268435456
+  },
+  "discovery_authorized": false,
+  "exposure": {
+    "edge_counts": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "expected_cases": 10239,
+    "expected_graphs": 790,
+    "nodes": [
+      1,
+      2,
+      3
+    ],
+    "oracle": "direct ordered pairs and target-intersection counting versus adjacency-join incidence accounting",
+    "targets": "every subset of distinct initial occurrence IDs, including empty"
+  },
+  "holdout_authorized": false,
+  "kind": "G2_exact_measurement_calibration_only",
+  "measurement_domain": {
+    "max_edges": 8,
+    "max_frontier_states": 50000,
+    "max_horizon": 3,
+    "max_matches": 64,
+    "max_nodes": 8
+  },
+  "named_controls": [
+    "weighted_union_exposure",
+    "g1_formula_counterexample",
+    "partial_horizon",
+    "nonparticipating_target_then_unavailable"
+  ],
+  "native_world_runs": 0,
+  "next": "Separately register G2 campaign feasibility and measurement-domain/budget design, then pilot and source-bound launch.",
+  "paired_cases": [
+    "zero",
+    "immediate_offset",
+    "delayed_quarter",
+    "eligibility_change",
+    "terminal",
+    "censored",
+    "undefined_density",
+    "mixed_incomplete",
+    "parent_mismatch",
+    "split_mismatch",
+    "horizon_mismatch",
+    "scheduler_mismatch",
+    "duplicate_parent",
+    "invalid_density",
+    "unknown_status",
+    "invented_endpoint",
+    "missing_match_count",
+    "missing_field"
+  ],
+  "paired_scope": "synthetic endpoint arithmetic only; parent/split/scheduler/horizon inheritance; expose initial and endpoint match-count differences; no dropping unavailable pairs or claiming a valid matched sham from equal counts",
+  "prerequisite_sha256": {
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "reports/r05a.json": "b284dd9bddb4738f12933b7f63c6fcb5de464bd061470c39b5122eda50c352e4",
+    "reports/r05b-release.json": "f4929468115e1e0e3f7eb64a51fdf5cf53705f0b7a7b9f8628a62ee2bf1227df",
+    "reports/r05b-sanitize.json": "e58c7f1c861eb059e2ecd024beb191d01d39f0d1de4fff475b844df688b1285a"
+  },
+  "preserved_intervention_horizon": 50,
+  "promotion_authorized": false,
+  "protocol_id": "R05c-v1",
+  "scientific_status": "untested",
+  "survival": {
+    "edge_counts": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "expected_distribution_cases": 6216,
+    "expected_graphs": 259,
+    "expected_survival_cases": 41832,
+    "expected_target_sets": 1743,
+    "horizons": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "nodes": [
+      1,
+      2,
+      3
+    ],
+    "oracle": "explicit weighted labelled histories, direct occurrence-pair matching and separate endpoint substitution; compare full endpoint distribution and termination-by-depth mass to aggregated state DP",
+    "rhs": [
+      [],
+      [
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "scheduler": "uniform over all ordered eligible distinct occurrence pairs; no RNG sampling",
+    "targets": "every subset of initial occurrence IDs, including empty; identities never regenerated"
+  }
+}

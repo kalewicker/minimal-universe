@@ -1,0 +1,32 @@
+{
+  "files": {
+    "reports/r05c-execution.json": {
+      "bytes": 321,
+      "sha256": "f12c1996c2a88f86afe7d218dbd90132ed10ca7d9e79ffa0e084524b082f9bd7"
+    },
+    "reports/r05c.json": {
+      "bytes": 12087,
+      "sha256": "7a57bedb748b31c003bdf32e9e729f9370fbd99f14883734fb9f35524f5a40e5"
+    },
+    "results/r05c-001/calibration.json": {
+      "bytes": 12087,
+      "sha256": "7a57bedb748b31c003bdf32e9e729f9370fbd99f14883734fb9f35524f5a40e5"
+    },
+    "results/r05c-001/calibration.jsonl": {
+      "bytes": 15161780,
+      "sha256": "285a8b217647beee0f7df1babbdfa407f99ade95473def9983e4b7536a62d2d4"
+    },
+    "results/r05c-001/execution.json": {
+      "bytes": 321,
+      "sha256": "f12c1996c2a88f86afe7d218dbd90132ed10ca7d9e79ffa0e084524b082f9bd7"
+    },
+    "results/r05c-001/started.json": {
+      "bytes": 87,
+      "sha256": "6e05a0e085ae7e27f7f3f3640f29080dec463c036ced3384f6ec5584c907784f"
+    }
+  },
+  "protocol_id": "R05c-v1",
+  "python_tests_passed": 56,
+  "source_hashes_verified": true,
+  "status": "pass"
+}
