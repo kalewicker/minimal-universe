@@ -1,0 +1,80 @@
+{
+  "acceptance": "All output fields equal independent Python replay; all atomic rejection and native checkpoint checks pass; retain terminal cases; release and sanitizer receipts agree.",
+  "attempt_policy": "One exclusive directory per registered build; preserve source and failures; no selective retry or changed fixtures. Repairs require a new registration.",
+  "budgets": {
+    "native_seconds": 120,
+    "retained_bytes": 67108864,
+    "wall_seconds": 180
+  },
+  "campaign_authorized": false,
+  "expected_cases": 5292,
+  "expected_statuses": {
+    "event_cap": 5280,
+    "no_eligible_match": 12
+  },
+  "kind": "native_atomic_rewiring_synthetic_assay",
+  "matrix": {
+    "contexts": 220,
+    "orientations": 4,
+    "parent_prefixes": [
+      0,
+      1
+    ],
+    "post_intervention_events": 3,
+    "schedulers": [
+      "lex_first",
+      "lex_last",
+      "uniform_match"
+    ],
+    "terminal_controls": 12
+  },
+  "next_boundary": "Separately register bounded full-population assay budget/completion calibration and missingness accounting; no scientific adoption or launch.",
+  "pins_sha256": {
+    "analysis/edge_budget_v1.py": "1597215ccbe7e098391b1d927194ff6566e8fb2b949f8c25cb2c83c5c9f4e14c",
+    "analysis/g2_measurements.py": "2eeb8165f7097c9ef1ea066c897910dd1c2f39f34d4dcd0cd28703177a128cae",
+    "analysis/g2_observer_v1.py": "80ac8a91210d8ace15450687e35000c08778d767def67cdad0a9090c1a5cf611",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r06d-assay.md": "bd4beb88c51e667fa32d3d43610384a0a9170fc37edffa55d70a2ff5b7c42848",
+    "g2_assay/CMakeLists.txt": "5809a53a178319bc9d40e2a50547476db7f44a16dab7d003e4606c68dff8d149",
+    "g2_assay/kernel.cpp": "f037e6df9ad128151458db6167b8db4891febf012bbae5d2b042be0dbee8e5fa",
+    "g2_assay/kernel.hpp": "5b93c5f5ac6a58455f00fadb53459159ccd60cbd2311ee482fb19845b1b4268d",
+    "g2_assay/main.cpp": "f998a5c6faa94f121afeb3330882984ef2d800da01e4b69a78d2157f4701596d",
+    "protocols/r06b.json": "23c2711ef92b22edc680f1a263c4886d25d5c55b435e29e9f649a10973197a5c",
+    "protocols/r06c.json": "72e0f8a14a19378feaf4c67dc5639927b7ee1df4922ae683f59aa31064ee0f07",
+    "reports/r06c-custody.json": "7c9258d59220988e5bc63ecc3222c36b88c43d165975cf4bc5d87b641fb1390b",
+    "reports/r06c.json": "366cca055d79d14eeec0094d6476b22ad3503b0c066f3b97013028a345c4771e",
+    "scripts/analyze_r03.py": "628ca04ec48f0404c0ac93ddbd5bb3623bf2ebb7a01f9b96236232815ea34f84",
+    "scripts/atlas_r03.py": "4aba54c31a2ed1ae0fb7d84e4a382ad57c0b61616c7d424791d5cf98f19d2011",
+    "scripts/audit_r00.py": "ff8f447046e79bfb5f40b38dd21f1c7ce80c6e59ff3c9ee13d530c7d2c46b74c",
+    "scripts/audit_r04.py": "da08da96810bf399e4f29b2099e974006eced0482f515f924565bc18f54a561f",
+    "scripts/audit_r05.py": "d84631d35d0f1e04309af1ebbc66acfe04e9577fa53f6758d67b3b3323112131",
+    "scripts/audit_r05e.py": "1afe5829f1173830e6b853d89e6903d54cf9947411beade0035d5202bb277071",
+    "scripts/bounded_runner.py": "b0809a69f807247f19cb063cf552426753d11269aaa50e999635db5769cebd54",
+    "scripts/calibrate_r02.py": "779c79a1fd19c915c60e78f5f6fd2017236322250dc6fa81b652187635b345b6",
+    "scripts/calibrate_r05c.py": "175e1e79830073b1594fc7714c109df74a42d21a4f501f5514abf1059fbee421",
+    "scripts/calibrate_r05f.py": "745857035d5fc1744293b6145b87862939fdec787bc44e06185bfc43471ca117",
+    "scripts/calibrate_r06b.py": "d641fd0780a43ea0b5204e011bd097aa461df2e4b5c06be5588e266421638cd6",
+    "scripts/design_r06a.py": "753f813aa445fb34145f6787a8c55b971b218c90bc648fe7d9a0c94a9c0171a6",
+    "scripts/design_r06c.py": "4b5e3954a87d437d49fbbbe87cf87869a93a78d4c4aeebdb00f7b0f65db3a37c",
+    "scripts/g2_reference.py": "6930e48ef41fd16d4435d5b1df21203d7a891ae21f5f6e38cc199e96c5221a36",
+    "scripts/observe_r03.py": "7b4a652185c6976611be3d9c2dc2937b238beb2f541fda64e174f9e5b899e987",
+    "scripts/pilot_r03.py": "90a9b5595e53716b1924bbc7b02bcc4e46f687b86afbc576020aaf3ff946f2d4",
+    "scripts/plan_r03.py": "69e737b1289ff55c877e856f3bf920740b9821799eadc02b6e0ddce0716675ea",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "scripts/review_r05g.py": "ef7bd6efe8a43515102a3c85c4b8ad4934131136f5b0a07f046c3bc1573a88e0",
+    "scripts/verify_r01.py": "9681a4ecfd2d8478f599aea880f1c4b433c389467b39422d0ebbaeb3239a216a",
+    "scripts/verify_r03_plan.py": "dc7a7dda2554deb37a093827ccc5fec0ff8ac82f9b21443883dd4c192aa1df71",
+    "scripts/verify_r05b.py": "ee9e1f0791eebe2528f5e6f388f7f24272708e4a2cb2fb59b3e8779f0861eda8",
+    "scripts/verify_r05d.py": "2dd0f868bcfca5eeb0ef94262a4a9b131634f9a376c2fab907a0d6705efcea07",
+    "scripts/verify_r06d.py": "bcb77b5aa468f9c5e22ee9be23cfc5a89f4fb71c0b66d6b012f9ffcb2d17f48b",
+    "tests/test_r06d.py": "e2bd2b79e23c6d913616946bf1d7d42b66792959fb501655683678a979cedbd5"
+  },
+  "production_adopted": false,
+  "protocol_id": "R06d-v1",
+  "registered_builds": [
+    "Release",
+    "Debug_ASan_UBSan"
+  ],
+  "scientific_pilot_authorized": false,
+  "scientific_status": "untested"
+}

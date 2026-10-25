@@ -1,0 +1,33 @@
+{
+  "bulk_evidence_published": false,
+  "clean_public_replay": "passed",
+  "clean_public_source_build": "passed",
+  "prior_source_pins_verified": true,
+  "protocol_id": "R06d-v1",
+  "public_receipt_hashes": {
+    "reports/r06d-release-execution.json": "77ae929c8a09518deaf6a6973cc54863cb4999ebc7f892e082a8c7b8b45111b4",
+    "reports/r06d-release.json": "885211f9ae739d9d97f3554d824e32de0556bc322682120dd94872f630e58f9c",
+    "reports/r06d-sanitize-execution.json": "21e9a2e1806c832152ba5040cc1cb4c1d8bc917c368b196bed6310750d639229",
+    "reports/r06d-sanitize.json": "885211f9ae739d9d97f3554d824e32de0556bc322682120dd94872f630e58f9c"
+  },
+  "python_tests": 130,
+  "release_sanitizer_receipts_identical": true,
+  "scientific_status": "untested",
+  "staged_public_paths": [
+    "README.md",
+    "docs/r06d-assay.md",
+    "docs/roadmap.md",
+    "g2_assay/CMakeLists.txt",
+    "g2_assay/kernel.cpp",
+    "g2_assay/kernel.hpp",
+    "g2_assay/main.cpp",
+    "protocols/r06d.json",
+    "reports/r06d-release-execution.json",
+    "reports/r06d-release.json",
+    "reports/r06d-sanitize-execution.json",
+    "reports/r06d-sanitize.json",
+    "reports/r06d.md",
+    "scripts/verify_r06d.py",
+    "tests/test_r06d.py"
+  ]
+}

@@ -184,12 +184,22 @@ G2 scientific status remains untested and campaign readiness remains blocked.
 [R06c scientific design review](reports/r06c.md) completed the fixed intervention
 census and conservative power/work scenarios. Strict deletion has no distinct
 matched sham; four-edge rewiring passed 880 static control checks. Parent sampling,
-scientific thresholds and production budgets remain unregistered. Next is R06d:
-separately register and implement the atomic rewiring operator and synthetic assay
-replay, including measured engineering costs. R02 criteria remain unchanged.
+scientific thresholds and production budgets remain unregistered. [R06d](reports/r06d.md) now implements a separate atomic rewiring kernel and
+passes independent replay of 5,292 synthetic cases in both release and sanitizer
+builds. R02 criteria remain unchanged. Next is a separately registered bounded
+assay-budget and completion calibration; scientific parent sampling and adoption
+remain unresolved.
 
 ```sh
 python3 -B scripts/design_r06c.py --verify reports/r06c.json
 ```
 
 Public repository: https://github.com/kalewicker/minimal-universe
+
+The R06d synthetic engineering matrix can be reproduced independently:
+
+```sh
+cmake -S g2_assay -B build-r06d -DCMAKE_BUILD_TYPE=Release
+cmake --build build-r06d -j 4
+python3 -B scripts/verify_r06d.py --binary build-r06d/mu-g2-assay --verify reports/r06d-release.json
+```

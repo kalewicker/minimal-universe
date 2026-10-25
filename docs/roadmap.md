@@ -61,10 +61,12 @@ bookkeeping preserves missing parents, eligibility changes and inherited splits.
 [R06c](../reports/r06c.md) completed static scientific design/feasibility: strict
 deletion has no distinct matched sham, while four-edge rewiring passed 880 fixed
 static controls. Nine power and 27 work scenarios quantify conservative requirements
-without adopting scientific thresholds, parents or campaign budgets. Next is
-separately registered R06d native atomic rewiring and synthetic assay replay with
-measured engineering costs. Scientific primary adoption and any world pilot still
-require their own registration.
+without adopting scientific thresholds, parents or campaign budgets. [R06d](../reports/r06d.md) implements a separate native atomic rewiring kernel.
+All 5,292 cases matched independent replay in release and ASan/UBSan, including
+allocator continuation, intervention provenance, inherited partitions and terminal
+controls. Next is separately registered bounded assay-budget/completion calibration
+over a frozen unfiltered engineering population. Scientific primary adoption,
+parent sampling and any scientific pilot still require their own registration.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 
