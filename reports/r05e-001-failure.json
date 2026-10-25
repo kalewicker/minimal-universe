@@ -1,0 +1,7 @@
+{
+  "audit_status": "fail",
+  "elapsed_seconds": 1.2147390004247427,
+  "error": "TypeError: cannot use 'list' as a set element (unhashable type: 'list')",
+  "protocol_id": "R05e-v1",
+  "retained_bytes_before_receipt": 9171878
+}

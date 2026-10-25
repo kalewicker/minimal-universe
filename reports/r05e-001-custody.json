@@ -1,0 +1,43 @@
+{
+  "attempt": "r05e-001",
+  "audit_status": "fail",
+  "diagnosis": "The static rare-support fixture was decoded from JSON as lists; set(rare[edges]) requires hashable tuples. No null sampling or world execution occurred. The full audit must be repeated under a new identified engineering attempt after a source-only fix.",
+  "files": {
+    "docs/r05e-long-observer.md": {
+      "bytes": 10775,
+      "sha256": "a03562f94dcb35cc7cdd758603913951e45c14df2d296916d543044d0501c9bc"
+    },
+    "protocols/r05e-observer-design.json": {
+      "bytes": 27345,
+      "sha256": "097c890bce9c4d9591f2ae7996e73f5a51ce01cd3c323e69f8c0fcd473c9f3c5"
+    },
+    "protocols/r05e.json": {
+      "bytes": 1617,
+      "sha256": "dade3d46146c0d797ccd34c4055d37d6224f22ed13fbf2ef968aa72a8af11631"
+    },
+    "reports/r05e-001-failure.json": {
+      "bytes": 228,
+      "sha256": "eb327c38ebebeca1c2b5f6e2160fe3982381b20654602f2da002e2da8df35832"
+    },
+    "results/r05e-001/design-checks.jsonl": {
+      "bytes": 9171791,
+      "sha256": "24a16636783c04ac5fc92aeb3e4932921fde5d541b5c8b2d415f6506b86a1adf"
+    },
+    "results/r05e-001/execution.json": {
+      "bytes": 228,
+      "sha256": "eb327c38ebebeca1c2b5f6e2160fe3982381b20654602f2da002e2da8df35832"
+    },
+    "results/r05e-001/started.json": {
+      "bytes": 87,
+      "sha256": "c92a4aab485a7b0672fe72d0d858c948b9fdb98012b94ba9adb642482c72647c"
+    },
+    "scripts/audit_r05e.py": {
+      "bytes": 16978,
+      "sha256": "3e3b6107160d27ba9c2f2cb818f995d822e55807f2843c8f56c18bf8596e8491"
+    },
+    "tests/test_r05e.py": {
+      "bytes": 3412,
+      "sha256": "1702779505202cc67402186dd22dde0199dae1c93d639e4d40fcd9fb79e0bd19"
+    }
+  }
+}

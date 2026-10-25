@@ -1,0 +1,31 @@
+{
+  "acceptance": "Exact independent permutation, radius and count/ceiling calculations agree; all prerequisite source hashes unchanged; proposed readiness never reported as implementation/calibration or scientific acceptance",
+  "budgets": {
+    "global_wall_seconds": 120,
+    "retained_bytes": 268435456
+  },
+  "calibration_executed": false,
+  "campaign_authorized": false,
+  "expected_precision_rows": 9,
+  "expected_rule_seed_cells": 13566,
+  "expected_shuffle_choice_vectors": 46234,
+  "holdout_authorized": false,
+  "inputs_sha256": {
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05d.json": "8fcec0ca017a291e57199639f9d5c2be52ed016c5e2e9f80806b73895f368f19",
+    "protocols/r05e-observer-design.json": "097c890bce9c4d9591f2ae7996e73f5a51ce01cd3c323e69f8c0fcd473c9f3c5",
+    "reports/r05c.json": "7a57bedb748b31c003bdf32e9e729f9370fbd99f14883734fb9f35524f5a40e5",
+    "reports/r05d.json": "e3c8494d55d1de30374d1038a0f9ba139e688998ec97807a1f4493353e6eb02e"
+  },
+  "kind": "long_horizon_measurement_design_and_static_audit",
+  "promotion_authorized": false,
+  "protocol_id": "R05e-v1",
+  "scientific_status": "untested",
+  "scope": [
+    "No null samples, native runs, graph transitions or trajectory reads",
+    "Exact shuffle-choice bijection for lengths 0..8",
+    "Certified rational precision/work arithmetic",
+    "Proposed domain coverage at event 50 over full R05d panel",
+    "Universal reciprocal-density upper bound for proposed density-minus-null-mean contrast, retaining all unavailable and undefined cells"
+  ]
+}
