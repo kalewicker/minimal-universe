@@ -181,9 +181,15 @@ python3 -B scripts/calibrate_r06b.py --verify reports/r06b.json
 ```
 
 G2 scientific status remains untested and campaign readiness remains blocked.
-Next is separately registered R06c scientific design and feasibility: estimands,
-intervention/sham validity, parent registry, power and campaign budgets. R02's
-production criteria and all consumed evidence remain unchanged; no campaign,
-selected subgrammar or shorter atlas was launched.
+[R06c scientific design review](reports/r06c.md) completed the fixed intervention
+census and conservative power/work scenarios. Strict deletion has no distinct
+matched sham; four-edge rewiring passed 880 static control checks. Parent sampling,
+scientific thresholds and production budgets remain unregistered. Next is R06d:
+separately register and implement the atomic rewiring operator and synthetic assay
+replay, including measured engineering costs. R02 criteria remain unchanged.
+
+```sh
+python3 -B scripts/design_r06c.py --verify reports/r06c.json
+```
 
 Public repository: https://github.com/kalewicker/minimal-universe

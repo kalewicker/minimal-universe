@@ -1,0 +1,25 @@
+{
+  "clean_staged_export_replay": "passed",
+  "execution_sha256": "1f51004e48f54c383f50c7044c65aa1138bac7a64edc6099489ffd8ddcbb979a",
+  "ledger_sha256": "e9e8cbb17cd2d2909390453123accfb6aba71bdd15cfa0c6d7fa636a73bfa801",
+  "local_bulk_ledger_published": false,
+  "local_receipt_matches_public": true,
+  "null_draws": 0,
+  "prior_bound_sources_verified": true,
+  "protocol_id": "R06c-v1",
+  "python_tests": 126,
+  "receipt_sha256": "366cca055d79d14eeec0094d6476b22ad3503b0c066f3b97013028a345c4771e",
+  "scientific_status": "untested",
+  "staged_public_paths": [
+    "README.md",
+    "docs/r06c-scientific-design.md",
+    "docs/roadmap.md",
+    "protocols/r06c.json",
+    "reports/r06c-execution.json",
+    "reports/r06c.json",
+    "reports/r06c.md",
+    "scripts/design_r06c.py",
+    "tests/test_r06c.py"
+  ],
+  "world_transitions": 0
+}
