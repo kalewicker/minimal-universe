@@ -40,10 +40,16 @@ software failure was repaired in a new static attempt without changing inputs.
 passed its source-bound synthetic calibration: 56 queries, 917,504 independently
 replayed draws and coverage of all 32 known small-graph means. Constant samples
 remain unresolved. This completes the metrology milestone; it does not remove
-the geometric ceiling or authorize a scientific campaign. Next is a separately
-registered read-only readiness and hypothesis review, preserving the full panel,
-failed readiness gate and ceilings. A changed metric or hypothesis needs a
-separate decision and protocol.
+the geometric ceiling or authorize a scientific campaign.
+[R05g](../reports/r05g.md) completed the read-only readiness and hypothesis review
+over all 13,566 cells, preserving the prior counts and exclusions. It confirmed
+conditional observer size support while retaining the failed readiness gate and
+unregistered scientific requirements. The maximum fresh-node event-50 density
+ceiling is 9/425, below 0.05 for the proposed density-minus-null contrast; this
+does not bound every possible G2 hypothesis or the paired intervention effect.
+Next is a separately registered observable/hypothesis design review, with
+size-scaling and synthetic controls before choosing any replacement. A changed
+metric or hypothesis needs a separate decision and protocol.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

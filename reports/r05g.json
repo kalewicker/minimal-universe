@@ -1,0 +1,219 @@
+{
+  "audit_status": "pass",
+  "availability": {
+    "not_established_by_static_sizes": 9520,
+    "provably_unavailable_edge_budget": 170,
+    "provably_unavailable_no_initial_match": 3876
+  },
+  "bound_scope": "conditional event-50 endpoints; density minus nonnegative degree-null mean; not the paired intervention effect or every possible G2 hypothesis",
+  "calibration_evidence": {
+    "attempted_words": 21168128,
+    "campaign_quota": null,
+    "campaign_radius": null,
+    "evidence": "saved source-bound receipt accounting; no recalibration",
+    "known_mean_covered": 32,
+    "large_invariants_only": 24,
+    "query_slots": 56,
+    "sample_statuses": {
+      "sampled_constant_unresolved": 24,
+      "witnessed_nonconstant": 32
+    }
+  },
+  "campaign_authorized": false,
+  "candidate_statistics_evaluated": 0,
+  "cell_classifications": {
+    "below_frozen_threshold_upper_bound": 7420,
+    "not_excluded_by_ceiling": 1680,
+    "provably_unavailable_edge_budget": 170,
+    "provably_unavailable_no_initial_match": 3876,
+    "undefined_density": 420
+  },
+  "conditional_rule_classes": {
+    "fresh_conditional": 7420,
+    "nonfresh_conditional": 2100
+  },
+  "decision": "close_current_readiness_review_without_launch",
+  "density_definedness": {
+    "endpoint_defined": 9100,
+    "endpoint_undefined": 420,
+    "initial_defined": 7616,
+    "initial_undefined": 1904
+  },
+  "endpoint_null_modes": {
+    "exact": 1270,
+    "sampled": 7830,
+    "undefined": 420
+  },
+  "fresh_maximum_density_ceiling": [
+    9,
+    425
+  ],
+  "full_panel_cells": 13566,
+  "graph_transitions_executed": 0,
+  "holdout_jobs_executed": 0,
+  "intervention_effects_measured": 0,
+  "motif_coverage": {
+    "guaranteed_complete": 816,
+    "known_incomplete_at_initial_state": 952,
+    "not_guaranteed_by_sizes": 7752
+  },
+  "native_runs": 0,
+  "next_boundary": "Separately register an observable/hypothesis design review with size-scaling analysis and synthetic controls before choosing any replacement. No R06, campaign, metric change or empirical discovery is authorized here.",
+  "null_samples_executed": 0,
+  "observer_domain": {
+    "domain_fit": 9520
+  },
+  "promotion_authorized": false,
+  "protocol_id": "R05g-v1",
+  "protocol_sha256": "59450f8e739fb5353701e4881c441799252281bc43f058509dd07a081f530865",
+  "readiness_status": "not_launch_ready",
+  "requirements": [
+    {
+      "evidence": [
+        "reports/r05b-release.json",
+        "reports/r05b-sanitize.json"
+      ],
+      "id": "reference_kernel",
+      "status": "calibrated_engineering"
+    },
+    {
+      "evidence": [
+        "reports/r05f.json"
+      ],
+      "id": "supplied_state_observer",
+      "status": "calibrated_synthetic_only"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json",
+        "protocols/r05e-observer-design.json",
+        "reports/r05f.json"
+      ],
+      "id": "conditional_50_event_size_domain",
+      "status": "check_full_panel_conditional_sizes_not_reachability"
+    },
+    {
+      "evidence": [
+        "reports/r05e.json"
+      ],
+      "id": "fresh_node_proposed_structural_contrast",
+      "status": "excluded_by_event_50_upper_bound"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json"
+      ],
+      "id": "reachability_and_density",
+      "status": "unavailable_and_undefined_cells_retained_others_unestablished"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json",
+        "protocols/r02-measurement-contract.json"
+      ],
+      "id": "complete_motif_coverage",
+      "status": "known_initial_exclusions_and_unestablished_future_coverage"
+    },
+    {
+      "evidence": [
+        "protocols/r05e-observer-design.json",
+        "reports/r05f.json"
+      ],
+      "id": "informative_degree_nulls",
+      "status": "not_established_for_campaign_sampled_constants_unresolved"
+    },
+    {
+      "evidence": [
+        "protocols/r05e-observer-design.json",
+        "protocols/r05d.json"
+      ],
+      "id": "production_structural_estimand_and_family",
+      "status": "proposed_only_not_production_registered"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json",
+        "reports/r05f.json"
+      ],
+      "id": "target_sham_and_scheduler_coupling",
+      "status": "not_established_by_synthetic_bookkeeping"
+    },
+    {
+      "evidence": [
+        "protocols/r02-measurement-contract.json",
+        "protocols/r05d.json"
+      ],
+      "id": "scientific_parents_splits_replication_power",
+      "status": "not_registered_in_reviewed_stages"
+    },
+    {
+      "evidence": [
+        "protocols/r02-measurement-contract.json",
+        "reports/r05d.json"
+      ],
+      "id": "estimators_resampling_and_test_families",
+      "status": "not_registered_or_validated_for_scientific_use_here"
+    },
+    {
+      "evidence": [
+        "protocols/r05e-observer-design.json",
+        "protocols/r05f.json"
+      ],
+      "id": "campaign_null_query_quota_and_precision",
+      "status": "not_registered_calibration_quota_does_not_transfer"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json",
+        "protocols/r05f.json"
+      ],
+      "id": "world_throughput_and_storage_budget",
+      "status": "not_measured_by_null_calibration"
+    },
+    {
+      "evidence": [
+        "protocols/r02-measurement-contract.json",
+        "protocols/r05c.json",
+        "reports/r05f.json"
+      ],
+      "id": "persistence",
+      "status": "descriptive_observed_identity_not_exact_50_event_unconditional_survival_not_new_promotion_gate"
+    }
+  ],
+  "reserved_g1_jobs_unopened_per_prior_receipt": 16774,
+  "scientific_status": "untested",
+  "size_maxima": {
+    "match_count_upper_bound": 2862,
+    "peak_edges": 54,
+    "peak_nodes": 56
+  },
+  "source_sha256": {
+    "docs/r05g-readiness.md": "4cf1b34226fdf7b0226782bab1f3c987b65a9baef3a15b9a8ba237b4cb0e23c6",
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05a.json": "7f78da52b077f9fe6312296801ba36421feef334d5239117595239472fb81f2e",
+    "protocols/r05b.json": "3fa63aeba3cdcae60d81d58705f93d37185d6708b7848b6c4ddc436418770f55",
+    "protocols/r05c.json": "f85d01805b1ec24fcaa37b71402f6c7c3bf51d5740072783184fa9bde447b74f",
+    "protocols/r05d.json": "8fcec0ca017a291e57199639f9d5c2be52ed016c5e2e9f80806b73895f368f19",
+    "protocols/r05e-observer-design.json": "097c890bce9c4d9591f2ae7996e73f5a51ce01cd3c323e69f8c0fcd473c9f3c5",
+    "protocols/r05e-repair.json": "149e2b95b6406d6dc95c57127b9cf023648aa6207f14b9d296fc4bf9fed5afbb",
+    "protocols/r05e.json": "dade3d46146c0d797ccd34c4055d37d6224f22ed13fbf2ef968aa72a8af11631",
+    "protocols/r05f.json": "ccc6132177e8efb0d244912fab37637b257ce1e1997b89617bd09f26720f13d8",
+    "reports/r04a.json": "06986c48cfb308fb33154044f6293cbacf6683be2d2fb1624b6ef1b8595cc1d7",
+    "reports/r05b-release.json": "f4929468115e1e0e3f7eb64a51fdf5cf53705f0b7a7b9f8628a62ee2bf1227df",
+    "reports/r05b-sanitize.json": "e58c7f1c861eb059e2ecd024beb191d01d39f0d1de4fff475b844df688b1285a",
+    "reports/r05c.json": "7a57bedb748b31c003bdf32e9e729f9370fbd99f14883734fb9f35524f5a40e5",
+    "reports/r05d.json": "e3c8494d55d1de30374d1038a0f9ba139e688998ec97807a1f4493353e6eb02e",
+    "reports/r05e-custody.json": "63135a58d6dcbb3119486cdb7d92c10778c655d58bcbd078ed97f83154d7793d",
+    "reports/r05e.json": "6716584c719861f7f993cf129c2889ec48266dbab741f09e3812a616c20ea8de",
+    "reports/r05f-custody.json": "a5d7203940336ccbd37bef3aa2fec0a8701ef1990ea1cbe4d029e015f72052aa",
+    "reports/r05f-execution.json": "13048b675716c79d5346d8324f2853f7d892b44c1041e9cd8e474435079a9e61",
+    "reports/r05f.json": "2c444f25548fce81b71565c874d429bb9fa4b77bceb95c4c3e5bdf72c7ae4495",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "scripts/review_r05g.py": "ef7bd6efe8a43515102a3c85c4b8ad4934131136f5b0a07f046c3bc1573a88e0",
+    "scripts/verify_r05d.py": "2dd0f868bcfca5eeb0ef94262a4a9b131634f9a376c2fab907a0d6705efcea07",
+    "tests/test_r05g.py": "66174a83a498309aa173610be20e8751552668cb2c5e4caa456c1251d7bc0291"
+  },
+  "trace_bytes": 12650701,
+  "trace_sha256": "cebaa7d1acb2d288f3425dfde2799696c24dd5117221f48a798462860c0a61f2",
+  "trajectory_files_read": 0
+}

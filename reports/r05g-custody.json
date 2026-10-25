@@ -1,0 +1,68 @@
+{
+  "actual_completed_attempt_bytes": 12659280,
+  "attempts": 1,
+  "campaign_authorized": false,
+  "completed_attempt": "r05g-001",
+  "files": {
+    "docs/r05g-readiness.md": {
+      "bytes": 4750,
+      "sha256": "4cf1b34226fdf7b0226782bab1f3c987b65a9baef3a15b9a8ba237b4cb0e23c6"
+    },
+    "protocols/r05g.json": {
+      "bytes": 7367,
+      "sha256": "59450f8e739fb5353701e4881c441799252281bc43f058509dd07a081f530865"
+    },
+    "reports/r05g-execution.json": {
+      "bytes": 316,
+      "sha256": "82c5ab0adc6620356ef576a68b5451458f9ce5a102fbca51068ac9175afba8b9"
+    },
+    "reports/r05g.json": {
+      "bytes": 8176,
+      "sha256": "8a1390546668ab60c758cb1d69bf6b435c2a5f1fb8245a05b76d2c6a4ab693f6"
+    },
+    "reports/r05g.md": {
+      "bytes": 5724,
+      "sha256": "eabbfe947305714817cb758d8ade2d7fe2d07f0680670310f966a067982dc47b"
+    },
+    "results/r05g-001/cells.jsonl": {
+      "bytes": 12650701,
+      "sha256": "cebaa7d1acb2d288f3425dfde2799696c24dd5117221f48a798462860c0a61f2"
+    },
+    "results/r05g-001/execution.json": {
+      "bytes": 316,
+      "sha256": "82c5ab0adc6620356ef576a68b5451458f9ce5a102fbca51068ac9175afba8b9"
+    },
+    "results/r05g-001/review.json": {
+      "bytes": 8176,
+      "sha256": "8a1390546668ab60c758cb1d69bf6b435c2a5f1fb8245a05b76d2c6a4ab693f6"
+    },
+    "results/r05g-001/started.json": {
+      "bytes": 87,
+      "sha256": "2764c38bee268bf11dceb0b1566c7c99ff60864273b8f19c6e034e2e08f8b60f"
+    },
+    "scripts/review_r05g.py": {
+      "bytes": 15496,
+      "sha256": "ef7bd6efe8a43515102a3c85c4b8ad4934131136f5b0a07f046c3bc1573a88e0"
+    },
+    "tests/test_r05g.py": {
+      "bytes": 3847,
+      "sha256": "66174a83a498309aa173610be20e8751552668cb2c5e4caa456c1251d7bc0291"
+    }
+  },
+  "global_wall_seconds_limit": 120,
+  "holdout_jobs_executed": 0,
+  "ledger_digest_and_bytes_verified": true,
+  "native_world_runs": 0,
+  "null_samples_executed": 0,
+  "promotion_authorized": false,
+  "protocol_id": "R05g-v1",
+  "public_replay_without_local_results_or_binaries": true,
+  "public_source_export_replay": "pass",
+  "public_verification_command": "python3 -B scripts/review_r05g.py --verify reports/r05g.json",
+  "python_tests_passed": 100,
+  "readiness_status": "not_launch_ready",
+  "retained_bytes_limit": 67108864,
+  "scientific_status": "untested",
+  "status": "pass",
+  "trajectory_files_read": 0
+}

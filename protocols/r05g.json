@@ -1,0 +1,178 @@
+{
+  "acceptance": "Independent incremental size arithmetic and pair-budget ceilings agree across the complete panel and reproduce R05d/R05e availability, classifications and motif exclusions. R05f saved query accounting agrees. Correct review does not imply launch readiness.",
+  "attempt_policy": "Exclusive identified attempt; preserve any failure and partial ledger. No selective retry, threshold change, new metric, shorter atlas or selected subgrammar. A repair needs its own registered attempt.",
+  "budgets": {
+    "global_wall_seconds": 120,
+    "retained_bytes": 67108864
+  },
+  "campaign_authorized": false,
+  "expected": {
+    "conditional_cells": 9520,
+    "fresh_conditional_cells": 7420,
+    "full_panel_cells": 13566,
+    "nonfresh_conditional_cells": 2100,
+    "rules": 969,
+    "seeds": 14
+  },
+  "holdout_authorized": false,
+  "horizon": 50,
+  "kind": "read_only_readiness_and_hypothesis_review",
+  "next_boundary": "Separately register an observable/hypothesis design review with size-scaling analysis and synthetic controls before choosing any replacement. No R06, campaign, metric change or empirical discovery is authorized here.",
+  "null_samples_authorized": 0,
+  "pins_sha256": {
+    "docs/r05g-readiness.md": "4cf1b34226fdf7b0226782bab1f3c987b65a9baef3a15b9a8ba237b4cb0e23c6",
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05a.json": "7f78da52b077f9fe6312296801ba36421feef334d5239117595239472fb81f2e",
+    "protocols/r05b.json": "3fa63aeba3cdcae60d81d58705f93d37185d6708b7848b6c4ddc436418770f55",
+    "protocols/r05c.json": "f85d01805b1ec24fcaa37b71402f6c7c3bf51d5740072783184fa9bde447b74f",
+    "protocols/r05d.json": "8fcec0ca017a291e57199639f9d5c2be52ed016c5e2e9f80806b73895f368f19",
+    "protocols/r05e-observer-design.json": "097c890bce9c4d9591f2ae7996e73f5a51ce01cd3c323e69f8c0fcd473c9f3c5",
+    "protocols/r05e-repair.json": "149e2b95b6406d6dc95c57127b9cf023648aa6207f14b9d296fc4bf9fed5afbb",
+    "protocols/r05e.json": "dade3d46146c0d797ccd34c4055d37d6224f22ed13fbf2ef968aa72a8af11631",
+    "protocols/r05f.json": "ccc6132177e8efb0d244912fab37637b257ce1e1997b89617bd09f26720f13d8",
+    "reports/r04a.json": "06986c48cfb308fb33154044f6293cbacf6683be2d2fb1624b6ef1b8595cc1d7",
+    "reports/r05b-release.json": "f4929468115e1e0e3f7eb64a51fdf5cf53705f0b7a7b9f8628a62ee2bf1227df",
+    "reports/r05b-sanitize.json": "e58c7f1c861eb059e2ecd024beb191d01d39f0d1de4fff475b844df688b1285a",
+    "reports/r05c.json": "7a57bedb748b31c003bdf32e9e729f9370fbd99f14883734fb9f35524f5a40e5",
+    "reports/r05d.json": "e3c8494d55d1de30374d1038a0f9ba139e688998ec97807a1f4493353e6eb02e",
+    "reports/r05e-custody.json": "63135a58d6dcbb3119486cdb7d92c10778c655d58bcbd078ed97f83154d7793d",
+    "reports/r05e.json": "6716584c719861f7f993cf129c2889ec48266dbab741f09e3812a616c20ea8de",
+    "reports/r05f-custody.json": "a5d7203940336ccbd37bef3aa2fec0a8701ef1990ea1cbe4d029e015f72052aa",
+    "reports/r05f-execution.json": "13048b675716c79d5346d8324f2853f7d892b44c1041e9cd8e474435079a9e61",
+    "reports/r05f.json": "2c444f25548fce81b71565c874d429bb9fa4b77bceb95c4c3e5bdf72c7ae4495",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "scripts/review_r05g.py": "ef7bd6efe8a43515102a3c85c4b8ad4934131136f5b0a07f046c3bc1573a88e0",
+    "scripts/verify_r05d.py": "2dd0f868bcfca5eeb0ef94262a4a9b131634f9a376c2fab907a0d6705efcea07",
+    "tests/test_r05g.py": "66174a83a498309aa173610be20e8751552668cb2c5e4caa456c1251d7bc0291"
+  },
+  "promotion_authorized": false,
+  "protocol_id": "R05g-v1",
+  "receipt_chain": [
+    "protocols/r05d.json",
+    "protocols/r05e.json",
+    "protocols/r05e-repair.json",
+    "protocols/r05f.json",
+    "reports/r05b-release.json",
+    "reports/r05b-sanitize.json",
+    "reports/r05c.json",
+    "reports/r05d.json",
+    "reports/r05e.json",
+    "reports/r05f.json"
+  ],
+  "requirements": [
+    {
+      "evidence": [
+        "reports/r05b-release.json",
+        "reports/r05b-sanitize.json"
+      ],
+      "id": "reference_kernel",
+      "status": "calibrated_engineering"
+    },
+    {
+      "evidence": [
+        "reports/r05f.json"
+      ],
+      "id": "supplied_state_observer",
+      "status": "calibrated_synthetic_only"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json",
+        "protocols/r05e-observer-design.json",
+        "reports/r05f.json"
+      ],
+      "id": "conditional_50_event_size_domain",
+      "status": "check_full_panel_conditional_sizes_not_reachability"
+    },
+    {
+      "evidence": [
+        "reports/r05e.json"
+      ],
+      "id": "fresh_node_proposed_structural_contrast",
+      "status": "excluded_by_event_50_upper_bound"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json"
+      ],
+      "id": "reachability_and_density",
+      "status": "unavailable_and_undefined_cells_retained_others_unestablished"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json",
+        "protocols/r02-measurement-contract.json"
+      ],
+      "id": "complete_motif_coverage",
+      "status": "known_initial_exclusions_and_unestablished_future_coverage"
+    },
+    {
+      "evidence": [
+        "protocols/r05e-observer-design.json",
+        "reports/r05f.json"
+      ],
+      "id": "informative_degree_nulls",
+      "status": "not_established_for_campaign_sampled_constants_unresolved"
+    },
+    {
+      "evidence": [
+        "protocols/r05e-observer-design.json",
+        "protocols/r05d.json"
+      ],
+      "id": "production_structural_estimand_and_family",
+      "status": "proposed_only_not_production_registered"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json",
+        "reports/r05f.json"
+      ],
+      "id": "target_sham_and_scheduler_coupling",
+      "status": "not_established_by_synthetic_bookkeeping"
+    },
+    {
+      "evidence": [
+        "protocols/r02-measurement-contract.json",
+        "protocols/r05d.json"
+      ],
+      "id": "scientific_parents_splits_replication_power",
+      "status": "not_registered_in_reviewed_stages"
+    },
+    {
+      "evidence": [
+        "protocols/r02-measurement-contract.json",
+        "reports/r05d.json"
+      ],
+      "id": "estimators_resampling_and_test_families",
+      "status": "not_registered_or_validated_for_scientific_use_here"
+    },
+    {
+      "evidence": [
+        "protocols/r05e-observer-design.json",
+        "protocols/r05f.json"
+      ],
+      "id": "campaign_null_query_quota_and_precision",
+      "status": "not_registered_calibration_quota_does_not_transfer"
+    },
+    {
+      "evidence": [
+        "reports/r05d.json",
+        "protocols/r05f.json"
+      ],
+      "id": "world_throughput_and_storage_budget",
+      "status": "not_measured_by_null_calibration"
+    },
+    {
+      "evidence": [
+        "protocols/r02-measurement-contract.json",
+        "protocols/r05c.json",
+        "reports/r05f.json"
+      ],
+      "id": "persistence",
+      "status": "descriptive_observed_identity_not_exact_50_event_unconditional_survival_not_new_promotion_gate"
+    }
+  ],
+  "scientific_status": "untested",
+  "scope": "Public protocols, source maps and compact receipts only. Count arithmetic and saved accounting; no bulk result/trajectory inputs, new null samples, world transitions, candidate statistics, law selection or metric changes.",
+  "world_transitions_authorized": 0
+}

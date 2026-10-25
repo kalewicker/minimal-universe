@@ -147,8 +147,20 @@ means have no coverage claim. Constant samples remain unresolved.
 python3 -B scripts/calibrate_r05f.py --verify reports/r05f.json
 ```
 
-G2 scientific status remains untested. Next is a separately registered read-only
-readiness and hypothesis review. The geometric limitation and failed campaign
-readiness gate remain in force; no campaign or metric change is authorized.
+The [R05g readiness review](reports/r05g.md) now consolidates the full 13,566-cell
+panel. The calibrated observer fits all 9,520 conditional size projections, but
+reachability and scientific eligibility remain unestablished. All 7,420 fresh-node
+projections have reciprocal-density ceilings at most 9/425 (about 0.02118), below
+the frozen 0.05 threshold for the proposed density-minus-null contrast. All
+unavailable/undefined cells and motif exclusions remain visible.
+
+```sh
+python3 -B scripts/review_r05g.py --verify reports/r05g.json
+```
+
+G2 scientific status remains untested and campaign readiness remains blocked.
+Next is a separately registered observable/hypothesis design review, including
+size-scaling analysis before any replacement is chosen. No campaign, selected
+subgrammar, shorter atlas or metric change is authorized by this review.
 
 Public repository: https://github.com/kalewicker/minimal-universe
