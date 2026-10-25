@@ -36,9 +36,14 @@ registered synthetic calibration matrix. It also established a geometric ceiling
 below the frozen structural-effect threshold for all fresh-node conditional
 event-50 cells under the proposed density-minus-null-mean contrast. A preserved
 software failure was repaired in a new static attempt without changing inputs.
-Next is R05f: implement the versioned observer and register its source-bound
-synthetic calibration. It does not remove the geometric ceiling or authorize a
-scientific campaign; a changed metric or hypothesis needs a separate decision.
+[R05f](../reports/r05f.md) implemented the versioned supplied-state observer and
+passed its source-bound synthetic calibration: 56 queries, 917,504 independently
+replayed draws and coverage of all 32 known small-graph means. Constant samples
+remain unresolved. This completes the metrology milestone; it does not remove
+the geometric ceiling or authorize a scientific campaign. Next is a separately
+registered read-only readiness and hypothesis review, preserving the full panel,
+failed readiness gate and ceilings. A changed metric or hypothesis needs a
+separate decision and protocol.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

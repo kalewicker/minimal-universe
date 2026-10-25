@@ -1,0 +1,3459 @@
+{
+  "audit_status": "pass",
+  "campaign_authorized": false,
+  "counts": {
+    "choice_vectors": 46234,
+    "exact_score_controls": 820,
+    "large_exposure_controls": 12,
+    "large_invariants_only": 24,
+    "legacy_exposure_controls": 10239,
+    "null_draws": 917504,
+    "queries": 56,
+    "small_covered": 32
+  },
+  "endpoint_controls": {
+    "deterministic": {
+      "event": 57,
+      "horizon": 50,
+      "local": {
+        "matches": 2,
+        "occurrence_match_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "probability_avoid": null,
+        "status": "counts_only_deterministic_scheduler",
+        "target_union_matches": 2
+      },
+      "observed_untouched": true,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "lex_first",
+      "status": "reached"
+    },
+    "domain_unsupported": {
+      "event": 10,
+      "horizon": 50,
+      "local": null,
+      "observed_untouched": null,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "uniform_match",
+      "status": "domain_unsupported"
+    },
+    "intact": {
+      "event": 57,
+      "horizon": 50,
+      "local": {
+        "matches": 2,
+        "occurrence_match_counts": {
+          "0": 2,
+          "1": 2
+        },
+        "probability_avoid": [
+          0,
+          1
+        ],
+        "status": "defined",
+        "target_union_matches": 2
+      },
+      "observed_untouched": true,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "uniform_match",
+      "status": "reached"
+    },
+    "lost": {
+      "event": 57,
+      "horizon": 50,
+      "local": {
+        "matches": 0,
+        "occurrence_match_counts": {
+          "1": 0
+        },
+        "probability_avoid": null,
+        "status": "target_already_consumed",
+        "target_union_matches": null
+      },
+      "observed_untouched": false,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "uniform_match",
+      "status": "reached"
+    },
+    "no_match": {
+      "event": 57,
+      "horizon": 50,
+      "local": {
+        "matches": 0,
+        "occurrence_match_counts": {
+          "0": 0
+        },
+        "probability_avoid": null,
+        "status": "no_eligible_match",
+        "target_union_matches": 0
+      },
+      "observed_untouched": true,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "uniform_match",
+      "status": "reached"
+    },
+    "paired_50": {
+      "complete_pairs": 1,
+      "mean_effect": null,
+      "pairs": [
+        {
+          "effect": [
+            0,
+            1
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/r05f-complete",
+          "partition": "final-test",
+          "unavailable_reasons": []
+        },
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": null,
+          "endpoint_match_counts": [
+            null,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-cal-v1/r05f-unavailable",
+          "partition": "detector-development",
+          "unavailable_reasons": [
+            "target:resource_censored"
+          ]
+        }
+      ],
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 2,
+      "unavailable_pairs": 1
+    },
+    "recreated": {
+      "event": 57,
+      "horizon": 50,
+      "local": {
+        "matches": 2,
+        "occurrence_match_counts": {
+          "2": 2,
+          "3": 2
+        },
+        "probability_avoid": null,
+        "status": "target_already_consumed",
+        "target_union_matches": null
+      },
+      "observed_untouched": false,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "uniform_match",
+      "status": "reached"
+    },
+    "resource_censored": {
+      "event": 10,
+      "horizon": 50,
+      "local": null,
+      "observed_untouched": null,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "uniform_match",
+      "status": "resource_censored"
+    },
+    "terminal_before_horizon": {
+      "event": 10,
+      "horizon": 50,
+      "local": null,
+      "observed_untouched": null,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "uniform_match",
+      "status": "terminal_before_horizon"
+    },
+    "undefined": {
+      "event": 10,
+      "horizon": 50,
+      "local": null,
+      "observed_untouched": null,
+      "parent_event": 7,
+      "probability_scope": "local next uniform match only; no survival product",
+      "scheduler": "uniform_match",
+      "status": "undefined"
+    }
+  },
+  "geometric_ceiling_preserved": true,
+  "holdout_jobs_executed": 0,
+  "native_world_runs": 0,
+  "preserved_intervention_horizon": 50,
+  "promotion_authorized": false,
+  "protocol_id": "R05f-v1",
+  "protocol_sha256": "ccc6132177e8efb0d244912fab37637b257ce1e1997b89617bd09f26720f13d8",
+  "queries": [
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "empty2",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "7228a84d6f692869aa903dcae5d8b20fb96ea49d8140dc23ba50c4be60969da0",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/empty2/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 0
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "empty2",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "7228a84d6f692869aa903dcae5d8b20fb96ea49d8140dc23ba50c4be60969da0",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/empty2/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 0
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "empty2",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "7228a84d6f692869aa903dcae5d8b20fb96ea49d8140dc23ba50c4be60969da0",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/empty2/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 0
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "empty2",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "7228a84d6f692869aa903dcae5d8b20fb96ea49d8140dc23ba50c4be60969da0",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/empty2/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 0
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "loop2",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ffa48ce053217637ab022b878521c6398677315296bd103bceb42a5a5f875eba",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/loop2/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 0
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "loop2",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ffa48ce053217637ab022b878521c6398677315296bd103bceb42a5a5f875eba",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/loop2/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 0
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "loop2",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ffa48ce053217637ab022b878521c6398677315296bd103bceb42a5a5f875eba",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/loop2/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 0
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "loop2",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ffa48ce053217637ab022b878521c6398677315296bd103bceb42a5a5f875eba",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/loop2/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 0
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        1,
+        2
+      ],
+      "graph_id": "reciprocal2",
+      "result": {
+        "contrast_interval": [
+          [
+            12205223,
+            25600000
+          ],
+          [
+            13263527,
+            25600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "87b09e287edf9a43a2daa8dd24368ba9f4c3fab886953eb8fffa466ae3f589d5",
+        "histogram": {
+          "0": 8150,
+          "1": 8234
+        },
+        "interval": [
+          [
+            12336473,
+            25600000
+          ],
+          [
+            13394777,
+            25600000
+          ]
+        ],
+        "mean": [
+          4117,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/reciprocal2/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        1,
+        2
+      ],
+      "graph_id": "reciprocal2",
+      "result": {
+        "contrast_interval": [
+          [
+            12248973,
+            25600000
+          ],
+          [
+            13307277,
+            25600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "87b09e287edf9a43a2daa8dd24368ba9f4c3fab886953eb8fffa466ae3f589d5",
+        "histogram": {
+          "0": 8178,
+          "1": 8206
+        },
+        "interval": [
+          [
+            12292723,
+            25600000
+          ],
+          [
+            13351027,
+            25600000
+          ]
+        ],
+        "mean": [
+          4103,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/reciprocal2/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        1,
+        2
+      ],
+      "graph_id": "reciprocal2",
+      "result": {
+        "contrast_interval": [
+          [
+            25019821,
+            51200000
+          ],
+          [
+            27136429,
+            51200000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "87b09e287edf9a43a2daa8dd24368ba9f4c3fab886953eb8fffa466ae3f589d5",
+        "histogram": {
+          "0": 8345,
+          "1": 8039
+        },
+        "interval": [
+          [
+            24063571,
+            51200000
+          ],
+          [
+            26180179,
+            51200000
+          ]
+        ],
+        "mean": [
+          8039,
+          16384
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/reciprocal2/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        1,
+        2
+      ],
+      "graph_id": "reciprocal2",
+      "result": {
+        "contrast_interval": [
+          [
+            12211473,
+            25600000
+          ],
+          [
+            13269777,
+            25600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "87b09e287edf9a43a2daa8dd24368ba9f4c3fab886953eb8fffa466ae3f589d5",
+        "histogram": {
+          "0": 8154,
+          "1": 8230
+        },
+        "interval": [
+          [
+            12330223,
+            25600000
+          ],
+          [
+            13388527,
+            25600000
+          ]
+        ],
+        "mean": [
+          4115,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/reciprocal2/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "path3",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "132b151d6ddee652c8c58a87950317455d926f675fbdcb224529fc8146c2d1cd",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/path3/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "path3",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "132b151d6ddee652c8c58a87950317455d926f675fbdcb224529fc8146c2d1cd",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/path3/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "path3",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "132b151d6ddee652c8c58a87950317455d926f675fbdcb224529fc8146c2d1cd",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/path3/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "path3",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "132b151d6ddee652c8c58a87950317455d926f675fbdcb224529fc8146c2d1cd",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/path3/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        5,
+        6
+      ],
+      "graph_id": "parallel_cycle2",
+      "result": {
+        "contrast_interval": [
+          [
+            7601071,
+            51200000
+          ],
+          [
+            9717679,
+            51200000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "61182c345214c60575b6068bd0fdca001e277a146909b56dcdd946690b362a30",
+        "histogram": {
+          "0": 2771,
+          "1": 13613
+        },
+        "interval": [
+          [
+            41482321,
+            51200000
+          ],
+          [
+            43598929,
+            51200000
+          ]
+        ],
+        "mean": [
+          13613,
+          16384
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/parallel_cycle2/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 196608,
+        "words": 49152
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        5,
+        6
+      ],
+      "graph_id": "parallel_cycle2",
+      "result": {
+        "contrast_interval": [
+          [
+            3698973,
+            25600000
+          ],
+          [
+            4757277,
+            25600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "61182c345214c60575b6068bd0fdca001e277a146909b56dcdd946690b362a30",
+        "histogram": {
+          "0": 2706,
+          "1": 13678
+        },
+        "interval": [
+          [
+            20842723,
+            25600000
+          ],
+          [
+            21901027,
+            25600000
+          ]
+        ],
+        "mean": [
+          6839,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/parallel_cycle2/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 196608,
+        "words": 49152
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        5,
+        6
+      ],
+      "graph_id": "parallel_cycle2",
+      "result": {
+        "contrast_interval": [
+          [
+            1882299,
+            12800000
+          ],
+          [
+            2411451,
+            12800000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "61182c345214c60575b6068bd0fdca001e277a146909b56dcdd946690b362a30",
+        "histogram": {
+          "0": 2748,
+          "1": 13636
+        },
+        "interval": [
+          [
+            10388549,
+            12800000
+          ],
+          [
+            10917701,
+            12800000
+          ]
+        ],
+        "mean": [
+          3409,
+          4096
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/parallel_cycle2/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 196608,
+        "words": 49152
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        5,
+        6
+      ],
+      "graph_id": "parallel_cycle2",
+      "result": {
+        "contrast_interval": [
+          [
+            3836473,
+            25600000
+          ],
+          [
+            4894777,
+            25600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "61182c345214c60575b6068bd0fdca001e277a146909b56dcdd946690b362a30",
+        "histogram": {
+          "0": 2794,
+          "1": 13590
+        },
+        "interval": [
+          [
+            20705223,
+            25600000
+          ],
+          [
+            21763527,
+            25600000
+          ]
+        ],
+        "mean": [
+          6795,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/parallel_cycle2/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 196608,
+        "words": 49152
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        1,
+        2
+      ],
+      "graph_id": "separate_loops2",
+      "result": {
+        "contrast_interval": [
+          [
+            -26705179,
+            51200000
+          ],
+          [
+            -24588571,
+            51200000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "8f4f62dfad4ee7a343853fc1c2aa51952ab42082ae5470d5db7f58c96d98ef8e",
+        "histogram": {
+          "0": 8177,
+          "1": 8207
+        },
+        "interval": [
+          [
+            24588571,
+            51200000
+          ],
+          [
+            26705179,
+            51200000
+          ]
+        ],
+        "mean": [
+          8207,
+          16384
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/separate_loops2/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        1,
+        2
+      ],
+      "graph_id": "separate_loops2",
+      "result": {
+        "contrast_interval": [
+          [
+            -3372913,
+            6400000
+          ],
+          [
+            -3108337,
+            6400000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "8f4f62dfad4ee7a343853fc1c2aa51952ab42082ae5470d5db7f58c96d98ef8e",
+        "histogram": {
+          "0": 8088,
+          "1": 8296
+        },
+        "interval": [
+          [
+            3108337,
+            6400000
+          ],
+          [
+            3372913,
+            6400000
+          ]
+        ],
+        "mean": [
+          1037,
+          2048
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/separate_loops2/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        1,
+        2
+      ],
+      "graph_id": "separate_loops2",
+      "result": {
+        "contrast_interval": [
+          [
+            -13407277,
+            25600000
+          ],
+          [
+            -12348973,
+            25600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "8f4f62dfad4ee7a343853fc1c2aa51952ab42082ae5470d5db7f58c96d98ef8e",
+        "histogram": {
+          "0": 8142,
+          "1": 8242
+        },
+        "interval": [
+          [
+            12348973,
+            25600000
+          ],
+          [
+            13407277,
+            25600000
+          ]
+        ],
+        "mean": [
+          4121,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/separate_loops2/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        1,
+        2
+      ],
+      "graph_id": "separate_loops2",
+      "result": {
+        "contrast_interval": [
+          [
+            -13357277,
+            25600000
+          ],
+          [
+            -12298973,
+            25600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "8f4f62dfad4ee7a343853fc1c2aa51952ab42082ae5470d5db7f58c96d98ef8e",
+        "histogram": {
+          "0": 8174,
+          "1": 8210
+        },
+        "interval": [
+          [
+            12298973,
+            25600000
+          ],
+          [
+            13357277,
+            25600000
+          ]
+        ],
+        "mean": [
+          4105,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/separate_loops2/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "fork3",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9deaec3c7589bc377850752e22493cea675ac70de11547f35ae4b714daece23e",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/fork3/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "fork3",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9deaec3c7589bc377850752e22493cea675ac70de11547f35ae4b714daece23e",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/fork3/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "fork3",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9deaec3c7589bc377850752e22493cea675ac70de11547f35ae4b714daece23e",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/fork3/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        0,
+        1
+      ],
+      "graph_id": "fork3",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9deaec3c7589bc377850752e22493cea675ac70de11547f35ae4b714daece23e",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/fork3/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 65536,
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        29,
+        90
+      ],
+      "graph_id": "mixed3",
+      "result": {
+        "contrast_interval": [
+          [
+            49659463,
+            153600000
+          ],
+          [
+            56009287,
+            153600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "341fafd018b092b53c12dac9c5ec96403700442f503059a3128230b01f7fbafd",
+        "histogram": {
+          "0": 4876,
+          "1/3": 7155,
+          "2/3": 4353
+        },
+        "interval": [
+          [
+            15463571,
+            51200000
+          ],
+          [
+            17580179,
+            51200000
+          ]
+        ],
+        "mean": [
+          5287,
+          16384
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/mixed3/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 262144,
+        "words": 65536
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        29,
+        90
+      ],
+      "graph_id": "mixed3",
+      "result": {
+        "contrast_interval": [
+          [
+            50040713,
+            153600000
+          ],
+          [
+            56390537,
+            153600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "341fafd018b092b53c12dac9c5ec96403700442f503059a3128230b01f7fbafd",
+        "histogram": {
+          "0": 4977,
+          "1/3": 7075,
+          "2/3": 4332
+        },
+        "interval": [
+          [
+            46009463,
+            153600000
+          ],
+          [
+            52359287,
+            153600000
+          ]
+        ],
+        "mean": [
+          15739,
+          49152
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/mixed3/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 262144,
+        "words": 65536
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        29,
+        90
+      ],
+      "graph_id": "mixed3",
+      "result": {
+        "contrast_interval": [
+          [
+            49621963,
+            153600000
+          ],
+          [
+            55971787,
+            153600000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "341fafd018b092b53c12dac9c5ec96403700442f503059a3128230b01f7fbafd",
+        "histogram": {
+          "0": 4917,
+          "1/3": 7061,
+          "2/3": 4406
+        },
+        "interval": [
+          [
+            15476071,
+            51200000
+          ],
+          [
+            17592679,
+            51200000
+          ]
+        ],
+        "mean": [
+          5291,
+          16384
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/mixed3/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 262144,
+        "words": 65536
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "exact_mean": [
+        29,
+        90
+      ],
+      "graph_id": "mixed3",
+      "result": {
+        "contrast_interval": [
+          [
+            12296897,
+            38400000
+          ],
+          [
+            13884353,
+            38400000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "341fafd018b092b53c12dac9c5ec96403700442f503059a3128230b01f7fbafd",
+        "histogram": {
+          "0": 4814,
+          "1/3": 7128,
+          "2/3": 4442
+        },
+        "interval": [
+          [
+            11715647,
+            38400000
+          ],
+          [
+            13303103,
+            38400000
+          ]
+        ],
+        "mean": [
+          4003,
+          12288
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/mixed3/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 262144,
+        "words": 65536
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "cycle64",
+      "result": {
+        "contrast_interval": [
+          [
+            -539813341,
+            25804800000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9f514189214759bee560d0acfbd1ed2b1152910e570960c4ff56c91e5cb9141f",
+        "histogram": {
+          "0": 9944,
+          "1/1008": 1278,
+          "1/2016": 4921,
+          "1/504": 22,
+          "1/672": 216,
+          "5/2016": 3
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            539813341,
+            25804800000
+          ]
+        ],
+        "mean": [
+          2057,
+          8257536
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/cycle64/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "cycle64",
+      "result": {
+        "contrast_interval": [
+          [
+            -539757091,
+            25804800000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9f514189214759bee560d0acfbd1ed2b1152910e570960c4ff56c91e5cb9141f",
+        "histogram": {
+          "0": 9948,
+          "1/1008": 1252,
+          "1/2016": 4963,
+          "1/288": 1,
+          "1/504": 20,
+          "1/672": 199,
+          "5/2016": 1
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            539757091,
+            25804800000
+          ]
+        ],
+        "mean": [
+          2039,
+          8257536
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/cycle64/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "cycle64",
+      "result": {
+        "contrast_interval": [
+          [
+            -359862019,
+            17203200000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9f514189214759bee560d0acfbd1ed2b1152910e570960c4ff56c91e5cb9141f",
+        "histogram": {
+          "0": 9904,
+          "1/1008": 1229,
+          "1/2016": 5023,
+          "1/336": 1,
+          "1/504": 32,
+          "1/672": 194,
+          "5/2016": 1
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            359862019,
+            17203200000
+          ]
+        ],
+        "mean": [
+          1367,
+          5505024
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/cycle64/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "cycle64",
+      "result": {
+        "contrast_interval": [
+          [
+            -33733451,
+            1612800000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9f514189214759bee560d0acfbd1ed2b1152910e570960c4ff56c91e5cb9141f",
+        "histogram": {
+          "0": 9984,
+          "1/1008": 1240,
+          "1/2016": 4930,
+          "1/504": 24,
+          "1/672": 204,
+          "5/2016": 2
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            33733451,
+            1612800000
+          ]
+        ],
+        "mean": [
+          127,
+          516096
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/cycle64/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "loops64",
+      "result": {
+        "contrast_interval": [
+          [
+            -2158987739,
+            103219200000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "362e3869b8aa3da14094d23aec4b51d277b269b4ca5f97790d9849aeee51b82b",
+        "histogram": {
+          "0": 9990,
+          "1/1008": 1210,
+          "1/2016": 4933,
+          "1/504": 37,
+          "1/672": 214
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2158987739,
+            103219200000
+          ]
+        ],
+        "mean": [
+          8143,
+          33030144
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/loops64/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "loops64",
+      "result": {
+        "contrast_interval": [
+          [
+            -2158943989,
+            103219200000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "362e3869b8aa3da14094d23aec4b51d277b269b4ca5f97790d9849aeee51b82b",
+        "histogram": {
+          "0": 10023,
+          "1/1008": 1264,
+          "1/2016": 4858,
+          "1/504": 22,
+          "1/672": 215,
+          "5/2016": 2
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2158943989,
+            103219200000
+          ]
+        ],
+        "mean": [
+          8129,
+          33030144
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/loops64/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "loops64",
+      "result": {
+        "contrast_interval": [
+          [
+            -2159118989,
+            103219200000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "362e3869b8aa3da14094d23aec4b51d277b269b4ca5f97790d9849aeee51b82b",
+        "histogram": {
+          "0": 9965,
+          "1/1008": 1268,
+          "1/2016": 4917,
+          "1/504": 20,
+          "1/672": 209,
+          "5/2016": 5
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2159118989,
+            103219200000
+          ]
+        ],
+        "mean": [
+          8185,
+          33030144
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/loops64/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "loops64",
+      "result": {
+        "contrast_interval": [
+          [
+            -719695913,
+            34406400000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "362e3869b8aa3da14094d23aec4b51d277b269b4ca5f97790d9849aeee51b82b",
+        "histogram": {
+          "0": 9984,
+          "1/1008": 1217,
+          "1/2016": 4923,
+          "1/504": 24,
+          "1/672": 229,
+          "5/2016": 7
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            719695913,
+            34406400000
+          ]
+        ],
+        "mean": [
+          2725,
+          11010048
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/loops64/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "rare_support2x64",
+      "result": {
+        "contrast_interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "b0c2fde552b0e38a1e0be5ae56af5459ab67b3c38af9db18f7d510784537eaf1",
+        "histogram": {
+          "1": 16384
+        },
+        "interval": [
+          [
+            97933,
+            100000
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mean": [
+          1,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/rare_support2x64/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "rare_support2x64",
+      "result": {
+        "contrast_interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "b0c2fde552b0e38a1e0be5ae56af5459ab67b3c38af9db18f7d510784537eaf1",
+        "histogram": {
+          "1": 16384
+        },
+        "interval": [
+          [
+            97933,
+            100000
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mean": [
+          1,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/rare_support2x64/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "rare_support2x64",
+      "result": {
+        "contrast_interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "b0c2fde552b0e38a1e0be5ae56af5459ab67b3c38af9db18f7d510784537eaf1",
+        "histogram": {
+          "1": 16384
+        },
+        "interval": [
+          [
+            97933,
+            100000
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mean": [
+          1,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/rare_support2x64/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "rare_support2x64",
+      "result": {
+        "contrast_interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "b0c2fde552b0e38a1e0be5ae56af5459ab67b3c38af9db18f7d510784537eaf1",
+        "histogram": {
+          "1": 16384
+        },
+        "interval": [
+          [
+            97933,
+            100000
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "mean": [
+          1,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/rare_support2x64/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4128768,
+        "words": 1032192
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "star64",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ef8e8fffa3f69354aa74c868d0cf42f26fae71ccf23279e55aeb3b3d11e4ae5d",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/star64/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4063232,
+        "words": 1015808
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "star64",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ef8e8fffa3f69354aa74c868d0cf42f26fae71ccf23279e55aeb3b3d11e4ae5d",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/star64/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4063232,
+        "words": 1015808
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "star64",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ef8e8fffa3f69354aa74c868d0cf42f26fae71ccf23279e55aeb3b3d11e4ae5d",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/star64/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4063232,
+        "words": 1015808
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "star64",
+      "result": {
+        "contrast_interval": [
+          [
+            -2067,
+            100000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ef8e8fffa3f69354aa74c868d0cf42f26fae71ccf23279e55aeb3b3d11e4ae5d",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            2067,
+            100000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/star64/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 4063232,
+        "words": 1015808
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "envelope56x54",
+      "result": {
+        "contrast_interval": [
+          [
+            -165456941,
+            7884800000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "a4698213e04da78cfe0a5f8e075b78118d5777e3649ea58312537d9586596519",
+        "histogram": {
+          "0": 10099,
+          "1/1540": 4880,
+          "1/385": 22,
+          "1/770": 1187,
+          "3/1540": 196
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            165456941,
+            7884800000
+          ]
+        ],
+        "mean": [
+          793,
+          2523136
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/envelope56x54/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 3473408,
+        "words": 868352
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "envelope56x54",
+      "result": {
+        "contrast_interval": [
+          [
+            -30088137,
+            1433600000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "a4698213e04da78cfe0a5f8e075b78118d5777e3649ea58312537d9586596519",
+        "histogram": {
+          "0": 9981,
+          "1/1540": 5021,
+          "1/308": 2,
+          "1/385": 24,
+          "1/770": 1176,
+          "3/1540": 180
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            30088137,
+            1433600000
+          ]
+        ],
+        "mean": [
+          729,
+          2293760
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/envelope56x54/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 3473408,
+        "words": 868352
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "envelope56x54",
+      "result": {
+        "contrast_interval": [
+          [
+            -165455691,
+            7884800000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "a4698213e04da78cfe0a5f8e075b78118d5777e3649ea58312537d9586596519",
+        "histogram": {
+          "0": 10121,
+          "1/1540": 4846,
+          "1/308": 2,
+          "1/385": 26,
+          "1/770": 1201,
+          "3/1540": 188
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            165455691,
+            7884800000
+          ]
+        ],
+        "mean": [
+          3963,
+          12615680
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/envelope56x54/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 3473408,
+        "words": 868352
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "envelope56x54",
+      "result": {
+        "contrast_interval": [
+          [
+            -15038131,
+            716800000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "a4698213e04da78cfe0a5f8e075b78118d5777e3649ea58312537d9586596519",
+        "histogram": {
+          "0": 10111,
+          "1/1540": 4935,
+          "1/308": 1,
+          "1/385": 18,
+          "1/770": 1159,
+          "3/1540": 160
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            15038131,
+            716800000
+          ]
+        ],
+        "mean": [
+          71,
+          229376
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/envelope56x54/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 3473408,
+        "words": 868352
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "parallel9",
+      "result": {
+        "contrast_interval": [
+          [
+            -469269,
+            3200000
+          ],
+          [
+            -336981,
+            3200000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "d2f1eb44e34eb06547540d2c667110a22b5a1bfa60265bf033f2b7ff0574ac1e",
+        "histogram": {
+          "0": 844,
+          "1/3": 8504,
+          "2/3": 7036
+        },
+        "interval": [
+          [
+            4210943,
+            9600000
+          ],
+          [
+            4607807,
+            9600000
+          ]
+        ],
+        "mean": [
+          1411,
+          3072
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/parallel9/root/0",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "eea8ad5106e94887565e39c1a212408ffb15393f884ed5374e9663f2d4bed6d9",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 524288,
+        "words": 131072
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "parallel9",
+      "result": {
+        "contrast_interval": [
+          [
+            -11209331,
+            76800000
+          ],
+          [
+            -8034419,
+            76800000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "d2f1eb44e34eb06547540d2c667110a22b5a1bfa60265bf033f2b7ff0574ac1e",
+        "histogram": {
+          "0": 843,
+          "1/3": 8540,
+          "2/3": 7001
+        },
+        "interval": [
+          [
+            11211473,
+            25600000
+          ],
+          [
+            12269777,
+            25600000
+          ]
+        ],
+        "mean": [
+          3757,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/parallel9/root/1",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "d1f2db69dbfc319c6502032727669ab100d43c9704c9cc725524ab7ccc47ff67",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 524288,
+        "words": 131072
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "parallel9",
+      "result": {
+        "contrast_interval": [
+          [
+            -11246831,
+            76800000
+          ],
+          [
+            -8071919,
+            76800000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "d2f1eb44e34eb06547540d2c667110a22b5a1bfa60265bf033f2b7ff0574ac1e",
+        "histogram": {
+          "0": 857,
+          "1/3": 8488,
+          "2/3": 7039
+        },
+        "interval": [
+          [
+            11223973,
+            25600000
+          ],
+          [
+            12282277,
+            25600000
+          ]
+        ],
+        "mean": [
+          3761,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/parallel9/root/2",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "74d5c3d41cedcf0a41c0ea3cd6eb5361d5296b022339282973ccaee8ee7150a4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 524288,
+        "words": 131072
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "exact_mean": null,
+      "graph_id": "parallel9",
+      "result": {
+        "contrast_interval": [
+          [
+            -11153081,
+            76800000
+          ],
+          [
+            -7978169,
+            76800000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "d2f1eb44e34eb06547540d2c667110a22b5a1bfa60265bf033f2b7ff0574ac1e",
+        "histogram": {
+          "0": 889,
+          "1/3": 8484,
+          "2/3": 7011
+        },
+        "interval": [
+          [
+            11192723,
+            25600000
+          ],
+          [
+            12251027,
+            25600000
+          ]
+        ],
+        "mean": [
+          3751,
+          8192
+        ],
+        "mode": "sampled",
+        "query": "mu/R05f-cal-v1/parallel9/root/3",
+        "quota": 56,
+        "radius": [
+          2067,
+          100000
+        ],
+        "root": "608c205ca4639fb24ab8bbadaa92404ce72736493e1904ed36bc08b420fc75e4",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid permutation model",
+        "word_budget": 524288,
+        "words": 131072
+      },
+      "root_index": 3
+    }
+  ],
+  "radius": [
+    2067,
+    100000
+  ],
+  "rare_support": {
+    "consequence": "A finite constant sample cannot certify degeneracy.",
+    "edges": 64,
+    "nodes": 2,
+    "witnessed_scores": [
+      0,
+      1
+    ],
+    "zero_score_probability": [
+      1,
+      1832624140942590534
+    ]
+  },
+  "scientific_status": "untested",
+  "source_sha256": {
+    "analysis/g2_measurements.py": "2eeb8165f7097c9ef1ea066c897910dd1c2f39f34d4dcd0cd28703177a128cae",
+    "analysis/g2_observer_v1.py": "80ac8a91210d8ace15450687e35000c08778d767def67cdad0a9090c1a5cf611",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r05f-observer.md": "518825442d1af5a5cfd135c2ccd268ce835d63df3d6d885576be46365a9e37fe",
+    "protocols/r05c.json": "f85d01805b1ec24fcaa37b71402f6c7c3bf51d5740072783184fa9bde447b74f",
+    "protocols/r05e-observer-design.json": "097c890bce9c4d9591f2ae7996e73f5a51ce01cd3c323e69f8c0fcd473c9f3c5",
+    "protocols/r05e-repair.json": "149e2b95b6406d6dc95c57127b9cf023648aa6207f14b9d296fc4bf9fed5afbb",
+    "protocols/r05e.json": "dade3d46146c0d797ccd34c4055d37d6224f22ed13fbf2ef968aa72a8af11631",
+    "reports/r05c.json": "7a57bedb748b31c003bdf32e9e729f9370fbd99f14883734fb9f35524f5a40e5",
+    "reports/r05d.json": "e3c8494d55d1de30374d1038a0f9ba139e688998ec97807a1f4493353e6eb02e",
+    "reports/r05e-custody.json": "63135a58d6dcbb3119486cdb7d92c10778c655d58bcbd078ed97f83154d7793d",
+    "reports/r05e.json": "6716584c719861f7f993cf129c2889ec48266dbab741f09e3812a616c20ea8de",
+    "scripts/audit_r04.py": "da08da96810bf399e4f29b2099e974006eced0482f515f924565bc18f54a561f",
+    "scripts/audit_r05.py": "d84631d35d0f1e04309af1ebbc66acfe04e9577fa53f6758d67b3b3323112131",
+    "scripts/audit_r05e.py": "1afe5829f1173830e6b853d89e6903d54cf9947411beade0035d5202bb277071",
+    "scripts/calibrate_r05c.py": "175e1e79830073b1594fc7714c109df74a42d21a4f501f5514abf1059fbee421",
+    "scripts/calibrate_r05f.py": "745857035d5fc1744293b6145b87862939fdec787bc44e06185bfc43471ca117",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "scripts/verify_r05d.py": "2dd0f868bcfca5eeb0ef94262a4a9b131634f9a376c2fab907a0d6705efcea07",
+    "tests/test_g2_observer_v1.py": "5abdb9c087136b5d974339c3195a36b499d7fff94466523be065f276411d28a2"
+  },
+  "trace_bytes": 192908683,
+  "trace_sha256": "6f99135f06239a84d24c65b0ddc3b83643665b8c8bf6d2f46db28d67da66e1b2"
+}

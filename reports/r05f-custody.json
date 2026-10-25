@@ -1,0 +1,69 @@
+{
+  "actual_completed_attempt_bytes": 192987707,
+  "attempts": 1,
+  "campaign_authorized": false,
+  "completed_attempt": "r05f-001",
+  "files": {
+    "analysis/g2_observer_v1.py": {
+      "bytes": 10817,
+      "sha256": "80ac8a91210d8ace15450687e35000c08778d767def67cdad0a9090c1a5cf611"
+    },
+    "docs/r05f-observer.md": {
+      "bytes": 4217,
+      "sha256": "518825442d1af5a5cfd135c2ccd268ce835d63df3d6d885576be46365a9e37fe"
+    },
+    "protocols/r05f.json": {
+      "bytes": 3499,
+      "sha256": "ccc6132177e8efb0d244912fab37637b257ce1e1997b89617bd09f26720f13d8"
+    },
+    "reports/r05f-execution.json": {
+      "bytes": 317,
+      "sha256": "13048b675716c79d5346d8324f2853f7d892b44c1041e9cd8e474435079a9e61"
+    },
+    "reports/r05f.json": {
+      "bytes": 78620,
+      "sha256": "2c444f25548fce81b71565c874d429bb9fa4b77bceb95c4c3e5bdf72c7ae4495"
+    },
+    "reports/r05f.md": {
+      "bytes": 4160,
+      "sha256": "60d400a856b8423088ec40625758febe027cbeff46a8a32a99682655edca5c1f"
+    },
+    "results/r05f-001/calibration.json": {
+      "bytes": 78620,
+      "sha256": "2c444f25548fce81b71565c874d429bb9fa4b77bceb95c4c3e5bdf72c7ae4495"
+    },
+    "results/r05f-001/draws.jsonl": {
+      "bytes": 192908683,
+      "sha256": "6f99135f06239a84d24c65b0ddc3b83643665b8c8bf6d2f46db28d67da66e1b2"
+    },
+    "results/r05f-001/execution.json": {
+      "bytes": 317,
+      "sha256": "13048b675716c79d5346d8324f2853f7d892b44c1041e9cd8e474435079a9e61"
+    },
+    "results/r05f-001/started.json": {
+      "bytes": 87,
+      "sha256": "402f9c8b55a83baf4c5b3f131337ffbb61c960f6b4c77e785df7a202cf55ccd9"
+    },
+    "scripts/calibrate_r05f.py": {
+      "bytes": 16510,
+      "sha256": "745857035d5fc1744293b6145b87862939fdec787bc44e06185bfc43471ca117"
+    },
+    "tests/test_g2_observer_v1.py": {
+      "bytes": 5531,
+      "sha256": "5abdb9c087136b5d974339c3195a36b499d7fff94466523be065f276411d28a2"
+    }
+  },
+  "global_wall_seconds_limit": 600,
+  "holdout_jobs_executed": 0,
+  "ledger_digest_and_bytes_verified": true,
+  "native_world_runs": 0,
+  "promotion_authorized": false,
+  "protocol_id": "R05f-v1",
+  "public_replay_without_local_results_or_binaries": true,
+  "public_source_export_replay": "pass",
+  "public_verification_command": "python3 -B scripts/calibrate_r05f.py --verify reports/r05f.json",
+  "python_tests_passed": 91,
+  "retained_bytes_limit": 536870912,
+  "scientific_status": "untested",
+  "status": "pass"
+}

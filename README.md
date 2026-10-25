@@ -137,8 +137,18 @@ changed, and no null sampling or campaign was run.
 python3 -B scripts/audit_r05e.py --verify reports/r05e.json
 ```
 
-G2 scientific status remains untested. Next is R05f: implement the versioned
-observer and run its separately source-bound synthetic calibration, preserving
-the geometric limitation and existing campaign-readiness boundary.
+The [R05f observer](docs/r05f-observer.md) is implemented and its
+[source-bound synthetic calibration](reports/r05f.md) passed all 56 queries and
+917,504 independently replayed null draws. All 32 small known-mean intervals
+covered their exact means. Larger controls passed invariants; their unknown null
+means have no coverage claim. Constant samples remain unresolved.
+
+```sh
+python3 -B scripts/calibrate_r05f.py --verify reports/r05f.json
+```
+
+G2 scientific status remains untested. Next is a separately registered read-only
+readiness and hypothesis review. The geometric limitation and failed campaign
+readiness gate remain in force; no campaign or metric change is authorized.
 
 Public repository: https://github.com/kalewicker/minimal-universe

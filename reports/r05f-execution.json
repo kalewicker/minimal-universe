@@ -1,0 +1,8 @@
+{
+  "audit_status": "pass",
+  "elapsed_seconds": 66.00489462539554,
+  "protocol_id": "R05f-v1",
+  "receipt_sha256": "2c444f25548fce81b71565c874d429bb9fa4b77bceb95c4c3e5bdf72c7ae4495",
+  "retained_bytes_before_receipt": 192987390,
+  "trace_sha256": "6f99135f06239a84d24c65b0ddc3b83643665b8c8bf6d2f46db28d67da66e1b2"
+}
