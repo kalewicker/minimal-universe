@@ -1,0 +1,402 @@
+{
+  "campaign_authorized": false,
+  "campaign_query_quota": null,
+  "claim_limit": "Analytical synthetic compatibility only. A size-resistant normalization does not establish informative nulls, power, structural enrichment, causal effects, biological function or self-reference. This is a separate proposed hypothesis; frozen R02 criteria and all prior receipts remain unchanged.",
+  "definitions": {
+    "edge_budget": "2R / E_total, undefined E_total=0; loops and redundant parallel copies consume budget without increasing R",
+    "occurrence_fraction": "M_reverse_supported_nonloop_occurrences / L_nonloop_occurrences, undefined L=0",
+    "pair_density": "R / choose(N,2), undefined N<2",
+    "support_fraction": "2R / S_distinct_nonloop, undefined S=0"
+  },
+  "design_id": "R06a-observable-design-v1",
+  "exact_null_max_edges": 8,
+  "exhaustive_controls": "Every directed endpoint multiset of lengths 0..4 on N=1,2,3, plus the N=0 empty graph; 791 graphs. No G2 rule/seed panel.",
+  "holdout_authorized": false,
+  "intervention_estimand": "Draft parent-level paired subsequent change (Q_target,50-Q_target,0)-(Q_sham,50-Q_sham,0), initial scores immediately post intervention, fixed scheduler, successful-event horizon 50. This excludes instantaneous score change, includes update-competition effects, and does not establish a valid sham or identified local effect. Unavailable/undefined endpoints keep a null pair and all parent denominators.",
+  "metric_order": [
+    "pair_density",
+    "edge_budget",
+    "support_fraction",
+    "occurrence_fraction"
+  ],
+  "named_graphs": [
+    {
+      "edges": [],
+      "id": "empty0",
+      "nodes": 0
+    },
+    {
+      "edges": [],
+      "id": "empty2",
+      "nodes": 2
+    },
+    {
+      "edges": [
+        [
+          0,
+          0
+        ]
+      ],
+      "id": "single_loop",
+      "nodes": 1
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "id": "single_nonloop",
+      "nodes": 2
+    },
+    {
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "id": "aliased_loops",
+      "nodes": 1
+    },
+    {
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "id": "separate_loops2",
+      "nodes": 2
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "id": "reciprocal2",
+      "nodes": 2
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "id": "path3",
+      "nodes": 3
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "id": "cycle3",
+      "nodes": 3
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "id": "weighted_pair",
+      "nodes": 2
+    }
+  ],
+  "null_policy": "Uniform labelled target-stub permutations with fixed source stubs. Retain every undefined outcome with its mass. Any undefined null mass makes the unconditional null mean unavailable; never condition it away. Exact constants remain degenerate, not informative. No sampled nulls here.",
+  "paired_arithmetic_controls": [
+    {
+      "endpoint_status": "reached",
+      "expected": [
+        0,
+        1
+      ],
+      "id": "zero",
+      "scores": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "endpoint_status": "reached",
+      "expected": [
+        0,
+        1
+      ],
+      "id": "immediate_offset_only",
+      "scores": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "endpoint_status": "reached",
+      "expected": [
+        0,
+        1
+      ],
+      "id": "equal_subsequent_change",
+      "scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "endpoint_status": "reached",
+      "expected": [
+        1,
+        1
+      ],
+      "id": "delayed_gain",
+      "scores": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "endpoint_status": "reached",
+      "expected": [
+        -1,
+        1
+      ],
+      "id": "negative_change",
+      "scores": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "endpoint_status": "terminal_before_horizon",
+      "expected": null,
+      "id": "terminal",
+      "scores": [
+        [
+          0,
+          1
+        ],
+        null,
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "endpoint_status": "resource_censored",
+      "expected": null,
+      "id": "censored",
+      "scores": [
+        [
+          0,
+          1
+        ],
+        null,
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "endpoint_status": "domain_unsupported",
+      "expected": null,
+      "id": "unsupported",
+      "scores": [
+        [
+          0,
+          1
+        ],
+        null,
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "endpoint_status": "reached",
+      "expected": null,
+      "id": "reached_undefined",
+      "scores": [
+        null,
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "physical_question": "How much of a nonempty graph edge-occurrence budget supports distinct reciprocal relations beyond what its degree sequences predict? This asks about edge allocation, not life, self-reference or identified context-sensitive causation.",
+  "physical_tradeoffs": "Isolates do not consume edge budget. Loops and redundant parallel copies do; this is a hypothesis choice and not a universal structural importance ordering.",
+  "power_design": null,
+  "production_status": "analytical_candidates_only",
+  "promotion_authorized": false,
+  "proposed_successful_event_horizon": 50,
+  "retention": "Full synthetic graph and null-permutation rows, both score implementations, histogram probabilities and undefined masses, complete failures. Raw-only scaling graphs above eight edges get no null mean or coverage claim.",
+  "scaling": {
+    "added_loops": [
+      0,
+      1,
+      2,
+      6
+    ],
+    "isolate_nodes": [
+      2,
+      3,
+      8,
+      32,
+      64
+    ],
+    "parallel_multiplicities": [
+      1,
+      2,
+      4
+    ],
+    "reciprocal_copies": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ]
+  },
+  "scientific_alpha": null,
+  "scientific_effect_threshold": null,
+  "scientific_parent_count": null,
+  "selection_policy": "Recommend every candidate meeting all five fixed criteria (bounded, defined_nonempty, total_nonempty_exact_null, isolate_invariant, reciprocal_copy_invariant) for separately registered calibration only. Retain ties and no-candidate results. Never select by null contrast magnitude, favorable laws or saved trajectories; no production metric adoption."
+}

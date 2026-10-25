@@ -47,9 +47,15 @@ conditional observer size support while retaining the failed readiness gate and
 unregistered scientific requirements. The maximum fresh-node event-50 density
 ceiling is 9/425, below 0.05 for the proposed density-minus-null contrast; this
 does not bound every possible G2 hypothesis or the paired intervention effect.
-Next is a separately registered observable/hypothesis design review, with
-size-scaling and synthetic controls before choosing any replacement. A changed
-metric or hypothesis needs a separate decision and protocol.
+[R06a](../reports/r06a.md) completed the separately registered analytical
+observable/hypothesis review, with fixed synthetic scaling and null controls.
+Among four candidates, 2R/E met the declared edge-allocation criteria and is
+recommended only for a separate implementation/calibration stage. Undefined
+null mass in the support and occurrence fractions was retained. No production
+metric, scientific threshold or scientific eligibility was changed. Next is
+R06b: a separately versioned reference observer and source-bound synthetic
+calibration for the proposed edge-budget question. Scientific adoption still
+requires its own hypothesis, intervention design, power and campaign registration.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

@@ -158,9 +158,21 @@ unavailable/undefined cells and motif exclusions remain visible.
 python3 -B scripts/review_r05g.py --verify reports/r05g.json
 ```
 
+The [R06a observable design review](reports/r06a.md) compared four fixed candidates
+on 819 synthetic graph fixtures and 135,086 exact labelled null permutations.
+It recommends **2R/E**, reciprocal pairs per edge-occurrence budget, for a
+separate versioned implementation and calibration. This proposed edge-allocation
+question avoids isolate dilution while explicitly charging loops and redundant
+parallel copies to the budget. Other candidates' undefined null outcomes remain
+visible; no null mean was computed by discarding them.
+
+```sh
+python3 -B scripts/design_r06a.py --verify reports/r06a.json
+```
+
 G2 scientific status remains untested and campaign readiness remains blocked.
-Next is a separately registered observable/hypothesis design review, including
-size-scaling analysis before any replacement is chosen. No campaign, selected
-subgrammar, shorter atlas or metric change is authorized by this review.
+Next is separately registered R06b observer implementation and synthetic
+calibration. R02's production criteria and all consumed evidence remain unchanged;
+no campaign, selected subgrammar or shorter atlas was launched.
 
 Public repository: https://github.com/kalewicker/minimal-universe

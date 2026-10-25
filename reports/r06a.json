@@ -1,0 +1,4043 @@
+{
+  "audit_status": "pass",
+  "campaign_authorized": false,
+  "candidate_scientific_statistics_evaluated": 0,
+  "counts": {
+    "exact_metric_null_summaries": 3264,
+    "exact_null_graphs": 816,
+    "exhaustive_graphs": 791,
+    "graphs": 819,
+    "labelled_null_permutations": 135086,
+    "named_or_scaling_graphs": 28,
+    "raw_only_graphs": 3
+  },
+  "criteria": {
+    "edge_budget": {
+      "bounded": true,
+      "defined_nonempty": true,
+      "isolate_invariant": true,
+      "reciprocal_copy_invariant": true,
+      "total_nonempty_exact_null": true
+    },
+    "occurrence_fraction": {
+      "bounded": true,
+      "defined_nonempty": false,
+      "isolate_invariant": true,
+      "reciprocal_copy_invariant": true,
+      "total_nonempty_exact_null": false
+    },
+    "pair_density": {
+      "bounded": true,
+      "defined_nonempty": false,
+      "isolate_invariant": false,
+      "reciprocal_copy_invariant": false,
+      "total_nonempty_exact_null": false
+    },
+    "support_fraction": {
+      "bounded": true,
+      "defined_nonempty": false,
+      "isolate_invariant": true,
+      "reciprocal_copy_invariant": true,
+      "total_nonempty_exact_null": false
+    }
+  },
+  "design_status": "analytical_review_complete_not_production_calibration",
+  "draft_intervention_estimand": "Draft parent-level paired subsequent change (Q_target,50-Q_target,0)-(Q_sham,50-Q_sham,0), initial scores immediately post intervention, fixed scheduler, successful-event horizon 50. This excludes instantaneous score change, includes update-competition effects, and does not establish a valid sham or identified local effect. Unavailable/undefined endpoints keep a null pair and all parent denominators.",
+  "exact_null_statuses": {
+    "edge_budget": {
+      "degenerate": 390,
+      "informative": 420,
+      "observed_undefined": 6
+    },
+    "occurrence_fraction": {
+      "degenerate": 364,
+      "informative": 323,
+      "null_contains_undefined": 68,
+      "observed_undefined": 61
+    },
+    "pair_density": {
+      "degenerate": 387,
+      "informative": 420,
+      "observed_undefined": 9
+    },
+    "support_fraction": {
+      "degenerate": 364,
+      "informative": 323,
+      "null_contains_undefined": 68,
+      "observed_undefined": 61
+    }
+  },
+  "g2_rule_or_seed_panels_scored": 0,
+  "graph_transitions_executed": 0,
+  "holdout_jobs_executed": 0,
+  "hypothesis": "How much of a nonempty graph edge-occurrence budget supports distinct reciprocal relations beyond what its degree sequences predict? This asks about edge allocation, not life, self-reference or identified context-sensitive causation.",
+  "native_runs": 0,
+  "next_boundary": "If any candidate meets all declared analytical criteria, separately register R06b versioned reference-observer implementation and source-bound synthetic calibration before any production adoption or scientific campaign. Preserve ties or no-candidate outcomes; no downstream stage is launched here.",
+  "paired_controls": [
+    {
+      "effect": [
+        0,
+        1
+      ],
+      "endpoint_status": "reached",
+      "id": "zero"
+    },
+    {
+      "effect": [
+        0,
+        1
+      ],
+      "endpoint_status": "reached",
+      "id": "immediate_offset_only"
+    },
+    {
+      "effect": [
+        0,
+        1
+      ],
+      "endpoint_status": "reached",
+      "id": "equal_subsequent_change"
+    },
+    {
+      "effect": [
+        1,
+        1
+      ],
+      "endpoint_status": "reached",
+      "id": "delayed_gain"
+    },
+    {
+      "effect": [
+        -1,
+        1
+      ],
+      "endpoint_status": "reached",
+      "id": "negative_change"
+    },
+    {
+      "effect": null,
+      "endpoint_status": "terminal_before_horizon",
+      "id": "terminal"
+    },
+    {
+      "effect": null,
+      "endpoint_status": "resource_censored",
+      "id": "censored"
+    },
+    {
+      "effect": null,
+      "endpoint_status": "domain_unsupported",
+      "id": "unsupported"
+    },
+    {
+      "effect": null,
+      "endpoint_status": "reached",
+      "id": "reached_undefined"
+    }
+  ],
+  "positive_and_negative_controls": [
+    {
+      "exact_null": {
+        "edge_budget": {
+          "contrast": [
+            1,
+            2
+          ],
+          "distribution": [
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                1,
+                1
+              ]
+            }
+          ],
+          "mean": [
+            1,
+            2
+          ],
+          "status": "informative",
+          "undefined_mass": [
+            0,
+            1
+          ]
+        },
+        "occurrence_fraction": {
+          "contrast": null,
+          "distribution": [
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": null
+            },
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                1,
+                1
+              ]
+            }
+          ],
+          "mean": null,
+          "status": "null_contains_undefined",
+          "undefined_mass": [
+            1,
+            2
+          ]
+        },
+        "pair_density": {
+          "contrast": [
+            1,
+            2
+          ],
+          "distribution": [
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                1,
+                1
+              ]
+            }
+          ],
+          "mean": [
+            1,
+            2
+          ],
+          "status": "informative",
+          "undefined_mass": [
+            0,
+            1
+          ]
+        },
+        "support_fraction": {
+          "contrast": null,
+          "distribution": [
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": null
+            },
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                1,
+                1
+              ]
+            }
+          ],
+          "mean": null,
+          "status": "null_contains_undefined",
+          "undefined_mass": [
+            1,
+            2
+          ]
+        }
+      },
+      "graph": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "family": "named",
+        "id": "reciprocal2",
+        "nodes": 2
+      },
+      "scores": {
+        "edge_budget": [
+          1,
+          1
+        ],
+        "occurrence_fraction": [
+          1,
+          1
+        ],
+        "pair_density": [
+          1,
+          1
+        ],
+        "support_fraction": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "exact_null": {
+        "edge_budget": {
+          "contrast": [
+            -1,
+            2
+          ],
+          "distribution": [
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                1,
+                1
+              ]
+            }
+          ],
+          "mean": [
+            1,
+            2
+          ],
+          "status": "informative",
+          "undefined_mass": [
+            0,
+            1
+          ]
+        },
+        "occurrence_fraction": {
+          "contrast": null,
+          "distribution": [
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": null
+            },
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                1,
+                1
+              ]
+            }
+          ],
+          "mean": null,
+          "status": "observed_undefined",
+          "undefined_mass": [
+            1,
+            2
+          ]
+        },
+        "pair_density": {
+          "contrast": [
+            -1,
+            2
+          ],
+          "distribution": [
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                0,
+                1
+              ]
+            },
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                1,
+                1
+              ]
+            }
+          ],
+          "mean": [
+            1,
+            2
+          ],
+          "status": "informative",
+          "undefined_mass": [
+            0,
+            1
+          ]
+        },
+        "support_fraction": {
+          "contrast": null,
+          "distribution": [
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": null
+            },
+            {
+              "count": 1,
+              "probability": [
+                1,
+                2
+              ],
+              "score": [
+                1,
+                1
+              ]
+            }
+          ],
+          "mean": null,
+          "status": "observed_undefined",
+          "undefined_mass": [
+            1,
+            2
+          ]
+        }
+      },
+      "graph": {
+        "edges": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "family": "named",
+        "id": "separate_loops2",
+        "nodes": 2
+      },
+      "scores": {
+        "edge_budget": [
+          0,
+          1
+        ],
+        "occurrence_fraction": null,
+        "pair_density": [
+          0,
+          1
+        ],
+        "support_fraction": null
+      }
+    }
+  ],
+  "production_metric_adopted": false,
+  "promotion_authorized": false,
+  "protocol_id": "R06a-v1",
+  "protocol_sha256": "ff94bc9a74a27b2f926463f72f9a22796838c34a9201083f49c50e25f7e220c9",
+  "random_null_draws_executed": 0,
+  "recommend_for_next_calibration": [
+    "edge_budget"
+  ],
+  "scaling_results": {
+    "copies": [
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "copies",
+          "id": "copies/1",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              3,
+              4
+            ],
+            "distribution": [
+              {
+                "count": 15,
+                "probability": [
+                  5,
+                  8
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 6,
+                "probability": [
+                  1,
+                  4
+                ],
+                "score": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "count": 3,
+                "probability": [
+                  1,
+                  8
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              4
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  24
+                ],
+                "score": null
+              },
+              {
+                "count": 14,
+                "probability": [
+                  7,
+                  12
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 9,
+                "probability": [
+                  3,
+                  8
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              24
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              4
+            ],
+            "distribution": [
+              {
+                "count": 15,
+                "probability": [
+                  5,
+                  8
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 6,
+                "probability": [
+                  1,
+                  4
+                ],
+                "score": [
+                  1,
+                  6
+                ]
+              },
+              {
+                "count": 3,
+                "probability": [
+                  1,
+                  8
+                ],
+                "score": [
+                  1,
+                  3
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              12
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  24
+                ],
+                "score": null
+              },
+              {
+                "count": 14,
+                "probability": [
+                  7,
+                  12
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 9,
+                "probability": [
+                  3,
+                  8
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              24
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "family": "copies",
+          "id": "copies/2",
+          "nodes": 4
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            3
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              7,
+              8
+            ],
+            "distribution": [
+              {
+                "count": 24465,
+                "probability": [
+                  233,
+                  384
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 12180,
+                "probability": [
+                  29,
+                  96
+                ],
+                "score": [
+                  1,
+                  4
+                ]
+              },
+              {
+                "count": 3150,
+                "probability": [
+                  5,
+                  64
+                ],
+                "score": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "count": 420,
+                "probability": [
+                  1,
+                  96
+                ],
+                "score": [
+                  3,
+                  4
+                ]
+              },
+              {
+                "count": 105,
+                "probability": [
+                  1,
+                  384
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              8
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  40320
+                ],
+                "score": null
+              },
+              {
+                "count": 24464,
+                "probability": [
+                  1529,
+                  2520
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 4480,
+                "probability": [
+                  1,
+                  9
+                ],
+                "score": [
+                  1,
+                  4
+                ]
+              },
+              {
+                "count": 4032,
+                "probability": [
+                  1,
+                  10
+                ],
+                "score": [
+                  2,
+                  7
+                ]
+              },
+              {
+                "count": 2520,
+                "probability": [
+                  1,
+                  16
+                ],
+                "score": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "count": 1120,
+                "probability": [
+                  1,
+                  36
+                ],
+                "score": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "count": 1260,
+                "probability": [
+                  1,
+                  32
+                ],
+                "score": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "count": 1680,
+                "probability": [
+                  1,
+                  24
+                ],
+                "score": [
+                  4,
+                  7
+                ]
+              },
+              {
+                "count": 763,
+                "probability": [
+                  109,
+                  5760
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              40320
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              8
+            ],
+            "distribution": [
+              {
+                "count": 24465,
+                "probability": [
+                  233,
+                  384
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 12180,
+                "probability": [
+                  29,
+                  96
+                ],
+                "score": [
+                  1,
+                  28
+                ]
+              },
+              {
+                "count": 3150,
+                "probability": [
+                  5,
+                  64
+                ],
+                "score": [
+                  1,
+                  14
+                ]
+              },
+              {
+                "count": 420,
+                "probability": [
+                  1,
+                  96
+                ],
+                "score": [
+                  3,
+                  28
+                ]
+              },
+              {
+                "count": 105,
+                "probability": [
+                  1,
+                  384
+                ],
+                "score": [
+                  1,
+                  7
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              56
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  40320
+                ],
+                "score": null
+              },
+              {
+                "count": 24464,
+                "probability": [
+                  1529,
+                  2520
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 4480,
+                "probability": [
+                  1,
+                  9
+                ],
+                "score": [
+                  1,
+                  4
+                ]
+              },
+              {
+                "count": 4032,
+                "probability": [
+                  1,
+                  10
+                ],
+                "score": [
+                  2,
+                  7
+                ]
+              },
+              {
+                "count": 2520,
+                "probability": [
+                  1,
+                  16
+                ],
+                "score": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "count": 1120,
+                "probability": [
+                  1,
+                  36
+                ],
+                "score": [
+                  2,
+                  5
+                ]
+              },
+              {
+                "count": 1260,
+                "probability": [
+                  1,
+                  32
+                ],
+                "score": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "count": 1680,
+                "probability": [
+                  1,
+                  24
+                ],
+                "score": [
+                  4,
+                  7
+                ]
+              },
+              {
+                "count": 763,
+                "probability": [
+                  109,
+                  5760
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              40320
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              6
+            ]
+          ],
+          "family": "copies",
+          "id": "copies/4",
+          "nodes": 8
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            7
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": null,
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              10
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              12
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              14
+            ]
+          ],
+          "family": "copies",
+          "id": "copies/8",
+          "nodes": 16
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            15
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": null,
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              10
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              12
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              17,
+              16
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              18
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              21,
+              20
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              22
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              25,
+              24
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              27,
+              26
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              29,
+              28
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              31,
+              30
+            ]
+          ],
+          "family": "copies",
+          "id": "copies/16",
+          "nodes": 32
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            31
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": null,
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              9
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              10
+            ],
+            [
+              12,
+              13
+            ],
+            [
+              13,
+              12
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              15,
+              14
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              17,
+              16
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              18
+            ],
+            [
+              20,
+              21
+            ],
+            [
+              21,
+              20
+            ],
+            [
+              22,
+              23
+            ],
+            [
+              23,
+              22
+            ],
+            [
+              24,
+              25
+            ],
+            [
+              25,
+              24
+            ],
+            [
+              26,
+              27
+            ],
+            [
+              27,
+              26
+            ],
+            [
+              28,
+              29
+            ],
+            [
+              29,
+              28
+            ],
+            [
+              30,
+              31
+            ],
+            [
+              31,
+              30
+            ],
+            [
+              32,
+              33
+            ],
+            [
+              33,
+              32
+            ],
+            [
+              34,
+              35
+            ],
+            [
+              35,
+              34
+            ],
+            [
+              36,
+              37
+            ],
+            [
+              37,
+              36
+            ],
+            [
+              38,
+              39
+            ],
+            [
+              39,
+              38
+            ],
+            [
+              40,
+              41
+            ],
+            [
+              41,
+              40
+            ],
+            [
+              42,
+              43
+            ],
+            [
+              43,
+              42
+            ],
+            [
+              44,
+              45
+            ],
+            [
+              45,
+              44
+            ],
+            [
+              46,
+              47
+            ],
+            [
+              47,
+              46
+            ],
+            [
+              48,
+              49
+            ],
+            [
+              49,
+              48
+            ],
+            [
+              50,
+              51
+            ],
+            [
+              51,
+              50
+            ],
+            [
+              52,
+              53
+            ],
+            [
+              53,
+              52
+            ],
+            [
+              54,
+              55
+            ],
+            [
+              55,
+              54
+            ],
+            [
+              56,
+              57
+            ],
+            [
+              57,
+              56
+            ],
+            [
+              58,
+              59
+            ],
+            [
+              59,
+              58
+            ],
+            [
+              60,
+              61
+            ],
+            [
+              61,
+              60
+            ],
+            [
+              62,
+              63
+            ],
+            [
+              63,
+              62
+            ]
+          ],
+          "family": "copies",
+          "id": "copies/32",
+          "nodes": 64
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            63
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      }
+    ],
+    "isolates": [
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "isolates",
+          "id": "isolates/2",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              6
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  3
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              6
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "isolates",
+          "id": "isolates/3",
+          "nodes": 3
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            3
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              56
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  28
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              56
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "isolates",
+          "id": "isolates/8",
+          "nodes": 8
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            28
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              992
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  496
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              992
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "isolates",
+          "id": "isolates/32",
+          "nodes": 32
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            496
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              4032
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  2016
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              4032
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "isolates",
+          "id": "isolates/64",
+          "nodes": 64
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            2016
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      }
+    ],
+    "loops": [
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "loops",
+          "id": "loops/0",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              2,
+              9
+            ],
+            "distribution": [
+              {
+                "count": 2,
+                "probability": [
+                  1,
+                  3
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 4,
+                "probability": [
+                  2,
+                  3
+                ],
+                "score": [
+                  2,
+                  3
+                ]
+              }
+            ],
+            "mean": [
+              4,
+              9
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 2,
+                "probability": [
+                  1,
+                  3
+                ],
+                "score": null
+              },
+              {
+                "count": 4,
+                "probability": [
+                  2,
+                  3
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              3
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              3
+            ],
+            "distribution": [
+              {
+                "count": 2,
+                "probability": [
+                  1,
+                  3
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 4,
+                "probability": [
+                  2,
+                  3
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              2,
+              3
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 2,
+                "probability": [
+                  1,
+                  3
+                ],
+                "score": null
+              },
+              {
+                "count": 4,
+                "probability": [
+                  2,
+                  3
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              3
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "family": "loops",
+          "id": "loops/1",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            2,
+            3
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              8
+            ],
+            "distribution": [
+              {
+                "count": 6,
+                "probability": [
+                  1,
+                  4
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 18,
+                "probability": [
+                  3,
+                  4
+                ],
+                "score": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "mean": [
+              3,
+              8
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 6,
+                "probability": [
+                  1,
+                  4
+                ],
+                "score": null
+              },
+              {
+                "count": 18,
+                "probability": [
+                  3,
+                  4
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              4
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              4
+            ],
+            "distribution": [
+              {
+                "count": 6,
+                "probability": [
+                  1,
+                  4
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 18,
+                "probability": [
+                  3,
+                  4
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              3,
+              4
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 6,
+                "probability": [
+                  1,
+                  4
+                ],
+                "score": null
+              },
+              {
+                "count": 18,
+                "probability": [
+                  3,
+                  4
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              4
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "family": "loops",
+          "id": "loops/2",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            2
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              32
+            ],
+            "distribution": [
+              {
+                "count": 5040,
+                "probability": [
+                  1,
+                  8
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 35280,
+                "probability": [
+                  7,
+                  8
+                ],
+                "score": [
+                  1,
+                  4
+                ]
+              }
+            ],
+            "mean": [
+              7,
+              32
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 5040,
+                "probability": [
+                  1,
+                  8
+                ],
+                "score": null
+              },
+              {
+                "count": 35280,
+                "probability": [
+                  7,
+                  8
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              8
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              8
+            ],
+            "distribution": [
+              {
+                "count": 5040,
+                "probability": [
+                  1,
+                  8
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 35280,
+                "probability": [
+                  7,
+                  8
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              7,
+              8
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 5040,
+                "probability": [
+                  1,
+                  8
+                ],
+                "score": null
+              },
+              {
+                "count": 35280,
+                "probability": [
+                  7,
+                  8
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              8
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "family": "loops",
+          "id": "loops/6",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            4
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      }
+    ],
+    "parallels": [
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              2
+            ],
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              1,
+              2
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": null
+              },
+              {
+                "count": 1,
+                "probability": [
+                  1,
+                  2
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              2
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "parallels",
+          "id": "parallels/1",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            1
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              12
+            ],
+            "distribution": [
+              {
+                "count": 4,
+                "probability": [
+                  1,
+                  6
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 20,
+                "probability": [
+                  5,
+                  6
+                ],
+                "score": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "mean": [
+              5,
+              12
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 4,
+                "probability": [
+                  1,
+                  6
+                ],
+                "score": null
+              },
+              {
+                "count": 20,
+                "probability": [
+                  5,
+                  6
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              6
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              6
+            ],
+            "distribution": [
+              {
+                "count": 4,
+                "probability": [
+                  1,
+                  6
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 20,
+                "probability": [
+                  5,
+                  6
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              5,
+              6
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 4,
+                "probability": [
+                  1,
+                  6
+                ],
+                "score": null
+              },
+              {
+                "count": 20,
+                "probability": [
+                  5,
+                  6
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              6
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "parallels",
+          "id": "parallels/2",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            2
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "exact_null": {
+          "edge_budget": {
+            "contrast": [
+              1,
+              280
+            ],
+            "distribution": [
+              {
+                "count": 576,
+                "probability": [
+                  1,
+                  70
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 39744,
+                "probability": [
+                  69,
+                  70
+                ],
+                "score": [
+                  1,
+                  4
+                ]
+              }
+            ],
+            "mean": [
+              69,
+              280
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "occurrence_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 576,
+                "probability": [
+                  1,
+                  70
+                ],
+                "score": null
+              },
+              {
+                "count": 39744,
+                "probability": [
+                  69,
+                  70
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              70
+            ]
+          },
+          "pair_density": {
+            "contrast": [
+              1,
+              70
+            ],
+            "distribution": [
+              {
+                "count": 576,
+                "probability": [
+                  1,
+                  70
+                ],
+                "score": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "count": 39744,
+                "probability": [
+                  69,
+                  70
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": [
+              69,
+              70
+            ],
+            "status": "informative",
+            "undefined_mass": [
+              0,
+              1
+            ]
+          },
+          "support_fraction": {
+            "contrast": null,
+            "distribution": [
+              {
+                "count": 576,
+                "probability": [
+                  1,
+                  70
+                ],
+                "score": null
+              },
+              {
+                "count": 39744,
+                "probability": [
+                  69,
+                  70
+                ],
+                "score": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "mean": null,
+            "status": "null_contains_undefined",
+            "undefined_mass": [
+              1,
+              70
+            ]
+          }
+        },
+        "graph": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "family": "parallels",
+          "id": "parallels/4",
+          "nodes": 2
+        },
+        "scores": {
+          "edge_budget": [
+            1,
+            4
+          ],
+          "occurrence_fraction": [
+            1,
+            1
+          ],
+          "pair_density": [
+            1,
+            1
+          ],
+          "support_fraction": [
+            1,
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "scientific_effect_threshold": null,
+  "scientific_status": "untested",
+  "selection_policy": "Recommend every candidate meeting all five fixed criteria (bounded, defined_nonempty, total_nonempty_exact_null, isolate_invariant, reciprocal_copy_invariant) for separately registered calibration only. Retain ties and no-candidate results. Never select by null contrast magnitude, favorable laws or saved trajectories; no production metric adoption.",
+  "source_sha256": {
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r06a-observable-design.md": "7f4adb22ae4c9b615ab69e7b97403c92b78a0ca184252fd5f0dadc6c21e3b855",
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05f.json": "ccc6132177e8efb0d244912fab37637b257ce1e1997b89617bd09f26720f13d8",
+    "protocols/r05g.json": "59450f8e739fb5353701e4881c441799252281bc43f058509dd07a081f530865",
+    "protocols/r06a-observable-design.json": "e21efb6f73d5f631f38a5acc90995f1fd607828248d3af7e3df26ddb3de8d9a9",
+    "reports/r05e.json": "6716584c719861f7f993cf129c2889ec48266dbab741f09e3812a616c20ea8de",
+    "reports/r05g-custody.json": "4e10e874560246fb1f164ec364b1c1a716a824b836d260823742ebc38501d8ae",
+    "reports/r05g.json": "8a1390546668ab60c758cb1d69bf6b435c2a5f1fb8245a05b76d2c6a4ab693f6",
+    "scripts/design_r06a.py": "753f813aa445fb34145f6787a8c55b971b218c90bc648fe7d9a0c94a9c0171a6",
+    "scripts/review_r05g.py": "ef7bd6efe8a43515102a3c85c4b8ad4934131136f5b0a07f046c3bc1573a88e0",
+    "tests/test_r06a.py": "12f8c27ec0d169d6b5ed1f43f725c50e335fbe44e4c1f00748f9b5dd1f918fa1"
+  },
+  "trace_bytes": 22703031,
+  "trace_sha256": "b26b00dfb7ade39bd89c22c367c2fede62fbf71ba581ffec78cf0b9943f53c47",
+  "trajectory_files_read": 0
+}

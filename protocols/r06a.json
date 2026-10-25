@@ -1,0 +1,47 @@
+{
+  "acceptance": "All fixed synthetic reference scores agree with independent matrix scores and the historical density. Every labelled null preserves degrees and agrees with multiplicity-weighted unique-endpoint enumeration. Exact undefined mass is retained. Fixed scaling criteria and paired arithmetic pass their checks; failed candidate criteria, ties or no candidate are valid analytical outcomes.",
+  "attempt_policy": "Exclusive identified output directory; preserve every error and partial ledger. No changes to formulas, controls, criterion policy or thresholds after results. Code repairs require a separately registered attempt and preserved source; no selected reruns.",
+  "budgets": {
+    "global_wall_seconds": 120,
+    "retained_bytes": 134217728
+  },
+  "campaign_authorized": false,
+  "expected": {
+    "exact_metric_null_summaries": 3264,
+    "exact_null_graphs": 816,
+    "exhaustive_graphs": 791,
+    "graphs": 819,
+    "labelled_null_permutations": 135086,
+    "named_or_scaling_graphs": 28,
+    "raw_only_graphs": 3
+  },
+  "holdout_authorized": false,
+  "kind": "analytical_observable_and_hypothesis_design_review",
+  "next_boundary": "If any candidate meets all declared analytical criteria, separately register R06b versioned reference-observer implementation and source-bound synthetic calibration before any production adoption or scientific campaign. Preserve ties or no-candidate outcomes; no downstream stage is launched here.",
+  "pins_sha256": {
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r06a-observable-design.md": "7f4adb22ae4c9b615ab69e7b97403c92b78a0ca184252fd5f0dadc6c21e3b855",
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05f.json": "ccc6132177e8efb0d244912fab37637b257ce1e1997b89617bd09f26720f13d8",
+    "protocols/r05g.json": "59450f8e739fb5353701e4881c441799252281bc43f058509dd07a081f530865",
+    "protocols/r06a-observable-design.json": "e21efb6f73d5f631f38a5acc90995f1fd607828248d3af7e3df26ddb3de8d9a9",
+    "reports/r05e.json": "6716584c719861f7f993cf129c2889ec48266dbab741f09e3812a616c20ea8de",
+    "reports/r05g-custody.json": "4e10e874560246fb1f164ec364b1c1a716a824b836d260823742ebc38501d8ae",
+    "reports/r05g.json": "8a1390546668ab60c758cb1d69bf6b435c2a5f1fb8245a05b76d2c6a4ab693f6",
+    "scripts/design_r06a.py": "753f813aa445fb34145f6787a8c55b971b218c90bc648fe7d9a0c94a9c0171a6",
+    "scripts/review_r05g.py": "ef7bd6efe8a43515102a3c85c4b8ad4934131136f5b0a07f046c3bc1573a88e0",
+    "tests/test_r06a.py": "12f8c27ec0d169d6b5ed1f43f725c50e335fbe44e4c1f00748f9b5dd1f918fa1"
+  },
+  "production_metric_adopted": false,
+  "promotion_authorized": false,
+  "protocol_id": "R06a-v1",
+  "random_null_draws_authorized": 0,
+  "receipt_chain": [
+    "protocols/r05g.json",
+    "reports/r05g.json",
+    "protocols/r05f.json"
+  ],
+  "scientific_status": "untested",
+  "scope": "Synthetic supplied graphs only; no G2 law/seed panel scoring, trajectory reads, native runs, random null draws, scientific statistics, threshold transfer, held-out work or production metric change.",
+  "world_transitions_authorized": 0
+}

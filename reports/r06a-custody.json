@@ -1,0 +1,72 @@
+{
+  "actual_completed_attempt_bytes": 22787816,
+  "attempts": 1,
+  "campaign_authorized": false,
+  "completed_attempt": "r06a-001",
+  "files": {
+    "docs/r06a-observable-design.md": {
+      "bytes": 7130,
+      "sha256": "7f4adb22ae4c9b615ab69e7b97403c92b78a0ca184252fd5f0dadc6c21e3b855"
+    },
+    "protocols/r06a-observable-design.json": {
+      "bytes": 7978,
+      "sha256": "e21efb6f73d5f631f38a5acc90995f1fd607828248d3af7e3df26ddb3de8d9a9"
+    },
+    "protocols/r06a.json": {
+      "bytes": 3206,
+      "sha256": "ff94bc9a74a27b2f926463f72f9a22796838c34a9201083f49c50e25f7e220c9"
+    },
+    "reports/r06a-execution.json": {
+      "bytes": 316,
+      "sha256": "64615e505561570c5bc2189a4914db48a398de64e787f6676cf81675634d850e"
+    },
+    "reports/r06a.json": {
+      "bytes": 84382,
+      "sha256": "82d75aeec556be65234d7daca6334979add497e993bae7f9101e49c251da50d3"
+    },
+    "reports/r06a.md": {
+      "bytes": 6872,
+      "sha256": "c88e275773c254f36be9016e4d20ae3ef5c4922e2084a479013254cc5b59587e"
+    },
+    "results/r06a-001/controls.jsonl": {
+      "bytes": 22703031,
+      "sha256": "b26b00dfb7ade39bd89c22c367c2fede62fbf71ba581ffec78cf0b9943f53c47"
+    },
+    "results/r06a-001/design.json": {
+      "bytes": 84382,
+      "sha256": "82d75aeec556be65234d7daca6334979add497e993bae7f9101e49c251da50d3"
+    },
+    "results/r06a-001/execution.json": {
+      "bytes": 316,
+      "sha256": "64615e505561570c5bc2189a4914db48a398de64e787f6676cf81675634d850e"
+    },
+    "results/r06a-001/started.json": {
+      "bytes": 87,
+      "sha256": "f16d80038c18bf9741dca184067c49bfff92baa95dc89b7d34180814caa19d16"
+    },
+    "scripts/design_r06a.py": {
+      "bytes": 16246,
+      "sha256": "753f813aa445fb34145f6787a8c55b971b218c90bc648fe7d9a0c94a9c0171a6"
+    },
+    "tests/test_r06a.py": {
+      "bytes": 3959,
+      "sha256": "12f8c27ec0d169d6b5ed1f43f725c50e335fbe44e4c1f00748f9b5dd1f918fa1"
+    }
+  },
+  "global_wall_seconds_limit": 120,
+  "holdout_jobs_executed": 0,
+  "ledger_digest_and_bytes_verified": true,
+  "native_world_runs": 0,
+  "production_metric_adopted": false,
+  "promotion_authorized": false,
+  "protocol_id": "R06a-v1",
+  "public_replay_without_local_results_or_binaries": true,
+  "public_source_export_replay": "pass",
+  "public_verification_command": "python3 -B scripts/design_r06a.py --verify reports/r06a.json",
+  "python_tests_passed": 109,
+  "random_null_draws_executed": 0,
+  "retained_bytes_limit": 134217728,
+  "scientific_status": "untested",
+  "status": "pass",
+  "trajectory_files_read": 0
+}
