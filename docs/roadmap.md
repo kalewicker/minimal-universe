@@ -31,8 +31,14 @@ exposure, bounded survival with terminal probability mass, and synthetic paired
 bookkeeping against independent controls. [R05d](../reports/r05d.md) audited static
 feasibility over all 969 rules and 14 seeds. The current measurements do not support
 the full conditional 50-event panel; kernel size compatibility did not satisfy
-that gate. Next is R05e: a separately registered long-horizon measurement extension
-design, with exact controls for any new estimators before budget pilots or launch.
+that gate. [R05e](../reports/r05e.md) audited a long-horizon observer design and
+registered synthetic calibration matrix. It also established a geometric ceiling
+below the frozen structural-effect threshold for all fresh-node conditional
+event-50 cells under the proposed density-minus-null-mean contrast. A preserved
+software failure was repaired in a new static attempt without changing inputs.
+Next is R05f: implement the versioned observer and register its source-bound
+synthetic calibration. It does not remove the geometric ceiling or authorize a
+scientific campaign; a changed metric or hypothesis needs a separate decision.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

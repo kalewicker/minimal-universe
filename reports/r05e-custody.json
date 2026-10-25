@@ -1,0 +1,61 @@
+{
+  "actual_completed_attempt_bytes": 9178038,
+  "completed_attempt": "r05e-002",
+  "files": {
+    "protocols/r05e-repair.json": {
+      "bytes": 1250,
+      "sha256": "149e2b95b6406d6dc95c57127b9cf023648aa6207f14b9d296fc4bf9fed5afbb"
+    },
+    "reports/r05e-001-custody.json": {
+      "bytes": 1677,
+      "sha256": "d866de6d105c6702b8bc91e023df325c1504772c9258fdc72242e531bf66fbcc"
+    },
+    "reports/r05e-001-failure.json": {
+      "bytes": 228,
+      "sha256": "eb327c38ebebeca1c2b5f6e2160fe3982381b20654602f2da002e2da8df35832"
+    },
+    "reports/r05e-execution.json": {
+      "bytes": 315,
+      "sha256": "a7be2d43442e939f77545e51328c823f37cb56b1c859a125a2e04e701f1cac19"
+    },
+    "reports/r05e-precision.csv": {
+      "bytes": 377,
+      "sha256": "690edd4bc1f61560b20e814ebbdf892e1f2ecf42f1d96dd98394fc232603bfaa"
+    },
+    "reports/r05e.json": {
+      "bytes": 5845,
+      "sha256": "6716584c719861f7f993cf129c2889ec48266dbab741f09e3812a616c20ea8de"
+    },
+    "results/r05e-001/design-checks.jsonl": {
+      "bytes": 9171791,
+      "sha256": "24a16636783c04ac5fc92aeb3e4932921fde5d541b5c8b2d415f6506b86a1adf"
+    },
+    "results/r05e-001/execution.json": {
+      "bytes": 228,
+      "sha256": "eb327c38ebebeca1c2b5f6e2160fe3982381b20654602f2da002e2da8df35832"
+    },
+    "results/r05e-002/design-checks.jsonl": {
+      "bytes": 9171791,
+      "sha256": "24a16636783c04ac5fc92aeb3e4932921fde5d541b5c8b2d415f6506b86a1adf"
+    },
+    "results/r05e-002/design.json": {
+      "bytes": 5845,
+      "sha256": "6716584c719861f7f993cf129c2889ec48266dbab741f09e3812a616c20ea8de"
+    },
+    "results/r05e-002/execution.json": {
+      "bytes": 315,
+      "sha256": "a7be2d43442e939f77545e51328c823f37cb56b1c859a125a2e04e701f1cac19"
+    },
+    "results/r05e-002/started.json": {
+      "bytes": 87,
+      "sha256": "c92a4aab485a7b0672fe72d0d858c948b9fdb98012b94ba9adb642482c72647c"
+    }
+  },
+  "historical_source_commit": "6462d97",
+  "historical_source_verified": true,
+  "preserved_failed_attempt": "r05e-001",
+  "protocol_id": "R05e-v1",
+  "python_tests_passed": 77,
+  "status": "pass",
+  "unchanged_trace_after_source_fix": true
+}

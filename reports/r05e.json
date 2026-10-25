@@ -1,0 +1,253 @@
+{
+  "audit_status": "pass",
+  "campaign_authorized": false,
+  "cell_classifications": {
+    "below_frozen_threshold_upper_bound": 7420,
+    "not_excluded_by_ceiling": 1680,
+    "provably_unavailable_edge_budget": 170,
+    "provably_unavailable_no_initial_match": 3876,
+    "undefined_density": 420
+  },
+  "contrast_scope": "proposed observed density minus conditional degree-null mean, not a new operational definition applied retroactively to existing supplied statistics",
+  "counts": {
+    "conditional_cells": 9520,
+    "precision_rows": 9,
+    "proposed_domain_compatible": 9520,
+    "rule_seed_cells": 13566,
+    "shuffle_choice_vectors": 46234
+  },
+  "design_status": "not_implemented_or_calibrated",
+  "effect_ceiling_summary": {
+    "fresh_cells_below_ceiling": 7420,
+    "fresh_conditional_cells": 7420
+  },
+  "frozen_minimum_structural_effect": [
+    1,
+    20
+  ],
+  "future_calibration_work": {
+    "calibration_dyadic_level": 14,
+    "calibration_radius": [
+      2067,
+      100000
+    ],
+    "maximum_swaps_per_query": 1032192,
+    "maximum_word_attempts_per_query": 4128768,
+    "null_score_evaluations": 917504,
+    "query_slots": 56,
+    "runtime_status": "not_measured",
+    "samples_executed_here": 0
+  },
+  "graph_transitions_executed": 0,
+  "holdout_jobs_executed": 0,
+  "inputs_sha256": {
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05d.json": "8fcec0ca017a291e57199639f9d5c2be52ed016c5e2e9f80806b73895f368f19",
+    "protocols/r05e-observer-design.json": "097c890bce9c4d9591f2ae7996e73f5a51ce01cd3c323e69f8c0fcd473c9f3c5",
+    "reports/r05c.json": "7a57bedb748b31c003bdf32e9e729f9370fbd99f14883734fb9f35524f5a40e5",
+    "reports/r05d.json": "e3c8494d55d1de30374d1038a0f9ba139e688998ec97807a1f4493353e6eb02e"
+  },
+  "labelled_permutation_counts": {
+    "0": 1,
+    "1": 1,
+    "2": 2,
+    "3": 6,
+    "4": 24,
+    "5": 120,
+    "6": 720,
+    "7": 5040,
+    "8": 40320
+  },
+  "native_runs": 0,
+  "null_samples_executed": 0,
+  "precision_table": [
+    {
+      "draws": 4096,
+      "dyadic_level": 8,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1,
+      "radius": [
+        1,
+        32
+      ],
+      "sufficient_draws_for_target_radius": 40000,
+      "target_radius": [
+        1,
+        100
+      ]
+    },
+    {
+      "draws": 4096,
+      "dyadic_level": 18,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1000,
+      "radius": [
+        3,
+        64
+      ],
+      "sufficient_draws_for_target_radius": 90000,
+      "target_radius": [
+        1,
+        100
+      ]
+    },
+    {
+      "draws": 4096,
+      "dyadic_level": 28,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1000000,
+      "radius": [
+        1827,
+        31250
+      ],
+      "sufficient_draws_for_target_radius": 140000,
+      "target_radius": [
+        1,
+        100
+      ]
+    },
+    {
+      "draws": 16384,
+      "dyadic_level": 8,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1,
+      "radius": [
+        1,
+        64
+      ],
+      "sufficient_draws_for_target_radius": 40000,
+      "target_radius": [
+        1,
+        100
+      ]
+    },
+    {
+      "draws": 16384,
+      "dyadic_level": 18,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1000,
+      "radius": [
+        11719,
+        500000
+      ],
+      "sufficient_draws_for_target_radius": 90000,
+      "target_radius": [
+        1,
+        100
+      ]
+    },
+    {
+      "draws": 16384,
+      "dyadic_level": 28,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1000000,
+      "radius": [
+        1827,
+        62500
+      ],
+      "sufficient_draws_for_target_radius": 140000,
+      "target_radius": [
+        1,
+        100
+      ]
+    },
+    {
+      "draws": 65536,
+      "dyadic_level": 8,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1,
+      "radius": [
+        7813,
+        1000000
+      ],
+      "sufficient_draws_for_target_radius": 40000,
+      "target_radius": [
+        1,
+        100
+      ]
+    },
+    {
+      "draws": 65536,
+      "dyadic_level": 18,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1000,
+      "radius": [
+        11719,
+        1000000
+      ],
+      "sufficient_draws_for_target_radius": 90000,
+      "target_radius": [
+        1,
+        100
+      ]
+    },
+    {
+      "draws": 65536,
+      "dyadic_level": 28,
+      "family_delta": [
+        1,
+        100
+      ],
+      "quota": 1000000,
+      "radius": [
+        1827,
+        125000
+      ],
+      "sufficient_draws_for_target_radius": 140000,
+      "target_radius": [
+        1,
+        100
+      ]
+    }
+  ],
+  "promotion_authorized": false,
+  "protocol_id": "R05e-v1",
+  "rare_support_control": {
+    "consequence": "A finite constant sample cannot certify degeneracy.",
+    "edges": 64,
+    "nodes": 2,
+    "witnessed_scores": [
+      0,
+      1
+    ],
+    "zero_score_probability": [
+      1,
+      1832624140942590534
+    ]
+  },
+  "scientific_status": "untested",
+  "source_sha256": {
+    "docs/r05e-long-observer.md": "a03562f94dcb35cc7cdd758603913951e45c14df2d296916d543044d0501c9bc",
+    "protocols/r05e-observer-design.json": "097c890bce9c4d9591f2ae7996e73f5a51ce01cd3c323e69f8c0fcd473c9f3c5",
+    "protocols/r05e-repair.json": "149e2b95b6406d6dc95c57127b9cf023648aa6207f14b9d296fc4bf9fed5afbb",
+    "protocols/r05e.json": "dade3d46146c0d797ccd34c4055d37d6224f22ed13fbf2ef968aa72a8af11631",
+    "scripts/audit_r05e.py": "1afe5829f1173830e6b853d89e6903d54cf9947411beade0035d5202bb277071",
+    "tests/test_r05e.py": "734a035502158d4c117cc7395de4db91e6700fc58e189c0766503f485ee1eaf3"
+  },
+  "trace_bytes": 9171791,
+  "trace_sha256": "24a16636783c04ac5fc92aeb3e4932921fde5d541b5c8b2d415f6506b86a1adf"
+}

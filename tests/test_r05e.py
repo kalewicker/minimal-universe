@@ -1,12 +1,13 @@
 from fractions import Fraction
 from itertools import product
+import json
 from pathlib import Path
 import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from audit_r05e import certified_radius, oracle_radius, density_ceiling, independent_ceiling, shuffle_choices
+from audit_r05e import certified_radius, oracle_radius, density_ceiling, independent_ceiling, shuffle_choices, rare_support_witness
 
 
 class ObserverDesignTests(unittest.TestCase):
@@ -65,6 +66,16 @@ class ObserverDesignTests(unittest.TestCase):
         for length, choices in ((3, (3, 0)), (3, (1,)), (2, (True,)), (9, tuple(range(8)))):
             with self.assertRaises(ValueError):
                 shuffle_choices(length, choices)
+
+    def test_rare_support_fixture_from_json_is_validated_without_hashing_lists(self):
+        design = json.loads((ROOT / 'protocols/r05e-observer-design.json').read_text())
+        graph = next(g for g in design['calibration_plan']['large_graphs'] if g['id'] == 'rare_support2x64')
+        witness = rare_support_witness(graph)
+        self.assertEqual(witness['witnessed_scores'], [0, 1])
+        self.assertEqual(witness['zero_score_probability'], Fraction(1, 1832624140942590534))
+        graph['edges'][0] = [0, 0]
+        with self.assertRaisesRegex(ValueError, 'degree witness'):
+            rare_support_witness(graph)
 
 
 if __name__ == '__main__':

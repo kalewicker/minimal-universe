@@ -126,7 +126,19 @@ panel. No campaign was launched and the 50-event requirement remains unchanged.
 python3 -B scripts/verify_r05d.py --verify reports/r05d.json
 ```
 
-G2 scientific status remains untested. Next is R05e: a separately registered
-long-horizon measurement extension design and calibration before a budget pilot.
+The [R05e observer design](reports/r05e.md) now specifies larger-state exposure,
+sampled degree-conditioned nulls with Monte Carlo uncertainty, and observed
+identity tracking. Its static audit also shows that the proposed density-minus-null
+contrast cannot reach the frozen 0.05 threshold in any of the 7,420 fresh-node
+cells with count-permitted event-50 projections. No threshold or hypothesis was
+changed, and no null sampling or campaign was run.
+
+```sh
+python3 -B scripts/audit_r05e.py --verify reports/r05e.json
+```
+
+G2 scientific status remains untested. Next is R05f: implement the versioned
+observer and run its separately source-bound synthetic calibration, preserving
+the geometric limitation and existing campaign-readiness boundary.
 
 Public repository: https://github.com/kalewicker/minimal-universe

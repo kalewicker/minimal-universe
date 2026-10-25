@@ -1,0 +1,20 @@
+{
+  "campaign_authorized": false,
+  "diagnosis": "JSON endpoint lists were used as set members in the static rare-support check; normalize to endpoint tuples. Add a regression using the exact decoded fixture.",
+  "historical_source_commit": "6462d97",
+  "holdout_authorized": false,
+  "inputs_or_thresholds_changed": false,
+  "kind": "source_only_static_audit_repair",
+  "new_attempt": "r05e-002",
+  "original_attempt": "r05e-001",
+  "pins_sha256": {
+    "protocols/r05e-observer-design.json": "097c890bce9c4d9591f2ae7996e73f5a51ce01cd3c323e69f8c0fcd473c9f3c5",
+    "protocols/r05e.json": "dade3d46146c0d797ccd34c4055d37d6224f22ed13fbf2ef968aa72a8af11631",
+    "reports/r05e-001-custody.json": "d866de6d105c6702b8bc91e023df325c1504772c9258fdc72242e531bf66fbcc",
+    "reports/r05e-001-failure.json": "eb327c38ebebeca1c2b5f6e2160fe3982381b20654602f2da002e2da8df35832",
+    "scripts/audit_r05e.py": "1afe5829f1173830e6b853d89e6903d54cf9947411beade0035d5202bb277071",
+    "tests/test_r05e.py": "734a035502158d4c117cc7395de4db91e6700fc58e189c0766503f485ee1eaf3"
+  },
+  "repair_id": "R05e-static-repair-v1",
+  "scope": "Repeat the unchanged complete static design audit, not a sampled or native campaign. Preserve r05e-001 and its exact source history."
+}

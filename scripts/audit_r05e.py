@@ -99,6 +99,18 @@ def shuffle_choices(length, choices):
     return tuple(values)
 
 
+def rare_support_witness(graph):
+    require(graph['nodes'] == 2 and len(graph['edges']) == 64, 'rare support fixture size')
+    arcs = [tuple(arc) for arc in graph['edges']]
+    loop_witness = [(a, a) for a, _ in arcs]
+    require(Counter(a for a, _ in arcs) == Counter(a for a, _ in loop_witness) and
+            Counter(b for _, b in arcs) == Counter(b for _, b in loop_witness), 'rare support degree witness')
+    require(set(arcs) == {(0, 1), (1, 0)} and set(loop_witness) == {(0, 0), (1, 1)}, 'rare support score witness')
+    return dict(nodes=2, edges=64, witnessed_scores=[0, 1],
+                zero_score_probability=Fraction(1, comb(64, 32)),
+                consequence='A finite constant sample cannot certify degeneracy.')
+
+
 def count_only_endpoint(rhs, seed, horizon):
     edges = seed['edges']
     eligible = any(i != j and a[1] == b[0] for i, a in enumerate(edges) for j, b in enumerate(edges))
@@ -120,6 +132,11 @@ def preflight(protocol):
             'R05e static scope')
     for name, value in protocol['inputs_sha256'].items():
         require(sha(ROOT / name) == value, 'input digest: ' + name)
+    repair = json.loads((ROOT / 'protocols/r05e-repair.json').read_text())
+    require(repair['kind'] == 'source_only_static_audit_repair' and
+            repair['inputs_or_thresholds_changed'] is False, 'repair scope')
+    for name, value in repair['pins_sha256'].items():
+        require(sha(ROOT / name) == value, 'repair provenance: ' + name)
     prior = json.loads((ROOT / 'reports/r05d.json').read_text())
     require(prior['audit_status'] == 'pass' and prior['feasibility_status'] == 'not_launch_ready', 'R05d boundary')
     for name, value in prior['source_sha256'].items():
@@ -142,7 +159,7 @@ def audit(stream=None):
     start = time.monotonic()
     protocol = json.loads((ROOT / 'protocols/r05e.json').read_text())
     design, r05d, seeds = preflight(protocol)
-    sources = ('protocols/r05e.json', 'protocols/r05e-observer-design.json', 'scripts/audit_r05e.py',
+    sources = ('protocols/r05e.json', 'protocols/r05e-observer-design.json', 'protocols/r05e-repair.json', 'scripts/audit_r05e.py',
                'tests/test_r05e.py', 'docs/r05e-long-observer.md')
     source_hashes = {name: sha(ROOT / name) for name in sources}
     digest, trace_bytes, counts = hashlib.sha256(), 0, Counter()
@@ -246,15 +263,7 @@ def audit(stream=None):
 
     # Static support witnesses for the rare-support fixture, not random null samples.
     rare = next(g for g in fixtures if g['id'] == 'rare_support2x64')
-    source_counts = Counter(a for a, _ in rare['edges'])
-    target_counts = Counter(b for _, b in rare['edges'])
-    loop_witness = [(a, a) for a, _ in rare['edges']]
-    require(source_counts == Counter(a for a, _ in loop_witness) and
-            target_counts == Counter(b for _, b in loop_witness), 'rare support degree witness')
-    require(set(rare['edges']) == {(0, 1), (1, 0)} and set(loop_witness) == {(0, 0), (1, 1)}, 'rare support score witness')
-    rare_support = dict(nodes=2, edges=64, witnessed_scores=[0, 1],
-                        zero_score_probability=Fraction(1, comb(64, 32)),
-                        consequence='A finite constant sample cannot certify degeneracy.')
+    rare_support = rare_support_witness(rare)
     level, radius = certified_radius(16384, 56, delta, grid)
     future_work = dict(query_slots=56, null_score_evaluations=917504,
                        maximum_swaps_per_query=16384 * 63,
