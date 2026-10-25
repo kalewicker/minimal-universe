@@ -117,7 +117,16 @@ independent exact controls. Verify it without native binaries or bulk data:
 python3 -B scripts/calibrate_r05c.py --verify reports/r05c.json
 ```
 
-G2 scientific status remains untested. Next is R05d: a static campaign-feasibility
-and measurement-domain review before a budget pilot or discovery campaign.
+The [R05d static feasibility review](reports/r05d.md) checked all 969 rules and 14
+seeds across horizons zero through 50. Kernel size limits fit the conditional
+50-event projections, but current measurement domains do not support the full
+panel. No campaign was launched and the 50-event requirement remains unchanged.
+
+```sh
+python3 -B scripts/verify_r05d.py --verify reports/r05d.json
+```
+
+G2 scientific status remains untested. Next is R05e: a separately registered
+long-horizon measurement extension design and calibration before a budget pilot.
 
 Public repository: https://github.com/kalewicker/minimal-universe

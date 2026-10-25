@@ -1,0 +1,2553 @@
+{
+  "audit_status": "pass",
+  "campaign_authorized": false,
+  "common_reviewed_horizon": {
+    "degree_null_edge_domain": 4,
+    "endpoint_density_defined": null,
+    "exact_survival_domain": 2,
+    "initial_density_defined": null,
+    "kernel_count_caps_fit": 50,
+    "kernel_match_cap_guaranteed": 50,
+    "local_exposure_domain": 2,
+    "observer_node_domain": 50
+  },
+  "counts": {
+    "cells": 13566,
+    "ledger_rows": 40698,
+    "size_views": 691866
+  },
+  "feasibility_status": "not_launch_ready",
+  "holdout_jobs_executed": 0,
+  "horizon_summaries": [
+    {
+      "availability": {
+        "initial_state": 13566
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "within": 13566
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 3876,
+          "within": 9690
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 3876,
+          "within": 9690
+        },
+        "kernel_count_caps_fit": {
+          "within": 13566
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 13566
+        },
+        "local_exposure_domain": {
+          "within": 13566
+        },
+        "observer_node_domain": {
+          "within": 13566
+        }
+      },
+      "exact_survival": {
+        "guaranteed_by_count_bound": 13566
+      },
+      "horizon": 0,
+      "motif_coverage": {
+        "guaranteed_complete": 12597,
+        "known_incomplete_at_initial_state": 969
+      },
+      "projections": 13566
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9690,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "within": 9690
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 440,
+          "within": 9250
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1938,
+          "within": 7752
+        },
+        "kernel_count_caps_fit": {
+          "within": 9690
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9690
+        },
+        "local_exposure_domain": {
+          "within": 9690
+        },
+        "observer_node_domain": {
+          "within": 9690
+        }
+      },
+      "exact_survival": {
+        "guaranteed_by_count_bound": 9690
+      },
+      "horizon": 1,
+      "motif_coverage": {
+        "guaranteed_complete": 918,
+        "known_incomplete_at_initial_state": 969,
+        "not_guaranteed_by_sizes": 7803
+      },
+      "projections": 9690
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9587,
+        "provably_unavailable_edge_budget": 103,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "within": 9587
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 430,
+          "within": 9157
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1921,
+          "within": 7666
+        },
+        "kernel_count_caps_fit": {
+          "within": 9587
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9587
+        },
+        "local_exposure_domain": {
+          "within": 9587
+        },
+        "observer_node_domain": {
+          "within": 9587
+        }
+      },
+      "exact_survival": {
+        "guaranteed_by_count_bound": 9587
+      },
+      "horizon": 2,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 969,
+        "not_guaranteed_by_sizes": 7802
+      },
+      "projections": 9587
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9568,
+        "provably_unavailable_edge_budget": 122,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "within": 9568
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 429,
+          "within": 9139
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1920,
+          "within": 7648
+        },
+        "kernel_count_caps_fit": {
+          "within": 9568
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9568
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 749,
+          "within": 8819
+        },
+        "observer_node_domain": {
+          "within": 9568
+        }
+      },
+      "exact_survival": {
+        "guaranteed_by_count_bound": 8819,
+        "outside_size_or_horizon_domain": 749
+      },
+      "horizon": 3,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 968,
+        "not_guaranteed_by_sizes": 7784
+      },
+      "projections": 9568
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "within": 9520
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 742,
+          "within": 8778
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 4,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 2448,
+          "within": 7072
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 3281,
+          "within": 6239
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 5,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 3264,
+          "within": 6256
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 5021,
+          "within": 4499
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 6,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 8888,
+          "within": 632
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 7,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 8,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 9,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 10,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 11,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 12,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 13,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 14,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 15,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 16,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 17,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 18,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 19,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 20,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 21,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 22,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 23,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 24,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 25,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 26,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 27,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 28,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 29,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 30,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 31,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 32,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 33,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 34,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 35,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 36,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 37,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 38,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 39,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 40,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 41,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 42,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 43,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 44,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 45,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 46,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 47,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 48,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 49,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    },
+    {
+      "availability": {
+        "not_established_by_static_sizes": 9520,
+        "provably_unavailable_edge_budget": 170,
+        "provably_unavailable_no_initial_match": 3876
+      },
+      "cells": 13566,
+      "checks": {
+        "degree_null_edge_domain": {
+          "outside_or_not_guaranteed": 8160,
+          "within": 1360
+        },
+        "endpoint_density_defined": {
+          "outside_or_not_guaranteed": 420,
+          "within": 9100
+        },
+        "initial_density_defined": {
+          "outside_or_not_guaranteed": 1904,
+          "within": 7616
+        },
+        "kernel_count_caps_fit": {
+          "within": 9520
+        },
+        "kernel_match_cap_guaranteed": {
+          "within": 9520
+        },
+        "local_exposure_domain": {
+          "outside_or_not_guaranteed": 9070,
+          "within": 450
+        },
+        "observer_node_domain": {
+          "within": 9520
+        }
+      },
+      "exact_survival": {
+        "outside_size_or_horizon_domain": 9520
+      },
+      "horizon": 50,
+      "motif_coverage": {
+        "guaranteed_complete": 816,
+        "known_incomplete_at_initial_state": 952,
+        "not_guaranteed_by_sizes": 7752
+      },
+      "projections": 9520
+    }
+  ],
+  "inputs_sha256": {
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05a.json": "7f78da52b077f9fe6312296801ba36421feef334d5239117595239472fb81f2e",
+    "protocols/r05b.json": "3fa63aeba3cdcae60d81d58705f93d37185d6708b7848b6c4ddc436418770f55",
+    "protocols/r05c.json": "f85d01805b1ec24fcaa37b71402f6c7c3bf51d5740072783184fa9bde447b74f",
+    "reports/r05b-release.json": "f4929468115e1e0e3f7eb64a51fdf5cf53705f0b7a7b9f8628a62ee2bf1227df",
+    "reports/r05b-sanitize.json": "e58c7f1c861eb059e2ecd024beb191d01d39f0d1de4fff475b844df688b1285a",
+    "reports/r05c.json": "7a57bedb748b31c003bdf32e9e729f9370fbd99f14883734fb9f35524f5a40e5"
+  },
+  "native_runs": 0,
+  "promotion_authorized": false,
+  "protocol_id": "R05d-v1",
+  "required_intervention_horizon": 50,
+  "scientific_status": "untested",
+  "seeds": [
+    {
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "id": "all_equal",
+      "nodes": 1
+    },
+    {
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "id": "u_equals_v",
+      "nodes": 2
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "id": "u_equals_x",
+      "nodes": 2
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "id": "v_equals_x",
+      "nodes": 2
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "id": "distinct",
+      "nodes": 3
+    },
+    {
+      "edges": [],
+      "id": "empty",
+      "nodes": 0
+    },
+    {
+      "edges": [
+        [
+          0,
+          0
+        ]
+      ],
+      "id": "single_loop",
+      "nodes": 1
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "id": "parallel_nonloops",
+      "nodes": 2
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "id": "out_fork",
+      "nodes": 3
+    },
+    {
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "id": "overlap",
+      "nodes": 3
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "id": "disjoint",
+      "nodes": 6
+    },
+    {
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "id": "weighted",
+      "nodes": 3
+    },
+    {
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "id": "isolates",
+      "nodes": 4
+    },
+    {
+      "edges": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "id": "four_loops",
+      "nodes": 1
+    }
+  ],
+  "source_sha256": {
+    "docs/r05d-feasibility.md": "72078327c6dbc9cbcc3b0e791f90cf25fc0cee3621ae4a0ea23a880582f0f736",
+    "protocols/r05d.json": "8fcec0ca017a291e57199639f9d5c2be52ed016c5e2e9f80806b73895f368f19",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "scripts/verify_r05d.py": "2dd0f868bcfca5eeb0ef94262a4a9b131634f9a376c2fab907a0d6705efcea07",
+    "tests/test_r05d.py": "93b2f06d4657142149a60cd7c460c92979cb0dc4f31484e561876156b0e86430"
+  },
+  "trace_bytes": 32769128,
+  "trace_sha256": "76e385f6d32e9e21187306d795e29ef1954c567cf08b6c81b28df547022fce80",
+  "trajectory_files_read": 0,
+  "unestablished_requirements": [
+    "future match eligibility and reached endpoints",
+    "informative nulls and motif completeness",
+    "valid target/sham construction and coupling",
+    "registered parent namespace, replication, split coverage and power",
+    "frozen test families, estimators and resampling RNG",
+    "measured throughput and output budgets"
+  ],
+  "world_transitions_executed": 0
+}

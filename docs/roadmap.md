@@ -28,10 +28,12 @@ semantics, an explicit nonconfluent rule, and required controls.
 validated the full registered matrix against independent Python replay in release
 and sanitizer builds. [R05c](../reports/r05c.md) calibrated exact match-weighted
 exposure, bounded survival with terminal probability mass, and synthetic paired
-bookkeeping against independent controls. Next is R05d: register and audit static
-campaign feasibility, reconciling intended horizons with kernel and measurement
-domains over the declared rules and seeds. A campaign requires subsequent pilot
-and launch registrations. This is a design transition,
+bookkeeping against independent controls. [R05d](../reports/r05d.md) audited static
+feasibility over all 969 rules and 14 seeds. The current measurements do not support
+the full conditional 50-event panel; kernel size compatibility did not satisfy
+that gate. Next is R05e: a separately registered long-horizon measurement extension
+design, with exact controls for any new estimators before budget pilots or launch.
+No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 
 Discovery, detector development, validation, and final testing use disjoint parent
