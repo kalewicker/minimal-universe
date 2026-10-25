@@ -186,9 +186,11 @@ census and conservative power/work scenarios. Strict deletion has no distinct
 matched sham; four-edge rewiring passed 880 static control checks. Parent sampling,
 scientific thresholds and production budgets remain unregistered. [R06d](reports/r06d.md) now implements a separate atomic rewiring kernel and
 passes independent replay of 5,292 synthetic cases in both release and sanitizer
-builds. R02 criteria remain unchanged. Next is a separately registered bounded
-assay-budget and completion calibration; scientific parent sampling and adoption
-remain unresolved.
+builds. R02 criteria remain unchanged. [R06e admission review](reports/r06e.md) found no eligible time-zero patch in
+any of the 40,698 original rule/seed/scheduler rows. All 162,792 prospective branch
+slots remain unstarted; full-horizon costs and completion are unmeasured. Next is
+a separately registered parent-population design review, with no automatic burn-in
+or seed replacement. Scientific parent sampling and adoption remain unresolved.
 
 ```sh
 python3 -B scripts/design_r06c.py --verify reports/r06c.json
@@ -202,4 +204,10 @@ The R06d synthetic engineering matrix can be reproduced independently:
 cmake -S g2_assay -B build-r06d -DCMAKE_BUILD_TYPE=Release
 cmake --build build-r06d -j 4
 python3 -B scripts/verify_r06d.py --binary build-r06d/mu-g2-assay --verify reports/r06d-release.json
+```
+
+Verify the static R06e admission receipt:
+
+```sh
+python3 -B scripts/audit_r06e.py --verify reports/r06e.json
 ```

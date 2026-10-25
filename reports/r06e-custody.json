@@ -1,0 +1,23 @@
+{
+  "bulk_evidence_published": false,
+  "clean_public_source_replay": "passed",
+  "execution_sha256": "d4f73ac21d97073bf2b8f6ba1075fd298aefbd6ca0fe09db5472810701a61463",
+  "ledger_sha256": "e9eda3941856ad50a91bc2502c36718a0de3a4b08123f34c4e228ff18a941136",
+  "prior_source_pins_verified": true,
+  "protocol_id": "R06e-v1",
+  "python_tests": 135,
+  "receipt_sha256": "5326d203a47784405a21a39d929072fa2c2580073bbe49e1ecdee3b1491ec159",
+  "scientific_status": "untested",
+  "staged_public_paths": [
+    "README.md",
+    "analysis/assay_eligibility_v1.py",
+    "docs/r06e-admission.md",
+    "docs/roadmap.md",
+    "protocols/r06e.json",
+    "reports/r06e-execution.json",
+    "reports/r06e.json",
+    "reports/r06e.md",
+    "scripts/audit_r06e.py",
+    "tests/test_r06e.py"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "acceptance": "Exact detector/oracle agreement and full denominator accounting. Admission requires all rows eligible; failed admission is preserved, not an engineering mismatch.",
+  "attempt_policy": "Exclusive result directory; preserve source and failures. Repairs after consumption require new identity. No input replacement, burn-in, subset or horizon change.",
+  "budgets": {
+    "retained_bytes": 67108864,
+    "wall_seconds": 120
+  },
+  "campaign_authorized": false,
+  "expected_control_graphs": 5065,
+  "expected_eligible_controls": 223,
+  "expected_parent_groups": 13566,
+  "expected_parent_scheduler_rows": 40698,
+  "kind": "static_time_zero_assay_admission",
+  "next_boundary": "On failed admission, separately register parent-population design review. No burn-in or supplied-state replacement is authorized. Full-horizon budget/completion calibration remains unperformed.",
+  "parent_prefix": 0,
+  "pins_sha256": {
+    "analysis/assay_eligibility_v1.py": "e29ec14f4b5fdfa5fc2af7dac115219c2751cf8f87938fd2efce165f2327c7e0",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r06e-admission.md": "ecf23264259bf0d3c9504176466a3d73eaa8ed76c3e1974081636b2bd88e99cf",
+    "protocols/r05b.json": "3fa63aeba3cdcae60d81d58705f93d37185d6708b7848b6c4ddc436418770f55",
+    "protocols/r06c.json": "72e0f8a14a19378feaf4c67dc5639927b7ee1df4922ae683f59aa31064ee0f07",
+    "protocols/r06d.json": "acf6eca2d7c81a9f5a968d648785c84ba732d2d187933009fa1d4905859652bf",
+    "reports/r06d-custody.json": "b00a2509df9a40a1c5cc278d0d4435ca62096d2fce01d691746f6d10cd268f67",
+    "reports/r06d-release.json": "885211f9ae739d9d97f3554d824e32de0556bc322682120dd94872f630e58f9c",
+    "scripts/audit_r06e.py": "016f3a8425b7883362a9ffdf1ebbc266250aa47e4350df1154b86d8e09837279",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "tests/test_r06e.py": "de885b4292272aa45a22045e21d6e06cb018730f0a2ebad91c5cd372da3a1459"
+  },
+  "production_adopted": false,
+  "prospective_orientation_slots": 162792,
+  "protocol_id": "R06e-v1",
+  "requested_branch_horizon": 50,
+  "schedulers": [
+    "lex_first",
+    "lex_last",
+    "uniform_match"
+  ],
+  "scientific_status": "untested",
+  "world_transitions_authorized": false
+}

@@ -64,9 +64,13 @@ static controls. Nine power and 27 work scenarios quantify conservative requirem
 without adopting scientific thresholds, parents or campaign budgets. [R06d](../reports/r06d.md) implements a separate native atomic rewiring kernel.
 All 5,292 cases matched independent replay in release and ASan/UBSan, including
 allocator continuation, intervention provenance, inherited partitions and terminal
-controls. Next is separately registered bounded assay-budget/completion calibration
-over a frozen unfiltered engineering population. Scientific primary adoption,
-parent sampling and any scientific pilot still require their own registration.
+controls. [R06e](../reports/r06e.md) checked admission for the full original population
+before cost calibration: all 40,698 parent/scheduler rows lack an eligible induced
+dyad patch at time zero. Detector calibration passed 5,065 independent controls;
+all 162,792 branch slots remain unstarted. Full-horizon completion and budgets
+remain unmeasured. Next is a separately registered parent-population design review,
+without automatic burn-in, seed substitution or favorable-law selection. Scientific
+primary adoption, parent sampling and any pilot require their own registration.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 
