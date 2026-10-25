@@ -1,0 +1,4812 @@
+{
+  "audit_status": "pass",
+  "campaign_authorized": false,
+  "counts": {
+    "analytic_large_mean_covered": 4,
+    "choice_vectors": 46234,
+    "exact_control_slots": 816,
+    "large_invariant_slots": 20,
+    "matrix_slots": 76,
+    "raw_control_graphs": 819,
+    "sampled_draws": 1114112,
+    "sampled_matrix_slots": 68,
+    "small_mean_covered": 44,
+    "undefined_matrix_slots": 8
+  },
+  "exact_control_statuses": {
+    "degenerate": 390,
+    "informative": 420,
+    "undefined_empty_graph": 6
+  },
+  "g2_rule_or_seed_panels_scored": 0,
+  "graph_transitions_executed": 0,
+  "holdout_jobs_executed": 0,
+  "metric": "mu-g2-edge-budget-v1",
+  "native_runs": 0,
+  "next_boundary": "Separately register R06c scientific design and feasibility: physical hypothesis/estimands, target-sham construction and scheduler coupling, production parent namespace and inherited splits, effect units/power and estimators/test families, then measured campaign budgets. No scientific primary adoption, threshold transfer, world pilot or campaign is authorized here.",
+  "paired_controls": {
+    "aliased_loops": {
+      "complete_pairs": 1,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": [
+        0,
+        1
+      ],
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": [
+            0,
+            1
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/aliased_loops",
+          "partition": "final-test",
+          "unavailable_reasons": []
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    },
+    "censored": {
+      "complete_pairs": 0,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": null,
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": null,
+          "endpoint_match_counts": [
+            null,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/censored",
+          "partition": "discovery",
+          "unavailable_reasons": [
+            "target:resource_censored"
+          ]
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 1,
+      "unavailable_pairs": 1
+    },
+    "delayed_quarter": {
+      "complete_pairs": 1,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": [
+        1,
+        4
+      ],
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": [
+            1,
+            4
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/delayed_quarter",
+          "partition": "discovery",
+          "unavailable_reasons": []
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    },
+    "duplicate_parent": {
+      "status": "rejected_as_registered"
+    },
+    "eligibility_change": {
+      "complete_pairs": 1,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": [
+        1,
+        4
+      ],
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": [
+            1,
+            4
+          ],
+          "endpoint_eligibility_changed": true,
+          "endpoint_match_counts": [
+            2,
+            0
+          ],
+          "initial_eligibility_changed": true,
+          "initial_match_counts": [
+            2,
+            1
+          ],
+          "parent": "mu/G2-budget-cal-v1/eligibility_change",
+          "partition": "detector-development",
+          "unavailable_reasons": []
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    },
+    "horizon_mismatch": {
+      "status": "rejected_as_registered"
+    },
+    "immediate_offset": {
+      "complete_pairs": 1,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": [
+        0,
+        1
+      ],
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": [
+            0,
+            1
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/immediate_offset",
+          "partition": "final-test",
+          "unavailable_reasons": []
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    },
+    "invalid_score": {
+      "status": "rejected_as_registered"
+    },
+    "invented_endpoint": {
+      "status": "rejected_as_registered"
+    },
+    "missing_field": {
+      "status": "rejected_as_registered"
+    },
+    "missing_match_count": {
+      "status": "rejected_as_registered"
+    },
+    "mixed_incomplete": {
+      "complete_pairs": 1,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": null,
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": null,
+          "endpoint_match_counts": [
+            null,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/mixed_incomplete",
+          "partition": "discovery",
+          "unavailable_reasons": [
+            "target:terminal_before_horizon"
+          ]
+        },
+        {
+          "effect": [
+            0,
+            1
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/complete-other",
+          "partition": "discovery",
+          "unavailable_reasons": []
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 2,
+      "unavailable_pairs": 1
+    },
+    "negative": {
+      "complete_pairs": 1,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": [
+        -1,
+        4
+      ],
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": [
+            -1,
+            4
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/negative",
+          "partition": "validation",
+          "unavailable_reasons": []
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    },
+    "parent_mismatch": {
+      "status": "rejected_as_registered"
+    },
+    "scheduler_mismatch": {
+      "status": "rejected_as_registered"
+    },
+    "split_mismatch": {
+      "status": "rejected_as_registered"
+    },
+    "terminal": {
+      "complete_pairs": 0,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": null,
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": null,
+          "endpoint_match_counts": [
+            null,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/terminal",
+          "partition": "discovery",
+          "unavailable_reasons": [
+            "target:terminal_before_horizon"
+          ]
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 1,
+      "unavailable_pairs": 1
+    },
+    "undefined_endpoint": {
+      "complete_pairs": 0,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": null,
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/undefined_endpoint",
+          "partition": "final-test",
+          "unavailable_reasons": [
+            "target:undefined_score"
+          ]
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 1,
+      "unavailable_pairs": 1
+    },
+    "undefined_initial": {
+      "complete_pairs": 0,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": null,
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/undefined_initial",
+          "partition": "detector-development",
+          "unavailable_reasons": [
+            "target:undefined_score"
+          ]
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 1,
+      "unavailable_pairs": 1
+    },
+    "unknown_status": {
+      "status": "rejected_as_registered"
+    },
+    "unsupported": {
+      "complete_pairs": 0,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": null,
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": null,
+          "endpoint_eligibility_changed": null,
+          "endpoint_match_counts": [
+            null,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/unsupported",
+          "partition": "detector-development",
+          "unavailable_reasons": [
+            "target:domain_unsupported"
+          ]
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "incomplete",
+      "total_pairs": 1,
+      "unavailable_pairs": 1
+    },
+    "wrong_namespace": {
+      "status": "rejected_as_registered"
+    },
+    "zero": {
+      "complete_pairs": 1,
+      "estimand": "subsequent paired change; instantaneous score change excluded",
+      "mean_effect": [
+        0,
+        1
+      ],
+      "metric": "mu-g2-edge-budget-v1",
+      "pairs": [
+        {
+          "effect": [
+            0,
+            1
+          ],
+          "endpoint_eligibility_changed": false,
+          "endpoint_match_counts": [
+            2,
+            2
+          ],
+          "initial_eligibility_changed": false,
+          "initial_match_counts": [
+            2,
+            2
+          ],
+          "parent": "mu/G2-budget-cal-v1/zero",
+          "partition": "final-test",
+          "unavailable_reasons": []
+        }
+      ],
+      "production_metric_adopted": false,
+      "scientific_acceptance": false,
+      "sham_validity": "not_established",
+      "status": "complete",
+      "total_pairs": 1,
+      "unavailable_pairs": 0
+    }
+  },
+  "production_metric_adopted": false,
+  "protocol_id": "R06b-v1",
+  "protocol_sha256": "23c2711ef92b22edc680f1a263c4886d25d5c55b435e29e9f649a10973197a5c",
+  "queries": [
+    {
+      "coverage": null,
+      "graph_id": "empty2",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": null,
+        "delta": [
+          1,
+          100
+        ],
+        "distribution": {},
+        "graph": "7228a84d6f692869aa903dcae5d8b20fb96ea49d8140dc23ba50c4be60969da0",
+        "interval": null,
+        "mean": null,
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "exact",
+        "query": "mu/R06b-cal-v1/matrix/empty2/root/0",
+        "quota": 892,
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "scientific_acceptance": false,
+        "status": "undefined_empty_graph",
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "graph_id": "empty2",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": null,
+        "delta": [
+          1,
+          100
+        ],
+        "distribution": {},
+        "graph": "7228a84d6f692869aa903dcae5d8b20fb96ea49d8140dc23ba50c4be60969da0",
+        "interval": null,
+        "mean": null,
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "exact",
+        "query": "mu/R06b-cal-v1/matrix/empty2/root/1",
+        "quota": 892,
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "scientific_acceptance": false,
+        "status": "undefined_empty_graph",
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "graph_id": "empty2",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": null,
+        "delta": [
+          1,
+          100
+        ],
+        "distribution": {},
+        "graph": "7228a84d6f692869aa903dcae5d8b20fb96ea49d8140dc23ba50c4be60969da0",
+        "interval": null,
+        "mean": null,
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "exact",
+        "query": "mu/R06b-cal-v1/matrix/empty2/root/2",
+        "quota": 892,
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "scientific_acceptance": false,
+        "status": "undefined_empty_graph",
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "graph_id": "empty2",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": null,
+        "delta": [
+          1,
+          100
+        ],
+        "distribution": {},
+        "graph": "7228a84d6f692869aa903dcae5d8b20fb96ea49d8140dc23ba50c4be60969da0",
+        "interval": null,
+        "mean": null,
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "exact",
+        "query": "mu/R06b-cal-v1/matrix/empty2/root/3",
+        "quota": 892,
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "scientific_acceptance": false,
+        "status": "undefined_empty_graph",
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "loop2",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ffa48ce053217637ab022b878521c6398677315296bd103bceb42a5a5f875eba",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/loop2/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "loop2",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ffa48ce053217637ab022b878521c6398677315296bd103bceb42a5a5f875eba",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/loop2/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "loop2",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ffa48ce053217637ab022b878521c6398677315296bd103bceb42a5a5f875eba",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/loop2/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "loop2",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ffa48ce053217637ab022b878521c6398677315296bd103bceb42a5a5f875eba",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/loop2/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "reciprocal2",
+      "known_mean": [
+        1,
+        2
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            123171747,
+            256000000
+          ],
+          [
+            135172003,
+            256000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "87b09e287edf9a43a2daa8dd24368ba9f4c3fab886953eb8fffa466ae3f589d5",
+        "histogram": {
+          "0": 8267,
+          "1": 8117
+        },
+        "interval": [
+          [
+            120827997,
+            256000000
+          ],
+          [
+            132828253,
+            256000000
+          ]
+        ],
+        "mean": [
+          8117,
+          16384
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/reciprocal2/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "reciprocal2",
+      "known_mean": [
+        1,
+        2
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            121640497,
+            256000000
+          ],
+          [
+            133640753,
+            256000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "87b09e287edf9a43a2daa8dd24368ba9f4c3fab886953eb8fffa466ae3f589d5",
+        "histogram": {
+          "0": 8169,
+          "1": 8215
+        },
+        "interval": [
+          [
+            122359247,
+            256000000
+          ],
+          [
+            134359503,
+            256000000
+          ]
+        ],
+        "mean": [
+          8215,
+          16384
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/reciprocal2/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "reciprocal2",
+      "known_mean": [
+        1,
+        2
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            121890497,
+            256000000
+          ],
+          [
+            133890753,
+            256000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "87b09e287edf9a43a2daa8dd24368ba9f4c3fab886953eb8fffa466ae3f589d5",
+        "histogram": {
+          "0": 8185,
+          "1": 8199
+        },
+        "interval": [
+          [
+            122109247,
+            256000000
+          ],
+          [
+            134109503,
+            256000000
+          ]
+        ],
+        "mean": [
+          8199,
+          16384
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/reciprocal2/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "reciprocal2",
+      "known_mean": [
+        1,
+        2
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            3859371,
+            8000000
+          ],
+          [
+            4234379,
+            8000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "87b09e287edf9a43a2daa8dd24368ba9f4c3fab886953eb8fffa466ae3f589d5",
+        "histogram": {
+          "0": 8288,
+          "1": 8096
+        },
+        "interval": [
+          [
+            3765621,
+            8000000
+          ],
+          [
+            4140629,
+            8000000
+          ]
+        ],
+        "mean": [
+          253,
+          512
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/reciprocal2/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "path3",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "132b151d6ddee652c8c58a87950317455d926f675fbdcb224529fc8146c2d1cd",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/path3/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "path3",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "132b151d6ddee652c8c58a87950317455d926f675fbdcb224529fc8146c2d1cd",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/path3/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "path3",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "132b151d6ddee652c8c58a87950317455d926f675fbdcb224529fc8146c2d1cd",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/path3/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "path3",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "132b151d6ddee652c8c58a87950317455d926f675fbdcb224529fc8146c2d1cd",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/path3/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "parallel_cycle2",
+      "known_mean": [
+        5,
+        12
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            7578061,
+            128000000
+          ],
+          [
+            13578189,
+            128000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "61182c345214c60575b6068bd0fdca001e277a146909b56dcdd946690b362a30",
+        "histogram": {
+          "0": 2708,
+          "1/2": 13676
+        },
+        "interval": [
+          [
+            50421811,
+            128000000
+          ],
+          [
+            56421939,
+            128000000
+          ]
+        ],
+        "mean": [
+          3419,
+          8192
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/parallel_cycle2/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 196608,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 49152
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "parallel_cycle2",
+      "known_mean": [
+        5,
+        12
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            15577997,
+            256000000
+          ],
+          [
+            27578253,
+            256000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "61182c345214c60575b6068bd0fdca001e277a146909b56dcdd946690b362a30",
+        "histogram": {
+          "0": 2762,
+          "1/2": 13622
+        },
+        "interval": [
+          [
+            100421747,
+            256000000
+          ],
+          [
+            112422003,
+            256000000
+          ]
+        ],
+        "mean": [
+          6811,
+          16384
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/parallel_cycle2/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 196608,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 49152
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "parallel_cycle2",
+      "known_mean": [
+        5,
+        12
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            3921843,
+            64000000
+          ],
+          [
+            6921907,
+            64000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "61182c345214c60575b6068bd0fdca001e277a146909b56dcdd946690b362a30",
+        "histogram": {
+          "0": 2776,
+          "1/2": 13608
+        },
+        "interval": [
+          [
+            25078093,
+            64000000
+          ],
+          [
+            28078157,
+            64000000
+          ]
+        ],
+        "mean": [
+          1701,
+          4096
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/parallel_cycle2/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 196608,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 49152
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "parallel_cycle2",
+      "known_mean": [
+        5,
+        12
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            31515369,
+            512000000
+          ],
+          [
+            55515881,
+            512000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "61182c345214c60575b6068bd0fdca001e277a146909b56dcdd946690b362a30",
+        "histogram": {
+          "0": 2785,
+          "1/2": 13599
+        },
+        "interval": [
+          [
+            200484119,
+            512000000
+          ],
+          [
+            224484631,
+            512000000
+          ]
+        ],
+        "mean": [
+          13599,
+          32768
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/parallel_cycle2/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 196608,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 49152
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "separate_loops2",
+      "known_mean": [
+        1,
+        2
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -134609503,
+            256000000
+          ],
+          [
+            -122609247,
+            256000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "8f4f62dfad4ee7a343853fc1c2aa51952ab42082ae5470d5db7f58c96d98ef8e",
+        "histogram": {
+          "0": 8153,
+          "1": 8231
+        },
+        "interval": [
+          [
+            122609247,
+            256000000
+          ],
+          [
+            134609503,
+            256000000
+          ]
+        ],
+        "mean": [
+          8231,
+          16384
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/separate_loops2/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "separate_loops2",
+      "known_mean": [
+        1,
+        2
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -66421939,
+            128000000
+          ],
+          [
+            -60421811,
+            128000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "8f4f62dfad4ee7a343853fc1c2aa51952ab42082ae5470d5db7f58c96d98ef8e",
+        "histogram": {
+          "0": 8266,
+          "1": 8118
+        },
+        "interval": [
+          [
+            60421811,
+            128000000
+          ],
+          [
+            66421939,
+            128000000
+          ]
+        ],
+        "mean": [
+          4059,
+          8192
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/separate_loops2/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "separate_loops2",
+      "known_mean": [
+        1,
+        2
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -133890753,
+            256000000
+          ],
+          [
+            -121890497,
+            256000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "8f4f62dfad4ee7a343853fc1c2aa51952ab42082ae5470d5db7f58c96d98ef8e",
+        "histogram": {
+          "0": 8199,
+          "1": 8185
+        },
+        "interval": [
+          [
+            121890497,
+            256000000
+          ],
+          [
+            133890753,
+            256000000
+          ]
+        ],
+        "mean": [
+          8185,
+          16384
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/separate_loops2/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "separate_loops2",
+      "known_mean": [
+        1,
+        2
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -136703253,
+            256000000
+          ],
+          [
+            -124702997,
+            256000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "8f4f62dfad4ee7a343853fc1c2aa51952ab42082ae5470d5db7f58c96d98ef8e",
+        "histogram": {
+          "0": 8019,
+          "1": 8365
+        },
+        "interval": [
+          [
+            124702997,
+            256000000
+          ],
+          [
+            136703253,
+            256000000
+          ]
+        ],
+        "mean": [
+          8365,
+          16384
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/separate_loops2/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "fork3",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9deaec3c7589bc377850752e22493cea675ac70de11547f35ae4b714daece23e",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/fork3/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "fork3",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9deaec3c7589bc377850752e22493cea675ac70de11547f35ae4b714daece23e",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/fork3/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "fork3",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9deaec3c7589bc377850752e22493cea675ac70de11547f35ae4b714daece23e",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/fork3/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "fork3",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9deaec3c7589bc377850752e22493cea675ac70de11547f35ae4b714daece23e",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/fork3/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "mixed3",
+      "known_mean": [
+        29,
+        75
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            50346811,
+            128000000
+          ],
+          [
+            56346939,
+            128000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "341fafd018b092b53c12dac9c5ec96403700442f503059a3128230b01f7fbafd",
+        "histogram": {
+          "0": 5003,
+          "2/5": 7065,
+          "4/5": 4316
+        },
+        "interval": [
+          [
+            46053061,
+            128000000
+          ],
+          [
+            52053189,
+            128000000
+          ]
+        ],
+        "mean": [
+          15697,
+          40960
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/mixed3/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 262144,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 65536
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "mixed3",
+      "known_mean": [
+        29,
+        75
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            25021843,
+            64000000
+          ],
+          [
+            28021907,
+            64000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "341fafd018b092b53c12dac9c5ec96403700442f503059a3128230b01f7fbafd",
+        "histogram": {
+          "0": 4886,
+          "2/5": 7202,
+          "4/5": 4296
+        },
+        "interval": [
+          [
+            23178093,
+            64000000
+          ],
+          [
+            26178157,
+            64000000
+          ]
+        ],
+        "mean": [
+          7897,
+          20480
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/mixed3/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 262144,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 65536
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "mixed3",
+      "known_mean": [
+        29,
+        75
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            49715561,
+            128000000
+          ],
+          [
+            55715689,
+            128000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "341fafd018b092b53c12dac9c5ec96403700442f503059a3128230b01f7fbafd",
+        "histogram": {
+          "0": 4907,
+          "2/5": 7055,
+          "4/5": 4422
+        },
+        "interval": [
+          [
+            46684311,
+            128000000
+          ],
+          [
+            52684439,
+            128000000
+          ]
+        ],
+        "mean": [
+          15899,
+          40960
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/mixed3/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 262144,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 65536
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "mixed3",
+      "known_mean": [
+        29,
+        75
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            392187,
+            1000000
+          ],
+          [
+            439063,
+            1000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "341fafd018b092b53c12dac9c5ec96403700442f503059a3128230b01f7fbafd",
+        "histogram": {
+          "0": 4968,
+          "2/5": 7088,
+          "4/5": 4328
+        },
+        "interval": [
+          [
+            360937,
+            1000000
+          ],
+          [
+            407813,
+            1000000
+          ]
+        ],
+        "mean": [
+          123,
+          320
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/mixed3/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 262144,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 65536
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "graph_id": "empty0",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": null,
+        "delta": [
+          1,
+          100
+        ],
+        "distribution": {},
+        "graph": "da26200ca993c32e92cde734788d38cb19b133e88f91b620d8a3c86f9545975b",
+        "interval": null,
+        "mean": null,
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "exact",
+        "query": "mu/R06b-cal-v1/matrix/empty0/root/0",
+        "quota": 892,
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "scientific_acceptance": false,
+        "status": "undefined_empty_graph",
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "graph_id": "empty0",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": null,
+        "delta": [
+          1,
+          100
+        ],
+        "distribution": {},
+        "graph": "da26200ca993c32e92cde734788d38cb19b133e88f91b620d8a3c86f9545975b",
+        "interval": null,
+        "mean": null,
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "exact",
+        "query": "mu/R06b-cal-v1/matrix/empty0/root/1",
+        "quota": 892,
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "scientific_acceptance": false,
+        "status": "undefined_empty_graph",
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "graph_id": "empty0",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": null,
+        "delta": [
+          1,
+          100
+        ],
+        "distribution": {},
+        "graph": "da26200ca993c32e92cde734788d38cb19b133e88f91b620d8a3c86f9545975b",
+        "interval": null,
+        "mean": null,
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "exact",
+        "query": "mu/R06b-cal-v1/matrix/empty0/root/2",
+        "quota": 892,
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "scientific_acceptance": false,
+        "status": "undefined_empty_graph",
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "graph_id": "empty0",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": null,
+        "delta": [
+          1,
+          100
+        ],
+        "distribution": {},
+        "graph": "da26200ca993c32e92cde734788d38cb19b133e88f91b620d8a3c86f9545975b",
+        "interval": null,
+        "mean": null,
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "exact",
+        "query": "mu/R06b-cal-v1/matrix/empty0/root/3",
+        "quota": 892,
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "scientific_acceptance": false,
+        "status": "undefined_empty_graph",
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "aliased_loops",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "0d533e2bb210cf7154191b71a4fbf31177a8c5afc5205986fe40258c0b5145ed",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/aliased_loops/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "aliased_loops",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "0d533e2bb210cf7154191b71a4fbf31177a8c5afc5205986fe40258c0b5145ed",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/aliased_loops/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "aliased_loops",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "0d533e2bb210cf7154191b71a4fbf31177a8c5afc5205986fe40258c0b5145ed",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/aliased_loops/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "aliased_loops",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "0d533e2bb210cf7154191b71a4fbf31177a8c5afc5205986fe40258c0b5145ed",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/aliased_loops/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 16384
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "weighted_pair",
+      "known_mean": [
+        1,
+        8
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            180015369,
+            512000000
+          ],
+          [
+            204015881,
+            512000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "e8509ecb270f1514abdd066dada3469db299e4b42f63bad64e9279af8bb66900",
+        "histogram": {
+          "0": 12289,
+          "1/2": 4095
+        },
+        "interval": [
+          [
+            51984119,
+            512000000
+          ],
+          [
+            75984631,
+            512000000
+          ]
+        ],
+        "mean": [
+          4095,
+          32768
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/weighted_pair/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 196608,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 49152
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "weighted_pair",
+      "known_mean": [
+        1,
+        8
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            179546619,
+            512000000
+          ],
+          [
+            203547131,
+            512000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "e8509ecb270f1514abdd066dada3469db299e4b42f63bad64e9279af8bb66900",
+        "histogram": {
+          "0": 12259,
+          "1/2": 4125
+        },
+        "interval": [
+          [
+            52452869,
+            512000000
+          ],
+          [
+            76453381,
+            512000000
+          ]
+        ],
+        "mean": [
+          4125,
+          32768
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/weighted_pair/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 196608,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 49152
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "weighted_pair",
+      "known_mean": [
+        1,
+        8
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            45140561,
+            128000000
+          ],
+          [
+            51140689,
+            128000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "e8509ecb270f1514abdd066dada3469db299e4b42f63bad64e9279af8bb66900",
+        "histogram": {
+          "0": 12324,
+          "1/2": 4060
+        },
+        "interval": [
+          [
+            12859311,
+            128000000
+          ],
+          [
+            18859439,
+            128000000
+          ]
+        ],
+        "mean": [
+          1015,
+          8192
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/weighted_pair/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 196608,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 49152
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "weighted_pair",
+      "known_mean": [
+        1,
+        8
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            181171619,
+            512000000
+          ],
+          [
+            205172131,
+            512000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "e8509ecb270f1514abdd066dada3469db299e4b42f63bad64e9279af8bb66900",
+        "histogram": {
+          "0": 12363,
+          "1/2": 4021
+        },
+        "interval": [
+          [
+            50827869,
+            512000000
+          ],
+          [
+            74828381,
+            512000000
+          ]
+        ],
+        "mean": [
+          4021,
+          32768
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/weighted_pair/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 196608,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 49152
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "single_nonloop",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "3d45fa426b315b4a1b1118bd5ed34218cae5bcd6fb8aacab2e64165450e47310",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/single_nonloop/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "single_nonloop",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "3d45fa426b315b4a1b1118bd5ed34218cae5bcd6fb8aacab2e64165450e47310",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/single_nonloop/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "single_nonloop",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "3d45fa426b315b4a1b1118bd5ed34218cae5bcd6fb8aacab2e64165450e47310",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/single_nonloop/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "single_nonloop",
+      "known_mean": [
+        0,
+        1
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "3d45fa426b315b4a1b1118bd5ed34218cae5bcd6fb8aacab2e64165450e47310",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/single_nonloop/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 65536,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 0
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "boundary8",
+      "known_mean": [
+        101,
+        280
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            632858863,
+            1024000000
+          ],
+          [
+            680859887,
+            1024000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "97b36d2e6e47f2317f11e5000f9172e00c0edd592968b047c4a7a18c9be74bcd",
+        "histogram": {
+          "0": 2409,
+          "1": 321,
+          "1/2": 5755,
+          "1/4": 6497,
+          "3/4": 1402
+        },
+        "interval": [
+          [
+            343140113,
+            1024000000
+          ],
+          [
+            391141137,
+            1024000000
+          ]
+        ],
+        "mean": [
+          23497,
+          65536
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/boundary8/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 458752,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 114688
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "boundary8",
+      "known_mean": [
+        101,
+        280
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            314734119,
+            512000000
+          ],
+          [
+            338734631,
+            512000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "97b36d2e6e47f2317f11e5000f9172e00c0edd592968b047c4a7a18c9be74bcd",
+        "histogram": {
+          "0": 2353,
+          "1": 337,
+          "1/2": 5764,
+          "1/4": 6476,
+          "3/4": 1454
+        },
+        "interval": [
+          [
+            173265369,
+            512000000
+          ],
+          [
+            197265881,
+            512000000
+          ]
+        ],
+        "mean": [
+          11857,
+          32768
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/boundary8/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 458752,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 114688
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "boundary8",
+      "known_mean": [
+        101,
+        280
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            629577613,
+            1024000000
+          ],
+          [
+            677578637,
+            1024000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "97b36d2e6e47f2317f11e5000f9172e00c0edd592968b047c4a7a18c9be74bcd",
+        "histogram": {
+          "0": 2366,
+          "1": 292,
+          "1/2": 5873,
+          "1/4": 6383,
+          "3/4": 1470
+        },
+        "interval": [
+          [
+            346421363,
+            1024000000
+          ],
+          [
+            394422387,
+            1024000000
+          ]
+        ],
+        "mean": [
+          23707,
+          65536
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/boundary8/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 458752,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 114688
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "boundary8",
+      "known_mean": [
+        101,
+        280
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            629077613,
+            1024000000
+          ],
+          [
+            677078637,
+            1024000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "97b36d2e6e47f2317f11e5000f9172e00c0edd592968b047c4a7a18c9be74bcd",
+        "histogram": {
+          "0": 2339,
+          "1": 340,
+          "1/2": 5788,
+          "1/4": 6474,
+          "3/4": 1443
+        },
+        "interval": [
+          [
+            346921363,
+            1024000000
+          ],
+          [
+            394922387,
+            1024000000
+          ]
+        ],
+        "mean": [
+          23739,
+          65536
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/boundary8/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 458752,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 114688
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "graph_id": "cycle64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -319144721,
+            8192000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9f514189214759bee560d0acfbd1ed2b1152910e570960c4ff56c91e5cb9141f",
+        "histogram": {
+          "0": 9960,
+          "1/16": 1234,
+          "1/32": 4966,
+          "1/8": 23,
+          "3/32": 197,
+          "5/32": 4
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            319144721,
+            8192000000
+          ]
+        ],
+        "mean": [
+          8137,
+          524288
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/cycle64/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "graph_id": "cycle64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -318800971,
+            8192000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9f514189214759bee560d0acfbd1ed2b1152910e570960c4ff56c91e5cb9141f",
+        "histogram": {
+          "0": 9985,
+          "1/16": 1238,
+          "1/32": 4937,
+          "1/8": 30,
+          "3/32": 194
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            318800971,
+            8192000000
+          ]
+        ],
+        "mean": [
+          8115,
+          524288
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/cycle64/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "graph_id": "cycle64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -159767673,
+            4096000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9f514189214759bee560d0acfbd1ed2b1152910e570960c4ff56c91e5cb9141f",
+        "histogram": {
+          "0": 9972,
+          "1/16": 1224,
+          "1/32": 4940,
+          "1/8": 24,
+          "3/32": 221,
+          "5/32": 3
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            159767673,
+            4096000000
+          ]
+        ],
+        "mean": [
+          4081,
+          262144
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/cycle64/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "graph_id": "cycle64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -320175971,
+            8192000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "9f514189214759bee560d0acfbd1ed2b1152910e570960c4ff56c91e5cb9141f",
+        "histogram": {
+          "0": 9908,
+          "1/16": 1227,
+          "1/32": 5014,
+          "1/8": 26,
+          "3/32": 207,
+          "5/32": 2
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            320175971,
+            8192000000
+          ]
+        ],
+        "mean": [
+          8203,
+          524288
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/cycle64/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "graph_id": "loops64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -322144721,
+            8192000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "362e3869b8aa3da14094d23aec4b51d277b269b4ca5f97790d9849aeee51b82b",
+        "histogram": {
+          "0": 9868,
+          "1/16": 1289,
+          "1/32": 4981,
+          "1/8": 26,
+          "3/32": 218,
+          "5/32": 1,
+          "7/32": 1
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            322144721,
+            8192000000
+          ]
+        ],
+        "mean": [
+          8329,
+          524288
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/loops64/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "graph_id": "loops64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -159611423,
+            4096000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "362e3869b8aa3da14094d23aec4b51d277b269b4ca5f97790d9849aeee51b82b",
+        "histogram": {
+          "0": 9984,
+          "1/16": 1176,
+          "1/32": 4958,
+          "1/8": 28,
+          "3/32": 235,
+          "5/32": 3
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            159611423,
+            4096000000
+          ]
+        ],
+        "mean": [
+          4071,
+          262144
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/loops64/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "graph_id": "loops64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -322082221,
+            8192000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "362e3869b8aa3da14094d23aec4b51d277b269b4ca5f97790d9849aeee51b82b",
+        "histogram": {
+          "0": 9826,
+          "1/16": 1280,
+          "1/32": 5048,
+          "1/8": 21,
+          "3/32": 206,
+          "5/32": 3
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            322082221,
+            8192000000
+          ]
+        ],
+        "mean": [
+          8325,
+          524288
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/loops64/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "graph_id": "loops64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -319863471,
+            8192000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "362e3869b8aa3da14094d23aec4b51d277b269b4ca5f97790d9849aeee51b82b",
+        "histogram": {
+          "0": 9940,
+          "1/16": 1247,
+          "1/32": 4965,
+          "1/8": 26,
+          "3/32": 205,
+          "5/32": 1
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            319863471,
+            8192000000
+          ]
+        ],
+        "mean": [
+          8183,
+          524288
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/loops64/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": true,
+      "graph_id": "rare_support2x64",
+      "known_mean": [
+        1832624140942590533,
+        58643972510162897088
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "b0c2fde552b0e38a1e0be5ae56af5459ab67b3c38af9db18f7d510784537eaf1",
+        "histogram": {
+          "1/32": 16384
+        },
+        "interval": [
+          [
+            1953,
+            250000
+          ],
+          [
+            1709,
+            31250
+          ]
+        ],
+        "mean": [
+          1,
+          32
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/rare_support2x64/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": true,
+      "graph_id": "rare_support2x64",
+      "known_mean": [
+        1832624140942590533,
+        58643972510162897088
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "b0c2fde552b0e38a1e0be5ae56af5459ab67b3c38af9db18f7d510784537eaf1",
+        "histogram": {
+          "1/32": 16384
+        },
+        "interval": [
+          [
+            1953,
+            250000
+          ],
+          [
+            1709,
+            31250
+          ]
+        ],
+        "mean": [
+          1,
+          32
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/rare_support2x64/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": true,
+      "graph_id": "rare_support2x64",
+      "known_mean": [
+        1832624140942590533,
+        58643972510162897088
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "b0c2fde552b0e38a1e0be5ae56af5459ab67b3c38af9db18f7d510784537eaf1",
+        "histogram": {
+          "1/32": 16384
+        },
+        "interval": [
+          [
+            1953,
+            250000
+          ],
+          [
+            1709,
+            31250
+          ]
+        ],
+        "mean": [
+          1,
+          32
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/rare_support2x64/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": true,
+      "graph_id": "rare_support2x64",
+      "known_mean": [
+        1832624140942590533,
+        58643972510162897088
+      ],
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "b0c2fde552b0e38a1e0be5ae56af5459ab67b3c38af9db18f7d510784537eaf1",
+        "histogram": {
+          "1/32": 16384
+        },
+        "interval": [
+          [
+            1953,
+            250000
+          ],
+          [
+            1709,
+            31250
+          ]
+        ],
+        "mean": [
+          1,
+          32
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/rare_support2x64/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4128768,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1032192
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "graph_id": "star64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ef8e8fffa3f69354aa74c868d0cf42f26fae71ccf23279e55aeb3b3d11e4ae5d",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/star64/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4063232,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1015808
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "graph_id": "star64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ef8e8fffa3f69354aa74c868d0cf42f26fae71ccf23279e55aeb3b3d11e4ae5d",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/star64/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4063232,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1015808
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "graph_id": "star64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ef8e8fffa3f69354aa74c868d0cf42f26fae71ccf23279e55aeb3b3d11e4ae5d",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/star64/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4063232,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1015808
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "graph_id": "star64",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -11719,
+            500000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "ef8e8fffa3f69354aa74c868d0cf42f26fae71ccf23279e55aeb3b3d11e4ae5d",
+        "histogram": {
+          "0": 16384
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            11719,
+            500000
+          ]
+        ],
+        "mean": [
+          0,
+          1
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/star64/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "sampled_constant_unresolved",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 4063232,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 1015808
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "graph_id": "envelope56x54",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -7859471,
+            192000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "a4698213e04da78cfe0a5f8e075b78118d5777e3649ea58312537d9586596519",
+        "histogram": {
+          "0": 10211,
+          "1/27": 4826,
+          "1/9": 162,
+          "2/27": 1157,
+          "4/27": 26,
+          "5/27": 2
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            7859471,
+            192000000
+          ]
+        ],
+        "mean": [
+          215,
+          12288
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/envelope56x54/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 3473408,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 868352
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "graph_id": "envelope56x54",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -142329853,
+            3456000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "a4698213e04da78cfe0a5f8e075b78118d5777e3649ea58312537d9586596519",
+        "histogram": {
+          "0": 10191,
+          "1/27": 4784,
+          "1/9": 189,
+          "2/27": 1192,
+          "4/27": 25,
+          "5/27": 3
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            142329853,
+            3456000000
+          ]
+        ],
+        "mean": [
+          3925,
+          221184
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/envelope56x54/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 3473408,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 868352
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "graph_id": "envelope56x54",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -285206581,
+            6912000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "a4698213e04da78cfe0a5f8e075b78118d5777e3649ea58312537d9586596519",
+        "histogram": {
+          "0": 10134,
+          "1/27": 4869,
+          "1/9": 189,
+          "2/27": 1161,
+          "4/27": 28,
+          "5/27": 3
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            285206581,
+            6912000000
+          ]
+        ],
+        "mean": [
+          7885,
+          442368
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/envelope56x54/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 3473408,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 868352
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "graph_id": "envelope56x54",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -286144081,
+            6912000000
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "a4698213e04da78cfe0a5f8e075b78118d5777e3649ea58312537d9586596519",
+        "histogram": {
+          "0": 10068,
+          "1/27": 4913,
+          "1/9": 179,
+          "2/27": 1201,
+          "4/27": 22,
+          "5/27": 1
+        },
+        "interval": [
+          [
+            0,
+            1
+          ],
+          [
+            286144081,
+            6912000000
+          ]
+        ],
+        "mean": [
+          7945,
+          442368
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/envelope56x54/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 3473408,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 868352
+      },
+      "root_index": 3
+    },
+    {
+      "coverage": null,
+      "graph_id": "parallel9",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -61984663,
+            576000000
+          ],
+          [
+            -34984087,
+            576000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "d2f1eb44e34eb06547540d2c667110a22b5a1bfa60265bf033f2b7ff0574ac1e",
+        "histogram": {
+          "0": 873,
+          "2/9": 8432,
+          "4/9": 7079
+        },
+        "interval": [
+          [
+            18109343,
+            64000000
+          ],
+          [
+            21109407,
+            64000000
+          ]
+        ],
+        "mean": [
+          1255,
+          4096
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/parallel9/root/0",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "64b0ba818cdd400ad7171fe909a19dbe21d9dcb87eb10a3af1499fdfc429d093",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 524288,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 131072
+      },
+      "root_index": 0
+    },
+    {
+      "coverage": null,
+      "graph_id": "parallel9",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -20703221,
+            192000000
+          ],
+          [
+            -11703029,
+            192000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "d2f1eb44e34eb06547540d2c667110a22b5a1bfa60265bf033f2b7ff0574ac1e",
+        "histogram": {
+          "0": 837,
+          "2/9": 8488,
+          "4/9": 7059
+        },
+        "interval": [
+          [
+            163109087,
+            576000000
+          ],
+          [
+            190109663,
+            576000000
+          ]
+        ],
+        "mean": [
+          11303,
+          36864
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/parallel9/root/1",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "f778f9a2e2b8687557d6a93acd3839301ff7ee3430b57d05980e30ebfd3a411d",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 524288,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 131072
+      },
+      "root_index": 1
+    },
+    {
+      "coverage": null,
+      "graph_id": "parallel9",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -125516201,
+            1152000000
+          ],
+          [
+            -71515049,
+            1152000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "d2f1eb44e34eb06547540d2c667110a22b5a1bfa60265bf033f2b7ff0574ac1e",
+        "histogram": {
+          "0": 833,
+          "2/9": 8413,
+          "4/9": 7138
+        },
+        "interval": [
+          [
+            36390561,
+            128000000
+          ],
+          [
+            42390689,
+            128000000
+          ]
+        ],
+        "mean": [
+          2521,
+          8192
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/parallel9/root/2",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "1e82c20adc0132aebb115644b248d50d94ed8688d2783e683021dd980db044f5",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 524288,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 131072
+      },
+      "root_index": 2
+    },
+    {
+      "coverage": null,
+      "graph_id": "parallel9",
+      "known_mean": null,
+      "result": {
+        "contrast_interval": [
+          [
+            -30265769,
+            288000000
+          ],
+          [
+            -16765481,
+            288000000
+          ]
+        ],
+        "delta": [
+          1,
+          100
+        ],
+        "graph": "d2f1eb44e34eb06547540d2c667110a22b5a1bfa60265bf033f2b7ff0574ac1e",
+        "histogram": {
+          "0": 933,
+          "2/9": 8498,
+          "4/9": 6953
+        },
+        "interval": [
+          [
+            26921827,
+            96000000
+          ],
+          [
+            31421923,
+            96000000
+          ]
+        ],
+        "mean": [
+          1867,
+          6144
+        ],
+        "metric": "mu-g2-edge-budget-v1",
+        "mode": "sampled",
+        "query": "mu/R06b-cal-v1/matrix/parallel9/root/3",
+        "quota": 892,
+        "radius": [
+          11719,
+          500000
+        ],
+        "root": "8ad254b95b25175ab8e4ca22d998e0da2c8f78111fa20d526bf0d547fb5c55dc",
+        "samples": 16384,
+        "scientific_acceptance": false,
+        "status": "witnessed_nonconstant",
+        "uncertainty": "Monte Carlo only; ideal iid uniform target-stub permutations, not proven by SHA",
+        "word_budget": 524288,
+        "word_schema": "mu-g2-budget-null-word-v1",
+        "words": 131072
+      },
+      "root_index": 3
+    }
+  ],
+  "quota": 892,
+  "radius": [
+    11719,
+    500000
+  ],
+  "rare_support": {
+    "argument": "Balanced stubs force equal off-diagonal counts. Only the all-loop target assignment has zero reciprocal pairs.",
+    "mean": [
+      1832624140942590533,
+      58643972510162897088
+    ],
+    "score_support": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        32
+      ]
+    ],
+    "zero_probability": [
+      1,
+      1832624140942590534
+    ]
+  },
+  "scientific_candidate_statistics_evaluated": 0,
+  "scientific_effect_threshold": null,
+  "scientific_status": "untested",
+  "source_sha256": {
+    "analysis/edge_budget_v1.py": "1597215ccbe7e098391b1d927194ff6566e8fb2b949f8c25cb2c83c5c9f4e14c",
+    "analysis/g2_observer_v1.py": "80ac8a91210d8ace15450687e35000c08778d767def67cdad0a9090c1a5cf611",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r06b-observer.md": "b9603ac501a41f9c6f251cb1ab838ea73c5c0599929396451dfadca94340d1db",
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05f.json": "ccc6132177e8efb0d244912fab37637b257ce1e1997b89617bd09f26720f13d8",
+    "protocols/r06a-observable-design.json": "e21efb6f73d5f631f38a5acc90995f1fd607828248d3af7e3df26ddb3de8d9a9",
+    "protocols/r06a.json": "ff94bc9a74a27b2f926463f72f9a22796838c34a9201083f49c50e25f7e220c9",
+    "protocols/r06b-calibration-design.json": "efd3ec759d593a681b1825cfedaddebf3083253cd7e019bdfed9b507bd150ba5",
+    "reports/r06a-custody.json": "1b5598f08cd2706ef7d5547cc3b29260e5af12cd63df9564c06e5ac4486c9585",
+    "reports/r06a.json": "82d75aeec556be65234d7daca6334979add497e993bae7f9101e49c251da50d3",
+    "scripts/audit_r05e.py": "1afe5829f1173830e6b853d89e6903d54cf9947411beade0035d5202bb277071",
+    "scripts/calibrate_r06b.py": "d641fd0780a43ea0b5204e011bd097aa461df2e4b5c06be5588e266421638cd6",
+    "scripts/design_r06a.py": "753f813aa445fb34145f6787a8c55b971b218c90bc648fe7d9a0c94a9c0171a6",
+    "scripts/review_r05g.py": "ef7bd6efe8a43515102a3c85c4b8ad4934131136f5b0a07f046c3bc1573a88e0",
+    "tests/test_edge_budget_v1.py": "d8d1205677b1569dcb965cb7d77cd2504f67243706532b61e8647d71b38b56b5"
+  },
+  "trace_bytes": 226596925,
+  "trace_sha256": "19126c09b78e74d194d912c02a87a02b80251a8d14f49e0453c5ac853e92a28a",
+  "trajectory_files_read": 0
+}

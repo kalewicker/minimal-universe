@@ -170,9 +170,20 @@ visible; no null mean was computed by discarding them.
 python3 -B scripts/design_r06a.py --verify reports/r06a.json
 ```
 
+The [R06b reference observer](docs/r06b-observer.md) now implements the separate
+edge-budget metric and [passed synthetic calibration](reports/r06b.md). All 892
+query slots were retained, including undefined requests; all 48 known-mean
+intervals covered their truth. Every one of 1,114,112 sampled draws matched an
+independent permutation replay and score. Constant samples remain unresolved.
+
+```sh
+python3 -B scripts/calibrate_r06b.py --verify reports/r06b.json
+```
+
 G2 scientific status remains untested and campaign readiness remains blocked.
-Next is separately registered R06b observer implementation and synthetic
-calibration. R02's production criteria and all consumed evidence remain unchanged;
-no campaign, selected subgrammar or shorter atlas was launched.
+Next is separately registered R06c scientific design and feasibility: estimands,
+intervention/sham validity, parent registry, power and campaign budgets. R02's
+production criteria and all consumed evidence remain unchanged; no campaign,
+selected subgrammar or shorter atlas was launched.
 
 Public repository: https://github.com/kalewicker/minimal-universe

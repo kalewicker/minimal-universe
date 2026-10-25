@@ -52,10 +52,16 @@ observable/hypothesis review, with fixed synthetic scaling and null controls.
 Among four candidates, 2R/E met the declared edge-allocation criteria and is
 recommended only for a separate implementation/calibration stage. Undefined
 null mass in the support and occurrence fractions was retained. No production
-metric, scientific threshold or scientific eligibility was changed. Next is
-R06b: a separately versioned reference observer and source-bound synthetic
-calibration for the proposed edge-budget question. Scientific adoption still
-requires its own hypothesis, intervention design, power and campaign registration.
+metric, scientific threshold or scientific eligibility was changed.
+[R06b](../reports/r06b.md) implemented a separate edge-budget reference observer
+and passed its source-bound synthetic calibration over 892 quota slots and
+1,114,112 independently replayed draws. All 48 known-mean intervals covered truth;
+undefined slots and unresolved constants remained explicit. Synthetic paired
+bookkeeping preserves missing parents, eligibility changes and inherited splits.
+Next is separately registered R06c scientific design/feasibility, including
+estimands, valid intervention/sham construction and coupling, production parents,
+effect units/power, statistical families and campaign budgets. Scientific primary
+adoption and any world pilot still require their own registration.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

@@ -1,0 +1,75 @@
+{
+  "actual_completed_attempt_bytes": 226715323,
+  "attempts": 1,
+  "campaign_authorized": false,
+  "completed_attempt": "r06b-001",
+  "files": {
+    "analysis/edge_budget_v1.py": {
+      "bytes": 9674,
+      "sha256": "1597215ccbe7e098391b1d927194ff6566e8fb2b949f8c25cb2c83c5c9f4e14c"
+    },
+    "docs/r06b-observer.md": {
+      "bytes": 6120,
+      "sha256": "b9603ac501a41f9c6f251cb1ab838ea73c5c0599929396451dfadca94340d1db"
+    },
+    "protocols/r06b-calibration-design.json": {
+      "bytes": 20859,
+      "sha256": "efd3ec759d593a681b1825cfedaddebf3083253cd7e019bdfed9b507bd150ba5"
+    },
+    "protocols/r06b.json": {
+      "bytes": 3887,
+      "sha256": "23c2711ef92b22edc680f1a263c4886d25d5c55b435e29e9f649a10973197a5c"
+    },
+    "reports/r06b-execution.json": {
+      "bytes": 317,
+      "sha256": "9b5a7e6de92c6515cb84a3ed03a74885ac28bd753aa44125201472e8ae89c243"
+    },
+    "reports/r06b.json": {
+      "bytes": 117994,
+      "sha256": "6d4e5b7d078f80d5b7f26b2f82529ed2c61c27457f52edcc6ed81313517ad4ca"
+    },
+    "reports/r06b.md": {
+      "bytes": 6117,
+      "sha256": "a3afc26a5ed4c75345ae6781831accae88d13c29bc033eaffe4959208d5674c1"
+    },
+    "results/r06b-001/calibration.json": {
+      "bytes": 117994,
+      "sha256": "6d4e5b7d078f80d5b7f26b2f82529ed2c61c27457f52edcc6ed81313517ad4ca"
+    },
+    "results/r06b-001/calibration.jsonl": {
+      "bytes": 226596925,
+      "sha256": "19126c09b78e74d194d912c02a87a02b80251a8d14f49e0453c5ac853e92a28a"
+    },
+    "results/r06b-001/execution.json": {
+      "bytes": 317,
+      "sha256": "9b5a7e6de92c6515cb84a3ed03a74885ac28bd753aa44125201472e8ae89c243"
+    },
+    "results/r06b-001/started.json": {
+      "bytes": 87,
+      "sha256": "012d6b1da6d080644964a6575e2f2a4c16fb6feab8b5ae71f9d29cc623f63bc4"
+    },
+    "scripts/calibrate_r06b.py": {
+      "bytes": 20077,
+      "sha256": "d641fd0780a43ea0b5204e011bd097aa461df2e4b5c06be5588e266421638cd6"
+    },
+    "tests/test_edge_budget_v1.py": {
+      "bytes": 6813,
+      "sha256": "d8d1205677b1569dcb965cb7d77cd2504f67243706532b61e8647d71b38b56b5"
+    }
+  },
+  "global_wall_seconds_limit": 600,
+  "holdout_jobs_executed": 0,
+  "ledger_digest_and_bytes_verified": true,
+  "native_world_runs": 0,
+  "production_metric_adopted": false,
+  "promotion_authorized": false,
+  "protocol_id": "R06b-v1",
+  "public_replay_without_local_results_or_binaries": true,
+  "public_source_export_replay": "pass",
+  "public_verification_command": "python3 -B scripts/calibrate_r06b.py --verify reports/r06b.json",
+  "python_tests_passed": 122,
+  "retained_bytes_limit": 536870912,
+  "scientific_status": "untested",
+  "status": "pass",
+  "trajectory_files_read": 0
+}

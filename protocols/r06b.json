@@ -1,0 +1,53 @@
+{
+  "acceptance": "Full independent raw/exact controls, default dispatch and shuffle-bijection counts agree. Every sampled draw replays independently, preserves degrees/occurrences and matches an independent scorer. Every known-mean interval covers exact or analytic truth. All undefined slots, unresolved constants and paired denominators remain explicit. Calibration is not scientific adoption.",
+  "attempt_policy": "Exclusive identified result directory; preserve source, started receipt, failures and partial ledger. Any coverage/structural failure consumes the attempt. Stop for separately registered diagnosis; never replace roots, add draws, omit slots or relax criteria. Code repairs require new registered identity and preserved source.",
+  "budgets": {
+    "global_wall_seconds": 600,
+    "retained_bytes": 536870912
+  },
+  "calibration_authorized": true,
+  "campaign_authorized": false,
+  "expected": {
+    "analytic_large_mean_covered": 4,
+    "choice_vectors": 46234,
+    "exact_control_slots": 816,
+    "large_invariant_slots": 20,
+    "matrix_slots": 76,
+    "raw_control_graphs": 819,
+    "sampled_draws": 1114112,
+    "sampled_matrix_slots": 68,
+    "small_mean_covered": 44,
+    "undefined_matrix_slots": 8
+  },
+  "holdout_authorized": false,
+  "kind": "versioned_edge_budget_reference_observer_and_synthetic_calibration",
+  "next_boundary": "Separately register R06c scientific design and feasibility: physical hypothesis/estimands, target-sham construction and scheduler coupling, production parent namespace and inherited splits, effect units/power and estimators/test families, then measured campaign budgets. No scientific primary adoption, threshold transfer, world pilot or campaign is authorized here.",
+  "pins_sha256": {
+    "analysis/edge_budget_v1.py": "1597215ccbe7e098391b1d927194ff6566e8fb2b949f8c25cb2c83c5c9f4e14c",
+    "analysis/g2_observer_v1.py": "80ac8a91210d8ace15450687e35000c08778d767def67cdad0a9090c1a5cf611",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r06b-observer.md": "b9603ac501a41f9c6f251cb1ab838ea73c5c0599929396451dfadca94340d1db",
+    "protocols/r02-measurement-contract.json": "52fc4dcd42b0ae4e789f13591ac53b40dcb37b7903d29e12f01fabb76e8e6a3e",
+    "protocols/r05f.json": "ccc6132177e8efb0d244912fab37637b257ce1e1997b89617bd09f26720f13d8",
+    "protocols/r06a-observable-design.json": "e21efb6f73d5f631f38a5acc90995f1fd607828248d3af7e3df26ddb3de8d9a9",
+    "protocols/r06a.json": "ff94bc9a74a27b2f926463f72f9a22796838c34a9201083f49c50e25f7e220c9",
+    "protocols/r06b-calibration-design.json": "efd3ec759d593a681b1825cfedaddebf3083253cd7e019bdfed9b507bd150ba5",
+    "reports/r06a-custody.json": "1b5598f08cd2706ef7d5547cc3b29260e5af12cd63df9564c06e5ac4486c9585",
+    "reports/r06a.json": "82d75aeec556be65234d7daca6334979add497e993bae7f9101e49c251da50d3",
+    "scripts/audit_r05e.py": "1afe5829f1173830e6b853d89e6903d54cf9947411beade0035d5202bb277071",
+    "scripts/calibrate_r06b.py": "d641fd0780a43ea0b5204e011bd097aa461df2e4b5c06be5588e266421638cd6",
+    "scripts/design_r06a.py": "753f813aa445fb34145f6787a8c55b971b218c90bc648fe7d9a0c94a9c0171a6",
+    "scripts/review_r05g.py": "ef7bd6efe8a43515102a3c85c4b8ad4934131136f5b0a07f046c3bc1573a88e0",
+    "tests/test_edge_budget_v1.py": "d8d1205677b1569dcb965cb7d77cd2504f67243706532b61e8647d71b38b56b5"
+  },
+  "production_metric_adopted": false,
+  "promotion_authorized": false,
+  "protocol_id": "R06b-v1",
+  "receipt_chain": [
+    "protocols/r06a.json",
+    "reports/r06a.json",
+    "protocols/r05f.json"
+  ],
+  "scientific_status": "untested",
+  "scope": "Synthetic graphs and supplied synthetic paired endpoints only. No G2 law/seed scoring, world transitions, trajectories, held-out work, scientific candidate statistics or new production primary. Keep R02 thresholds, motifs and consumed receipts unchanged."
+}
