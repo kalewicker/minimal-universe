@@ -188,9 +188,11 @@ scientific thresholds and production budgets remain unregistered. [R06d](reports
 passes independent replay of 5,292 synthetic cases in both release and sanitizer
 builds. R02 criteria remain unchanged. [R06e admission review](reports/r06e.md) found no eligible time-zero patch in
 any of the 40,698 original rule/seed/scheduler rows. All 162,792 prospective branch
-slots remain unstarted; full-horizon costs and completion are unmeasured. Next is
-a separately registered parent-population design review, with no automatic burn-in
-or seed replacement. Scientific parent sampling and adoption remain unresolved.
+slots remain unstarted; full-horizon costs and completion are unmeasured. [R06f parent-population review](reports/r06f.md) compared engineered pairings
+with fixed endogenous-generation windows. It recommends separately registered
+supplied-state engineering calibration over all three pairings, all rules and
+schedulers at 50 events, retaining known completion failures. Scientific parent
+sampling and adoption remain unresolved; no generation or new assay has launched.
 
 ```sh
 python3 -B scripts/design_r06c.py --verify reports/r06c.json
@@ -210,4 +212,10 @@ Verify the static R06e admission receipt:
 
 ```sh
 python3 -B scripts/audit_r06e.py --verify reports/r06e.json
+```
+
+Verify the static parent-population design review:
+
+```sh
+python3 -B scripts/design_r06f.py --verify reports/r06f.json
 ```

@@ -1,0 +1,38 @@
+{
+  "acceptance": "Three supplied pairings and complete rule/seed scenarios accounted for; closed-form counts equal iterative oracle. Preserve impossible full-panel completion and unmeasured endogenous admission.",
+  "attempt_policy": "Exclusive attempt; preserve source and failures; no input substitution, threshold changes, trajectory launch or selective retry.",
+  "branch_horizon": 50,
+  "budgets": {
+    "retained_bytes": 67108864,
+    "wall_seconds": 120
+  },
+  "expected_design_rows": 30039,
+  "expected_supplied_counts": {
+    "count_conditional_domain_guaranteed": 2856,
+    "provably_unavailable": 51
+  },
+  "generation_windows": [
+    10,
+    50
+  ],
+  "kind": "static_parent_population_design_review",
+  "next_boundary": "Separately register full supplied-state engineering completion/cost calibration with canonical patch adapter, 50-event horizon and all failures retained. Endogenous generation remains unlaunched.",
+  "pins_sha256": {
+    "analysis/assay_eligibility_v1.py": "e29ec14f4b5fdfa5fc2af7dac115219c2751cf8f87938fd2efce165f2327c7e0",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r06f-parent-design.md": "a5c3182b53c53326eaca3ad5fff28db4631b949c8638916952e131f711377751",
+    "protocols/r05b.json": "3fa63aeba3cdcae60d81d58705f93d37185d6708b7848b6c4ddc436418770f55",
+    "protocols/r06c.json": "72e0f8a14a19378feaf4c67dc5639927b7ee1df4922ae683f59aa31064ee0f07",
+    "protocols/r06d.json": "acf6eca2d7c81a9f5a968d648785c84ba732d2d187933009fa1d4905859652bf",
+    "protocols/r06e.json": "00a53d941f8f626baecb6e3cc679bdffbdb32782b9ec5946b4b28a636eb7e8ff",
+    "reports/r06e-custody.json": "0eb004f138cd8f30ced742eaae8631f4714a4066030d912855765b949118f183",
+    "reports/r06e.json": "5326d203a47784405a21a39d929072fa2c2580073bbe49e1ecdee3b1491ec159",
+    "scripts/design_r06f.py": "887d70f74676bc9d6757c2dae18342be772a5a207dbb4a6235546475f9e0e340",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "tests/test_r06f.py": "d9250534e57f98687598196c706c6003c0b15b3bc034dd88752f679e040fb909"
+  },
+  "production_adopted": false,
+  "protocol_id": "R06f-v1",
+  "scientific_status": "untested",
+  "world_transitions_authorized": false
+}

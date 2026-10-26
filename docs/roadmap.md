@@ -68,9 +68,14 @@ controls. [R06e](../reports/r06e.md) checked admission for the full original pop
 before cost calibration: all 40,698 parent/scheduler rows lack an eligible induced
 dyad patch at time zero. Detector calibration passed 5,065 independent controls;
 all 162,792 branch slots remain unstarted. Full-horizon completion and budgets
-remain unmeasured. Next is a separately registered parent-population design review,
-without automatic burn-in, seed substitution or favorable-law selection. Scientific
-primary adoption, parent sampling and any pilot require their own registration.
+remain unmeasured. [R06f](../reports/r06f.md) reviewed supplied-state and endogenous parent designs
+over 30,039 static rows. All three supplied pairings are eligible, but 612 prospective
+orientation slots cannot complete 50 events; generated-parent scenarios also lack
+full conditional observer-domain guarantees. Next is separately registered R06g
+supplied-state engineering cost/completion calibration with a canonical patch
+adapter and every failure retained. This is a distinct engineering population,
+not repair of the failed original-seed gate. Scientific adoption and endogenous
+generation remain unregistered and unlaunched.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

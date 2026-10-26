@@ -1,0 +1,22 @@
+{
+  "bulk_evidence_published": false,
+  "clean_public_source_replay": "passed",
+  "execution_sha256": "89234fdea9637e445153f6067e9f4221104ddf5070cb6e3a31dc3100936d4069",
+  "ledger_sha256": "825816c8c1c70b5fb45b2c4e9bac2c006be66e2643e9ca78fdd68a26e99f5786",
+  "prior_source_pins_verified": true,
+  "protocol_id": "R06f-v1",
+  "python_tests": 139,
+  "receipt_sha256": "77e1f0f3283f8eb8ffa588109ed6d83d357c67f17a35c37af856bbdbbca26a20",
+  "scientific_status": "untested",
+  "staged_public_paths": [
+    "README.md",
+    "docs/r06f-parent-design.md",
+    "docs/roadmap.md",
+    "protocols/r06f.json",
+    "reports/r06f-execution.json",
+    "reports/r06f.json",
+    "reports/r06f.md",
+    "scripts/design_r06f.py",
+    "tests/test_r06f.py"
+  ]
+}
