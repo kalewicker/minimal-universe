@@ -71,10 +71,13 @@ all 162,792 branch slots remain unstarted. Full-horizon completion and budgets
 remain unmeasured. [R06f](../reports/r06f.md) reviewed supplied-state and endogenous parent designs
 over 30,039 static rows. All three supplied pairings are eligible, but 612 prospective
 orientation slots cannot complete 50 events; generated-parent scenarios also lack
-full conditional observer-domain guarantees. Next is separately registered R06g
-supplied-state engineering cost/completion calibration with a canonical patch
-adapter and every failure retained. This is a distinct engineering population,
-not repair of the failed original-seed gate. Scientific adoption and endogenous
+full conditional observer-domain guarantees. [R06g](../reports/r06g.md) completed the full supplied-state engineering panel
+with a canonical patch adapter: all 34,884 native histories matched independent
+Python replay. There were 27,670 horizon completions and 7,214 early stops, with
+36 empty endpoints and no censored/unstarted slots. Full-panel completion remains
+failed. Next is separately registered read-only completion/cost diagnosis using
+the preserved histories, with no survivor selection or rerun. This distinct
+engineering population does not repair R06e. Scientific adoption and endogenous
 generation remain unregistered and unlaunched.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.

@@ -1,0 +1,49 @@
+{
+  "acceptance": "Release and sanitizer adapter controls agree; every full-panel native history matches independent replay; preserve all terminal, undefined, censored and not-started slots. No completion-rate acceptance threshold.",
+  "attempt_policy": "Exclusive fixed-order attempts, preserve failures and source. Stop on mismatch or budget failure, no retries or extension. Full panel launches only after control agreement.",
+  "budgets": {
+    "batch_bytes": 16777216,
+    "batch_seconds": 30,
+    "global_seconds": 1800,
+    "oracle_case_seconds": 10,
+    "retained_bytes": 1073741824
+  },
+  "engineering_execution_authorized": true,
+  "expected_slots": {
+    "controls": 108,
+    "panel": 34884
+  },
+  "horizon": 50,
+  "kind": "supplied_state_engineering_completion_and_cost_calibration",
+  "next_boundary": "Separately register read-only completion/cost diagnosis on saved evidence. No surviving-law selection, new parents, horizon changes or scientific promotion.",
+  "pins_sha256": {
+    "analysis/assay_eligibility_v1.py": "e29ec14f4b5fdfa5fc2af7dac115219c2751cf8f87938fd2efce165f2327c7e0",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "docs/r06g-calibration.md": "c2dad4285e5dee4f86717b625ca400b54634c0de9b6fc839c754e355eef7aadd",
+    "g2_assay/kernel.cpp": "f037e6df9ad128151458db6167b8db4891febf012bbae5d2b042be0dbee8e5fa",
+    "g2_assay/kernel.hpp": "5b93c5f5ac6a58455f00fadb53459159ccd60cbd2311ee482fb19845b1b4268d",
+    "g2_calibration/CMakeLists.txt": "416450ff30e5dc36b0face6e28e35a8a170b0c514b16a3b593b85dcd3db061ae",
+    "g2_calibration/main.cpp": "df028fb2d7a7418aae6533caa72f5e6b8935db8c724d439ece0f811fba1db678",
+    "protocols/r06c.json": "72e0f8a14a19378feaf4c67dc5639927b7ee1df4922ae683f59aa31064ee0f07",
+    "protocols/r06d.json": "acf6eca2d7c81a9f5a968d648785c84ba732d2d187933009fa1d4905859652bf",
+    "protocols/r06e.json": "00a53d941f8f626baecb6e3cc679bdffbdb32782b9ec5946b4b28a636eb7e8ff",
+    "protocols/r06f.json": "bbb6b200624d071054dbbb3def06a916579991cf5515ae51926d70a78d6a1c20",
+    "reports/r06f-custody.json": "e4f36df22b3f6ea63e24a163db562c17f3098b67486cbff29b5dfa88043b7f0b",
+    "reports/r06f.json": "77e1f0f3283f8eb8ffa588109ed6d83d357c67f17a35c37af856bbdbbca26a20",
+    "scripts/calibrate_r06g.py": "c75f0f4d5465aaf5ab89d5ff8cda8cc71e8cb96126fdf5439904e684cd97b4fc",
+    "scripts/design_r06f.py": "887d70f74676bc9d6757c2dae18342be772a5a207dbb4a6235546475f9e0e340",
+    "scripts/g2_reference.py": "6930e48ef41fd16d4435d5b1df21203d7a891ae21f5f6e38cc199e96c5221a36",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "scripts/verify_r05b.py": "ee9e1f0791eebe2528f5e6f388f7f24272708e4a2cb2fb59b3e8779f0861eda8",
+    "tests/test_r06g.py": "d8e53514032454a87bce553b2971c9b2a038ce016a286e3e7d889f1efc541b25"
+  },
+  "production_adopted": false,
+  "protocol_id": "R06g-v1",
+  "registered_attempts": [
+    "release-controls",
+    "sanitize-controls",
+    "release-panel"
+  ],
+  "scientific_campaign_authorized": false,
+  "scientific_status": "untested"
+}

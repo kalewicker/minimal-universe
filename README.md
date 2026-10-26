@@ -189,10 +189,11 @@ passes independent replay of 5,292 synthetic cases in both release and sanitizer
 builds. R02 criteria remain unchanged. [R06e admission review](reports/r06e.md) found no eligible time-zero patch in
 any of the 40,698 original rule/seed/scheduler rows. All 162,792 prospective branch
 slots remain unstarted; full-horizon costs and completion are unmeasured. [R06f parent-population review](reports/r06f.md) compared engineered pairings
-with fixed endogenous-generation windows. It recommends separately registered
-supplied-state engineering calibration over all three pairings, all rules and
-schedulers at 50 events, retaining known completion failures. Scientific parent
-sampling and adoption remain unresolved; no generation or new assay has launched.
+with fixed endogenous-generation windows. [R06g](reports/r06g.md) completed that distinct supplied-state engineering
+calibration: all 34,884 branches matched independent replay; 27,670 reached 50
+events and 7,214 stopped early. All 36 empty endpoints remain explicit. Full-panel
+completion failed; scientific sampling and adoption remain unresolved. Next is a
+separately registered read-only completion/cost diagnosis of the saved evidence.
 
 ```sh
 python3 -B scripts/design_r06c.py --verify reports/r06c.json
@@ -219,3 +220,14 @@ Verify the static parent-population design review:
 ```sh
 python3 -B scripts/design_r06f.py --verify reports/r06f.json
 ```
+
+R06g uses a separate adapter over the frozen assay kernel:
+
+```sh
+cmake -S g2_calibration -B build-r06g -DCMAKE_BUILD_TYPE=Release
+cmake --build build-r06g -j 4
+```
+
+The full local histories remain under ignored `results/`; public receipts retain
+completion denominators and per-batch output hashes. See the
+[R06g contract](docs/r06g-calibration.md) for attempt limits and verification scope.
