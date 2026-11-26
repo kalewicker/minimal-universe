@@ -192,8 +192,10 @@ slots remain unstarted; full-horizon costs and completion are unmeasured. [R06f 
 with fixed endogenous-generation windows. [R06g](reports/r06g.md) completed that distinct supplied-state engineering
 calibration: all 34,884 branches matched independent replay; 27,670 reached 50
 events and 7,214 stopped early. All 36 empty endpoints remain explicit. Full-panel
-completion failed; scientific sampling and adoption remain unresolved. Next is a
-separately registered read-only completion/cost diagnosis of the saved evidence.
+completion failed. [R06h](reports/r06h.md) verified the saved panel and found
+6,602 early stops under rules that preserve or grow the edge count. Python replay
+accounted for 78.0% of the run time and native histories for 94.2% of retained bytes.
+Scientific sampling and adoption remain unresolved.
 
 ```sh
 python3 -B scripts/design_r06c.py --verify reports/r06c.json

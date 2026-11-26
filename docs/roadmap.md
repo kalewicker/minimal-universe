@@ -75,10 +75,13 @@ full conditional observer-domain guarantees. [R06g](../reports/r06g.md) complete
 with a canonical patch adapter: all 34,884 native histories matched independent
 Python replay. There were 27,670 horizon completions and 7,214 early stops, with
 36 empty endpoints and no censored/unstarted slots. Full-panel completion remains
-failed. Next is separately registered read-only completion/cost diagnosis using
-the preserved histories, with no survivor selection or rerun. This distinct
-engineering population does not repair R06e. Scientific adoption and endogenous
-generation remain unregistered and unlaunched.
+failed. [R06h](../reports/r06h.md) verified all saved batches and identified
+match exhaustion in all 7,214 early stops, including 6,602 under rules with
+nondecreasing edge count. Completion differed between target and sham in 143
+parent/scheduler rows. Python replay and retained native histories dominated the
+measured time and storage. A future assay design must specify how terminal
+outcomes contribute before collecting trajectories. Scientific adoption and
+endogenous generation remain unregistered and unlaunched.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

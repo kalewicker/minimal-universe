@@ -1,0 +1,37 @@
+{
+  "attempt_policy": "Exclusive output. Preserve any failure and its source. Verification may re-read and compare saved data.",
+  "completion_accounting": "Histogram of early-stop event counts and endpoint edge counts by RHS size. Joint counts of the completed target and sham orientations for each of the 8721 parent/scheduler rows.",
+  "completion_definition": "Exactly 50 recorded successful events. Record terminal status independently of reaching the horizon.",
+  "cost_accounting": "Sum native phase timings and reconcile exact file sizes against R06g execution receipt. Python replay and process wall time are available as whole-run totals.",
+  "expected_batches": 969,
+  "expected_branches": 34884,
+  "kind": "read_only_completion_and_cost_diagnosis",
+  "pins_sha256": {
+    "analysis/assay_eligibility_v1.py": "e29ec14f4b5fdfa5fc2af7dac115219c2751cf8f87938fd2efce165f2327c7e0",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "protocols/r06g.json": "fe2d0ce851f904fed76d7708530e76873333d931e8bcaae18a04e2ab52b43d9e",
+    "reports/r06g-custody.json": "dd63145e114c3760b2df23b962811df1bec56a649cf31cb18abc1c5c3ccb07c9",
+    "reports/r06g-execution.json": "b49700ce04917b674bf29a081fe51e09ddf9369b8cebc3267edb3f4332837844",
+    "reports/r06g.json": "a3581902f9e9af39661eb26e588b95f27893ac8823210b3700cb5239d8ba4eed",
+    "scripts/audit_r04.py": "da08da96810bf399e4f29b2099e974006eced0482f515f924565bc18f54a561f",
+    "scripts/audit_r05.py": "d84631d35d0f1e04309af1ebbc66acfe04e9577fa53f6758d67b3b3323112131",
+    "scripts/calibrate_r06g.py": "c75f0f4d5465aaf5ab89d5ff8cda8cc71e8cb96126fdf5439904e684cd97b4fc",
+    "scripts/design_r06f.py": "887d70f74676bc9d6757c2dae18342be772a5a207dbb4a6235546475f9e0e340",
+    "scripts/diagnose_r06h.py": "b1a6c342a7ef427c96ee8a4b00ff6eece6fa0a137d5e2edbb3fdf39190005cbe",
+    "scripts/g2_reference.py": "6930e48ef41fd16d4435d5b1df21203d7a891ae21f5f6e38cc199e96c5221a36",
+    "scripts/plan_r05d.py": "a02c910e5556a2db456e1d092839800d051b0da487506eb3c406e38d32f3c2ab",
+    "scripts/verify_r05b.py": "ee9e1f0791eebe2528f5e6f388f7f24272708e4a2cb2fb59b3e8779f0861eda8"
+  },
+  "protocol_id": "R06h-v1",
+  "scientific_status": "untested",
+  "scope": "One saved R06g release panel. Verify batches and input order, reconcile ledger with saved endpoints, and reconstruct aggregate completion and cost accounting.",
+  "strata": [
+    "RHS size",
+    "scheduler",
+    "pairing",
+    "orientation",
+    "partition"
+  ],
+  "wall_seconds": 120,
+  "world_transitions_authorized": false
+}
