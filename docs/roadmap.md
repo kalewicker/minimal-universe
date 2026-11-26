@@ -82,8 +82,11 @@ parent/scheduler rows. Python replay and retained native histories dominated the
 measured time and storage. [R06i](../reports/r06i.md) specified a proposed outcome
 based on the fraction of the 50-event horizon completed, with companion reach
 and joint structural outcomes. Its bounds passed 10,000 synthetic checks.
-Next is a separately registered synthetic bookkeeping adapter. Scientific
-adoption and endogenous generation remain unregistered and unlaunched.
+[R06j](../reports/r06j.md) implemented a synthetic adapter that validates the
+roster and orientation records, preserves known reach with missing structure,
+and computes exact weighted bounds by scheduler. Next is a separately registered
+scientific population and inference design review. Scientific adoption and
+endogenous generation remain unregistered and unlaunched.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

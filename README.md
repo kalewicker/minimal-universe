@@ -197,8 +197,9 @@ completion failed. [R06h](reports/r06h.md) verified the saved panel and found
 accounted for 78.0% of the run time and native histories for 94.2% of retained bytes.
 [R06i](reports/r06i.md) checked a proposed terminal-aware outcome on 10,000
 synthetic orientation quartets. It measures the fraction of 50 events completed
-and bounds unresolved outcomes using verified prefixes. Scientific sampling and
-adoption remain unresolved.
+and bounds unresolved outcomes using verified prefixes. [R06j](reports/r06j.md)
+implemented the synthetic adapter for roster validation and exact scheduler-level
+bounds. Scientific sampling and adoption remain unresolved.
 
 ```sh
 python3 -B scripts/design_r06c.py --verify reports/r06c.json

@@ -1,0 +1,34 @@
+{
+  "parents": [
+    {"key": "mu/G2-terminal-fixture-v1/a", "weight": [1, 1], "initial": {"nodes": 4, "edges": [[0, 1], [1, 0], [2, 3], [3, 2]]}},
+    {"key": "mu/G2-terminal-fixture-v1/b", "weight": [3, 1], "initial": {"nodes": 4, "edges": [[0, 1], [1, 0], [2, 3], [3, 2]]}},
+    {"key": "mu/G2-terminal-fixture-v1/no-patch", "weight": [2, 1], "initial": {"nodes": 4, "edges": [[0, 1]]}},
+    {"key": "mu/G2-terminal-fixture-v1/ambiguous", "weight": [4, 1], "initial": {"nodes": 6, "edges": [[0, 1], [1, 0], [2, 3], [3, 2], [4, 5], [5, 4]]}}
+  ],
+  "branches": [
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "lex_first", "orientation": 0, "patch": [0, 1, 2, 3], "status": "terminal", "events": 2, "endpoint": {"nodes": 4, "edges": [[0, 1]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "lex_first", "orientation": 1, "patch": [0, 1, 2, 3], "status": "terminal", "events": 49, "endpoint": {"nodes": 4, "edges": []}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "lex_first", "orientation": 2, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": []}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "lex_first", "orientation": 3, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": [[0, 1], [1, 0], [2, 3], [3, 2]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "lex_first", "orientation": 0, "patch": [0, 1, 2, 3], "status": "reached_snapshot_missing", "events": 50, "endpoint": null},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "lex_first", "orientation": 1, "patch": [0, 1, 2, 3], "status": "resource_censored", "events": 49, "endpoint": null},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "lex_first", "orientation": 2, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": [[0, 1]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "lex_first", "orientation": 3, "patch": [0, 1, 2, 3], "status": "not_started", "events": 0, "endpoint": null},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "lex_last", "orientation": 0, "patch": [0, 1, 2, 3], "status": "terminal", "events": 2, "endpoint": {"nodes": 4, "edges": [[0, 1]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "lex_last", "orientation": 1, "patch": [0, 1, 2, 3], "status": "terminal", "events": 49, "endpoint": {"nodes": 4, "edges": []}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "lex_last", "orientation": 2, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": []}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "lex_last", "orientation": 3, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": [[0, 1], [1, 0], [2, 3], [3, 2]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "lex_last", "orientation": 0, "patch": [0, 1, 2, 3], "status": "reached_snapshot_missing", "events": 50, "endpoint": null},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "lex_last", "orientation": 1, "patch": [0, 1, 2, 3], "status": "domain_unsupported", "events": 13, "endpoint": null},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "lex_last", "orientation": 2, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": [[0, 1]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "lex_last", "orientation": 3, "patch": [0, 1, 2, 3], "status": "not_started", "events": 0, "endpoint": null},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "uniform_match", "orientation": 0, "patch": [0, 1, 2, 3], "status": "terminal", "events": 2, "endpoint": {"nodes": 4, "edges": [[0, 1]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "uniform_match", "orientation": 1, "patch": [0, 1, 2, 3], "status": "terminal", "events": 49, "endpoint": {"nodes": 4, "edges": []}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "uniform_match", "orientation": 2, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": []}},
+    {"parent": "mu/G2-terminal-fixture-v1/a", "partition": "final-test", "scheduler": "uniform_match", "orientation": 3, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": [[0, 1], [1, 0], [2, 3], [3, 2]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "uniform_match", "orientation": 0, "patch": [0, 1, 2, 3], "status": "reached_snapshot_missing", "events": 50, "endpoint": null},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "uniform_match", "orientation": 1, "patch": [0, 1, 2, 3], "status": "resource_censored", "events": 49, "endpoint": null},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "uniform_match", "orientation": 2, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": [[0, 1]]}},
+    {"parent": "mu/G2-terminal-fixture-v1/b", "partition": "discovery", "scheduler": "uniform_match", "orientation": 3, "patch": [0, 1, 2, 3], "status": "reached", "events": 50, "endpoint": {"nodes": 4, "edges": [[0, 1], [1, 0]]}}
+  ]
+}

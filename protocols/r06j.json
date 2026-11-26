@@ -1,0 +1,37 @@
+{
+  "acceptance": "Exact agreement with hand-derived weighted bounds in all three scheduler strata. Preserve all admission and endpoint categories. Check ordering invariance and an empty eligible denominator. Reject each invalid fixture for the expected reason.",
+  "attempt_policy": "Exclusive output directory. Preserve failures and bound source.",
+  "eligibility": "Exactly one canonical induced dyad patch. Report no-patch and ambiguous parents separately.",
+  "empirical_outcome_scoring_authorized": false,
+  "expected_rejections": 15,
+  "fixture_namespace": "mu/G2-terminal-fixture-v1/",
+  "horizon": 50,
+  "orientation_order": [
+    "target-0",
+    "target-1",
+    "sham-0",
+    "sham-1"
+  ],
+  "pins_sha256": {
+    "analysis/assay_eligibility_v1.py": "e29ec14f4b5fdfa5fc2af7dac115219c2751cf8f87938fd2efce165f2327c7e0",
+    "analysis/edge_budget_v1.py": "1597215ccbe7e098391b1d927194ff6566e8fb2b949f8c25cb2c83c5c9f4e14c",
+    "analysis/g2_observer_v1.py": "80ac8a91210d8ace15450687e35000c08778d767def67cdad0a9090c1a5cf611",
+    "analysis/measurements.py": "57cc0586ae194bc105bd4f87a5e2087a09ce600f1f3e940fc1a92da798d9edb2",
+    "fixtures/r06j/panel.json": "4d32003b8f60560586ed1647e250e4ebfa037d255944a5849cd30dee7c6d21e9",
+    "protocols/r06i.json": "4b8f4b00afdcde805738c3accb190524dd5eb6402f378da04f5bd876fd3e25f5",
+    "reports/r06i.json": "1f3c185cb95e4ae3439c0bcaa3de1b331f1b0394e329f14c7550bb94d8fabf2b",
+    "scripts/bookkeep_r06j.py": "a9501fbe606368f65b26120c2aefdc36cca4dfe8166e0519de447465203e7614",
+    "scripts/check_r06j.py": "800608874ae8a09f2a41e13d5630e84b7adad9c47274ed105d0d9dceeed84f26",
+    "scripts/design_r06i.py": "9a7278255f44482c178e8a81ceb2fb6a5c9bbaa22d2439be05378a4e07a8234f"
+  },
+  "protocol_id": "R06j-v1",
+  "scheduler_strata": [
+    "lex_first",
+    "lex_last",
+    "uniform_match"
+  ],
+  "scientific_status": "untested",
+  "scope": "Synthetic terminal outcome record adapter and exact weighted interval accounting.",
+  "weights": "Equal weights per orientation within each arm. Positive rational roster weights normalized among eligible parents within each scheduler.",
+  "world_transitions_authorized": false
+}
