@@ -79,9 +79,11 @@ failed. [R06h](../reports/r06h.md) verified all saved batches and identified
 match exhaustion in all 7,214 early stops, including 6,602 under rules with
 nondecreasing edge count. Completion differed between target and sham in 143
 parent/scheduler rows. Python replay and retained native histories dominated the
-measured time and storage. A future assay design must specify how terminal
-outcomes contribute before collecting trajectories. Scientific adoption and
-endogenous generation remain unregistered and unlaunched.
+measured time and storage. [R06i](../reports/r06i.md) specified a proposed outcome
+based on the fraction of the 50-event horizon completed, with companion reach
+and joint structural outcomes. Its bounds passed 10,000 synthetic checks.
+Next is a separately registered synthetic bookkeeping adapter. Scientific
+adoption and endogenous generation remain unregistered and unlaunched.
 No shorter atlas or selected subgrammar is authorized as a repair. This is a design transition,
 not a finding that the one-edge rules failed a scientific effect test.
 

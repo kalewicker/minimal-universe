@@ -1,0 +1,39 @@
+{
+  "acceptance": "Exact interval agreement with enumeration on all quartets and rejection of the nine invalid records",
+  "attempt_policy": "Exclusive output directory. Preserve any failure and its bound source.",
+  "empirical_outcome_scoring_authorized": false,
+  "expected_quartets": 10000,
+  "horizon": 50,
+  "orientation_order": [
+    "target-0",
+    "target-1",
+    "sham-0",
+    "sham-1"
+  ],
+  "pins_sha256": {
+    "docs/r06c-scientific-design.md": "0ed847c578e8aba01bb2a876c1039b24af2b0318d9366c2b982b3b4b250be814",
+    "docs/r06i-terminal-design.md": "4e49466463e2f8ca115a58d7c554d6900a6fe23a05b1a06025dce604c6b3b611",
+    "protocols/r06c.json": "72e0f8a14a19378feaf4c67dc5639927b7ee1df4922ae683f59aa31064ee0f07",
+    "protocols/r06h.json": "296ab05dc47113bfa3ef7f2db843b830c7f8dd8d06fb3c3543542f4c42b0ec9a",
+    "reports/r06h.json": "73ace1ffc18617d7395e496574e947ab8056c75ede81409a0d8530ce673499b0",
+    "scripts/design_r06i.py": "9a7278255f44482c178e8a81ceb2fb6a5c9bbaa22d2439be05378a4e07a8234f"
+  },
+  "protocol_id": "R06i-v1",
+  "scientific_status": "untested",
+  "scope": "Static terminal outcome design with synthetic records",
+  "thresholds_for_synthetic_checks": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "world_transitions_authorized": false
+}

@@ -195,7 +195,10 @@ events and 7,214 stopped early. All 36 empty endpoints remain explicit. Full-pan
 completion failed. [R06h](reports/r06h.md) verified the saved panel and found
 6,602 early stops under rules that preserve or grow the edge count. Python replay
 accounted for 78.0% of the run time and native histories for 94.2% of retained bytes.
-Scientific sampling and adoption remain unresolved.
+[R06i](reports/r06i.md) checked a proposed terminal-aware outcome on 10,000
+synthetic orientation quartets. It measures the fraction of 50 events completed
+and bounds unresolved outcomes using verified prefixes. Scientific sampling and
+adoption remain unresolved.
 
 ```sh
 python3 -B scripts/design_r06c.py --verify reports/r06c.json
